@@ -1,0 +1,97 @@
+.container{
+  // background-image: url('./assets/mainImages/lookout-tower.png');
+  // background-position: center;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // width: 100vw;
+  // height: 99vh;
+  // display: flex;
+  // justify-content: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/mainImages/scenery.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  // margin-top: -80vh;
+  // margin-right: -50vw;
+  padding: 0;
+  &__bg-image-wrapper {
+    position: absolute;
+    background: url('./assets/mainImages/lookout-tower-new.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.4s;
+    transform-origin: bottom;
+  }
+  &__content {
+    position: relative;
+    margin-left: -60vw;
+  }
+  &__left-gate-ctnr{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &__right-gate-ctnr{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &__left-gate{
+    position: relative;
+    z-index: 5;
+    width: 4.6vw;
+    height: 12.9vh;
+    margin-right: 2.5vw;
+    margin-bottom: 0.3vh;
+  }
+  &__right-gate{
+    position: relative;
+    width:4.5vw;
+    margin-left: 3.3vw;
+    margin-bottom: 0.22vh;
+    height: 12.3vh;
+  }
+  
+
+  // &__click{
+  //   margin-top: 65vh;
+  //   // background-image: linear-gradient(45deg, #d9000e, #680803);
+  //   /* Fallback: Set a background color. */
+  // background-color: red;
+  
+  // /* Create the gradient. */
+  // background-image: linear-gradient(45deg, #F20001, #680803);
+  
+  // /* Set the background size and repeat properties. */
+  // background-size: 100%;
+  // background-repeat: repeat;
+
+  // /* Use the text as a mask for the background. */
+  // /* This will show the gradient as a text color rather than element bg. */
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent; 
+  // -moz-background-clip: text;
+  // -moz-text-fill-color: transparent;
+  // font-family: "Archivo Black", sans-serif;
+  // font-weight: bolder;
+  // font-size: 2em;
+  // text-align: center;
+  // }
+}
