@@ -1,10 +1,26 @@
 import './ChooseGame.scss';
 import { Link } from 'react-router-dom';
 import Skye from '../../assets/pups/skye.png';
+import RiderOne from '../../assets/rider/rider-angle-1.png';
+import RiderTwo from '../../assets/rider/rider-angle-2.png';
+import RiderMain from '../../assets/rider/rider-paw-patrol-png-41895.png'
 
-const ChooseGame = () => {
-    return (
-        <div className="home">
+import React, { Component } from 'react';
+
+class ChooseGame extends Component {
+    state = {
+        riderPosition:0
+    }
+    render() {
+        const LinkTo = () => {
+            this.setState({riderPosition: 1})
+        }
+        const LinkDown = () => {
+            this.setState({riderPosition: 2})
+        }
+        return (
+            <div className="home">
+            {this.state.riderPosition === 1 ? <img className="home__rider-up" src={RiderOne} alt="Rider with hand up"/> : this.state.riderPosition === 2 ? <img className="home__rider-down" src={RiderTwo} alt="Rider with hand down"/> : <img className="home__rider-down" src={RiderMain} alt="Rider dancing"/>}
             {/* Slider --start */}
             <div className="home__slider">
                 {/* Slides --start */}
@@ -12,11 +28,13 @@ const ChooseGame = () => {
                     {/* <h1 className="game__title">Hi Friends</h1>
                     <h2 className="game__title">Choose Your Game</h2> */}
                     {/* inputs */}
+                    <label>
                     <input 
                         type="radio" 
                         name="radio-btn" 
                         id="radio1"
                     />
+                    </label>
                     <input 
                         type="radio" 
                         name="radio-btn" 
@@ -24,13 +42,13 @@ const ChooseGame = () => {
                     />
                     {/* Business slide */}
                         <div className="home__slide home__slide-one">
-                            <div className="game__tile">
+                            <div className="game__tile-up" onClick={LinkTo}>
                                 <h3 className="game__tile-title">Addition Math with Skye</h3>
                                 <Link className="game__link" to='/choosegame/addgame'>
                                     <img className="game__tile-pic" src={Skye} alt="Pup named Skye"/>
                                 </Link>
                             </div>
-                            <div className="game__tile">
+                            <div className="game__tile-down" onClick={LinkDown}>
                                 <h3 className="game__tile-title">Subtraction Math with Zuma</h3>
                                 <Link className="game__link" to='/choosegame/subtractgame'>
                                     {/* <img className="game__tile-pic" src={Zuma} alt="Pup named Zuma"/> */}
@@ -39,13 +57,13 @@ const ChooseGame = () => {
                         </div>
                     {/* Customer slide */}
                         <div className="home__slide home__slide-two">
-                            <div className="game__tile">
+                            <div className="game__tile game__tile--rider-up">
                                 <h3 className="game__tile-title">Exercise with Rider</h3>
                                 <Link className="game__link" to='/choosegame/exercise'>
                                     {/* <img className="game__tile-pic" src={Rider} alt="Pup named Rider"/> */}
                                 </Link>
                             </div>
-                            <div className="game__tile">
+                            <div className="game__tile game__tile--rider-down">
                                 <h3 className="game__tile-title">Scavenger Hunt with Marshal</h3>
                                 <Link className="game__link" to='/choosegame/scavengerhunt'>
                                 {/* <img className="game__tile-pic" src={Marshal} alt="Pup named Marshal"/> */}
@@ -63,7 +81,8 @@ const ChooseGame = () => {
                 </div>
             </div>
         </div>
-    )
+        );
+    }
 }
 
 export default ChooseGame;
