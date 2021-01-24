@@ -1,0 +1,85 @@
+$root: '.open__c-rainbow';
+#{$root} {
+    counter-reset: rainbow;
+    position: relative;
+    display: block;
+    
+    list-style: none;
+    
+    padding: 0;
+    margin: 0;
+    &__layer {
+        color: #fff;
+        -moz-animation-iteration-count: rainbow; 
+        font-size: 3rem;
+        text-shadow: -0.2px -0.2px 0 #000,0.2px -0.2px 0 #000, -0.2px 0.2px 0 #000, 0.2px 0.2px 0 #000, 4px 4px 0 rgba(0, 0, 0, .2);
+        -webkit-animation: rainbow 1.5s ease-in-out infinite;
+        &--white {
+            animation-delay: 0.1s;
+            top: 0;
+            left: 1px;
+            z-index: -10;
+        }
+        &--orange {
+            position: absolute;
+            animation-delay: 0.2s;
+            top: 0;
+            left: 2px;
+            z-index: -20;
+            color:orange;
+        }
+        &--red {
+            position: absolute;
+            animation-delay: 0.3s;
+            left: 3px;
+            top: 0;
+            z-index: -30;
+            color:red
+        }
+        &--violet {
+            position: absolute;
+            animation-delay: 0.4s;
+            top: 0;
+            left: 4px;
+            z-index: -40;
+            color:rgb(196, 64, 248);
+        }
+        &--blue {
+            position: absolute;
+            -webkit-animation-delay: 0.5s;
+            top: 0;
+            left: 5px;
+            z-index: -50;
+            color:blue;
+        }
+        &--green {
+            position: absolute;
+            -webkit-animation-delay: 0.6s;
+            top: 0;
+            left: 6px;
+            z-index: -60;
+            color: greenyellow;
+        }
+        &--yellow {
+            position: absolute;
+            -webkit-animation-delay: 0.7s;
+            top: 0;
+            left: 7px;
+            z-index: -70;
+            color: yellow;
+        }
+    }
+    &:not(:first-child) {
+        position: absolute;
+        top: 0;
+    }
+}
+
+@keyframes rainbow {
+    0%, 100% {
+        transform: translateY(1rem);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+}
