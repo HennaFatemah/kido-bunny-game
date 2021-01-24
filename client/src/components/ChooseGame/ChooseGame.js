@@ -4,6 +4,7 @@ import Skye from '../../assets/pups/skye.png';
 import RiderOne from '../../assets/rider/rider-angle-1.png';
 import RiderTwo from '../../assets/rider/rider-angle-2.png';
 import RiderMain from '../../assets/rider/rider-paw-patrol-png-41895.png'
+import Paw from '../../assets/cursor/small-paw-new.png';
 
 import React, { Component } from 'react';
 
@@ -18,9 +19,21 @@ class ChooseGame extends Component {
         const LinkDown = () => {
             this.setState({riderPosition: 2})
         }
+        const LinkLeave = () => {
+            this.setState({riderPosition: 3})
+        }
         return (
             <div className="home">
-            {this.state.riderPosition === 1 ? <img className="home__rider-up" src={RiderOne} alt="Rider with hand up"/> : this.state.riderPosition === 2 ? <img className="home__rider-down" src={RiderTwo} alt="Rider with hand down"/> : <img className="home__rider-down" src={RiderMain} alt="Rider dancing"/>}
+            <div className="home__head-container">
+                <h1 className="home__primary-head">Hello Friends,</h1>
+                <h2 className="home__secondary-head">Choose Your Game</h2>
+                <div className="home__instruction-container">
+                    <h2 className="home__instruction">Instructions</h2>
+                    <h3 className="home__pointers"><span><img className="home__paw-img"src={Paw} alt='paw pointer'/></span>Click on your favorite pup to play the game</h3>
+                    <h3 className="home__pointers"><span><img className="home__paw-img" src={Paw} alt='paw pointer'/></span>Click on the numbers to change the slides</h3>
+                </div>
+            </div>
+            {this.state.riderPosition === 1 ? <img className="home__rider-up" src={RiderOne} alt="Rider with hand up"/> : this.state.riderPosition === 2 ? <img className="home__rider-down" src={RiderTwo} alt="Rider with hand down"/> : this.state.riderPosition === 3 ? <img className="home__rider-main" src={RiderMain} alt="Rider dancing"/> : <img className="home__rider-main" src={RiderMain} alt="Rider dancing"/>}
             {/* Slider --start */}
             <div className="home__slider">
                 {/* Slides --start */}
@@ -42,13 +55,13 @@ class ChooseGame extends Component {
                     />
                     {/* Business slide */}
                         <div className="home__slide home__slide-one">
-                            <div className="game__tile-up" onClick={LinkTo}>
+                            <div className="game__tile-up" onMouseOver={LinkTo} onMouseLeave={LinkLeave}>
                                 <h3 className="game__tile-title">Addition Math with Skye</h3>
                                 <Link className="game__link" to='/choosegame/addgame'>
                                     <img className="game__tile-pic" src={Skye} alt="Pup named Skye"/>
                                 </Link>
                             </div>
-                            <div className="game__tile-down" onClick={LinkDown}>
+                            <div className="game__tile-down" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
                                 <h3 className="game__tile-title">Subtraction Math with Zuma</h3>
                                 <Link className="game__link" to='/choosegame/subtractgame'>
                                     {/* <img className="game__tile-pic" src={Zuma} alt="Pup named Zuma"/> */}

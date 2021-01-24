@@ -1,7 +1,8 @@
 .home {
+    cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
     margin: 0;
     padding: 0;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     background-color:#fded00;
     display: flex;
@@ -13,10 +14,68 @@
         //border-radius: 10px;
         overflow: hidden;
     }
+    &__head-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 60px;
+    }
+    &__primary-head{
+        color: white;
+        font-size: 110px;
+        font-weight: bolder;
+        margin: 30px 0 0 40px;
+        padding: 0;
+        line-height: 100px;
+    }
+    &__secondary-head{
+        color: white;
+        margin: 0 0 0 40px;
+        font-size: 50px;
+        font-weight: normal;
+        padding: 0;
+    }
+    &__tertiary-head{
+        color: white;
+        margin: 0 0 0 40px;
+        font-size: 50px;
+        font-weight: normal;
+        padding: 0;
+    }
+    &__instruction-container{
+        border: 3px solid white;
+        margin: 30px 0 0 40px;
+        height: fit-content;
+        padding: 25px 0 25px 0;
+        width: 400px;
+    }
+    &__instruction{
+        color: white;
+        padding: 0 0 20px 40px;
+        font-size: 35px;
+        font-weight: bolder;
+        margin: 0;
+    }
+    &__pointers{
+        padding: 0 0 10px 40px;
+        font-size: 30px;
+        font-weight: bolder;
+        color: white;
+        margin: 0;
+        
+    }
+    &__paw-img{
+        width: 40px;
+        height: 35px;
+    }
     &__slide-one{
         background-color: transparent;
         width: 100vw;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__slide-two{
         background-color: transparent;
@@ -24,7 +83,7 @@
         height: 100vh;
     }
     &__slides{
-        width: 500%;
+        width: 410%;
         height: 100vh;
         display: flex;
     }
@@ -39,16 +98,16 @@
         position: absolute;
         width: 100vw;
         margin-top: -80vh;
-        margin-left: 30vw;
+        margin-left: 0vw;
         display: flex;
         justify-content: center;
     }
     &__manual-btn{
         border: 3px solid red;
-        padding: 3px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
+        padding: 20px;
+        border-radius: 50%;
+        cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+        //transition: .1s;
     }
     &__manual-btn:not(:last-child){
         margin-right: 40px;
@@ -75,6 +134,12 @@
         left: 70vw;
         top: 30vh;
     }
+    &__rider-main{
+        width: 590px;
+        position: absolute;
+        left: 65vw;
+        top: 15vh;
+    }
     // &__navigation-auto-container{
     //     border: 2px solid #40D3DC;
     //     padding: 3px;
@@ -100,6 +165,7 @@
     background: #40D3DC;
 }
 .game{
+    cursor: url('../../assets/cursor/small-paw-new.png'), auto;
     position: relative;
     z-index: 3;
     height: 150vh;
@@ -129,15 +195,17 @@
         height: 17rem;
     }
     &__tile-up{
-        margin: 2rem;
-        width: 13.5rem;
+        display: flex;
+        margin: 2rem 0;
+        margin-left: -10rem;
+        width: 25rem;
         height: 19rem;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        border-radius: 6px;
-        background-color: rgb(243, 243, 243);
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 15px;
+        background-color: white;
         padding: 0.4rem;
         &:hover {
-            background-color: rgba(97, 96, 96, 0.1);
+            background-color: rgba(97, 96, 96, 0.01);
         }
         content: '';
         position: relative;
@@ -151,15 +219,17 @@
     }
     }
     &__tile-down{
-        margin: 2rem;
-        width: 13.5rem;
+        display: flex;
+        margin: 2rem 0;
+        margin-left: -10rem;
+        width: 25rem;
         height: 19rem;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        border-radius: 6px;
-        background-color: rgb(243, 243, 243);
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 15px;
+        background-color: white;
         padding: 0.4rem;
         &:hover {
-            background-color: rgba(97, 96, 96, 0.1);
+            background-color: rgba(97, 96, 96, 0.01);
         }
         content: '';
         position: relative;
@@ -179,15 +249,15 @@
     }
     }
     &__tile-pic{
-        width: 12.5rem;
-        height: 15rem;
+        width: 18.5rem;
         object-fit: cover;
+        margin-left: -60px;
     }
     &__tile-title{
-        text-transform: capitalize;
-        letter-spacing: 0.4rem;
-        font-weight: 600;
-        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-weight: bolder;
+        font-size: 30px;
         line-height: 1.5em;
         text-align: center;
         background-color: #f3ec78;
@@ -197,8 +267,10 @@
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
-        padding: 0.1rem;
+        padding: 0.9rem;
         margin: 0.3rem 0;
+        margin-left: 10px;
+        margin-top: 40px;
     }
     &__tile-content{
         font-size: 12px;
