@@ -1,0 +1,53 @@
+.game {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    &:focus{
+        outline: none;
+    }
+}
+button.rec-dot{
+    display: none;
+}
+
+.rec.rec-arrow{
+    margin: 1vw;
+    background-color: white;
+    cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+    &:hover, &:active, &:checked, &:focus-visible{
+        background-color: white;
+    }
+}
+// .rec.rec-arrow:hover{
+//     background-color: white;
+// }
+.rec.rec-arrow-right:hover{
+    background-color: white;
+}
+
+.rec.rec-arrow-right:hover{
+    color: white;
+    background-color: white;
+}
+.arrow{
+    cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+    width: 4vw;
+    &:focus{
+        outline: none;
+    }
+}
+
+.button {
+    cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+    background-color: transparent;
+    border: transparent;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 45vh;
+    &:focus{
+        outline: none;
+    }
+}
