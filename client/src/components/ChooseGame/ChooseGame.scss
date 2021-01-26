@@ -1,20 +1,12 @@
-.home {
+.choose {
     cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
     margin: 0;
     padding: 0;
     height: 100vh;
-    
-    
+    background-color: #fded00;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
-    &__slider{
-        width: 25vw;
-        height: 100vh;
-        //border-radius: 10px;
-        overflow: hidden;
-    }
     &__head-container{
         width: 47vw;
         height: 100vh;
@@ -23,8 +15,7 @@
         margin: 0;
         padding: 0;
         background-color:white;
-        box-shadow: 5px 5px 5px rgba($color: #e2e2e2, $alpha: 0.5);
-        // margin-left: 180px;
+        box-shadow: 5px 3px 5px rgba($color: #e2e2e2, $alpha: 0.7);
     }
     &__primary-head{
         color: #fded00;
@@ -61,7 +52,6 @@
         font-weight: bolder;
         color: #fded00;
         margin: 0;
-        
     }
     &__paw-img{
         width: 25px;
@@ -69,7 +59,6 @@
         margin-right: 5px;
     }
     &__part{
-        width: 50vw;
+        width: 60vw;
     }
 }
-

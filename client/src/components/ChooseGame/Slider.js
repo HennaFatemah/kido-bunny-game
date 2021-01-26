@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Carousel, {consts} from "react-elastic-carousel";
 import Item from "./Item";
 import "./Slider.scss";
-import SlideOne from './SlideOne';
+import SlideOne from './Slides/SlideOne/SlideOne';
+import SlideTwo from './Slides/SlideTwo/SlideTwo';
+import SlideThree from './Slides/SlideThree/SlideThree';
 import Left from '../../assets/mainImages/left-arrow.svg';
 import Right from '../../assets/mainImages/right.svg';
 
@@ -30,13 +32,9 @@ class Slider extends Component {
                     renderArrow={this.myArrow}
                 >
                     <Item><SlideOne/></Item>
-                    <Item>Two</Item>
-                    <Item>Three</Item>
-                    <Item>Four</Item>
-                    <Item>Five</Item>
-                    <Item>Six</Item>
-                    <Item>Seven</Item>
-                    <Item>Eight</Item>
+                    <Item><SlideTwo/></Item>
+                    <Item><SlideThree/></Item>
+                    <Item>Coming Soon</Item>
                 </Carousel>
             </div>
         </>
