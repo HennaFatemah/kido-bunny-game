@@ -27,18 +27,18 @@ class SlideOne extends Component {
         return (
             <div className="slide-one">
                 {this.state.riderPosition === 1 ? <img className="slide-one__rider-up" src={RiderOne} alt="Rider with hand up"/> : this.state.riderPosition === 2 ? <img className="slide-one__rider-down" src={RiderTwo} alt="Rider with hand down"/> : this.state.riderPosition === 3 ? <img className="slide-one__rider-main" src={RiderMain} alt="Rider dancing"/> : <img className="slide-one__rider-main" src={RiderMain} alt="Rider dancing"/>}
-                <div className="slide-one__tile" onMouseOver={LinkTo} onMouseLeave={LinkLeave}>
-                    <h3 className="slide-one__tile-title">Add with Skye</h3>
-                    <Link className="slide-one__link" to='/choosegame/addgame'>
+                <Link className="slide-one__link" to='/choosegame/addgame'>
+                    <div className="slide-one__tile" onMouseOver={LinkTo} onMouseLeave={LinkLeave}>
+                        <h3 className="slide-one__tile-title">Add with Skye</h3>
                         <img className="slide-one__tile-pic" src={Skye} alt="Pup named Skye"/>
-                    </Link>
-                </div>
-                <div className="slide-one__tile" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
-                    <h3 className="slide-one__tile-title">Subtract with Zuma</h3>
-                    <Link className="slide-one__link" to='/choosegame/subtractgame'>
+                    </div>
+                </Link>
+                <Link className="slide-one__link" to='/choosegame/subtractgame'>
+                    <div className="slide-one__tile" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
+                        <h3 className="slide-one__tile-title">Subtract with Zuma</h3>
                         <img className="slide-one__tile-pic" src={Zuma} alt="Pup named Zuma"/>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
         );
     }

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import './AddGame.scss'
-import Skye from '../../../assets/pups/new-skye-flying.png';
-import SkyeSit from '../../../assets/pups/skye.png';
-import SkyeHappy from '../../../assets/pups/happy-skye.png';
-import {questions} from './AddGameData';
+import './SubtractGame.scss'
+import Zuma from '../../../assets/pups/zuma-patrol-coloring-book-pup-fu-others-e66ab975932a3322e6c663a65df9cd6c.png';
+import ZumaOne from '../../../assets/pups/zuma-1.png';
+import ZumaTwo from '../../../assets/pups/zuma-2.png';
+import ZumaSit from '../../../assets/pups/zuma-paw-patrol-png-41900.png';
+import {questions} from './SubtractGameData';
+import SeaPortion from '../../../assets/mainImages/sea-portion.png';
 
-export default function App() {
+export default function SubtractGame() {
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
@@ -28,28 +30,31 @@ export default function App() {
     } 
 
 	return (
-        <section className='add'>
-            <div className='add__card'>
+        <section className='subtract'>
+            <div className="subtract__front-bg">
+                <img className="subtract__sea-portion" src={SeaPortion} alt="portion of the sea"/>
+            </div>
+            <div className='subtract__card'>
                 {showScore ? (
                     <>
-                    <div className='add__score-section'>
+                    <div className='subtract__score-section'>
                         <p>You scored {score} out of {questions.length}</p>
                     </div>
-                    <img src={SkyeHappy} alt="Sitting pup called Skye" className="add__pic--score" />
-                    <button className="add__btn" onClick={refreshPage}>Start Again</button>
+                    <img src={ZumaSit} alt="Sitting pup called Skye" className="subtract__pic--score" />
+                    <button className="subtract__btn" onClick={refreshPage}>Start Again</button>
                     </>
                 ) : (
                     <>
-                        {questions[currentQuestion].id === 1 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--one" />: questions[currentQuestion].id === 2 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--two" />: questions[currentQuestion].id === 3 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--three" />: questions[currentQuestion].id === 4 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--four" />: questions[currentQuestion].id === 5 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--five" />: questions[currentQuestion].id === 6 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--six" />: questions[currentQuestion].id === 7 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--seven" />: questions[currentQuestion].id === 8 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--eight" />: questions[currentQuestion].id === 9 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--nine" />: questions[currentQuestion].id === 10 ? <img src={SkyeSit} alt="Sitting pup called Skye" className="add__pic add__pic--ten" />: null}
-                        <div className='add__question-section'>
-                            <div className='add__question-count'>
+                        {questions[currentQuestion].id === 1 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--one" />: questions[currentQuestion].id === 2 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--two" />: questions[currentQuestion].id === 3 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--three" />: questions[currentQuestion].id === 4 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--four" />: questions[currentQuestion].id === 5 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--five" />: questions[currentQuestion].id === 6 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--six" />: questions[currentQuestion].id === 7 ? <img src={ZumaTwo} alt="Flying pup called Skye" className="subtract__pic subtract__pic--seven" />: questions[currentQuestion].id === 8 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--eight" />: questions[currentQuestion].id === 9 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--nine" />: questions[currentQuestion].id === 10 ? <img src={Zuma} alt="Sitting pup called Skye" className="subtract__pic subtract__pic--ten" />: null}
+                        <div className='subtract__question-section'>
+                            <div className='subtract__question-count'>
                                 <span>Question {currentQuestion + 1}</span>/{questions.length}
                             </div>
-                            <div className='add__question-text'>{questions[currentQuestion].questionText}</div>
+                            <div className='subtract__question-text'>{questions[currentQuestion].questionText}</div>
                         </div>
-                        <div className='add__answer-section'>
+                        <div className='subtract__answer-section'>
                             {questions[currentQuestion].answerOptions.map((answerOption) => (
-                                <button className="add__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+                                <button className="subtract__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                             ))}
                         </div>
                     </>

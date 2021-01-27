@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './AddGame.scss'
+import './SightWordsGame.scss'
 import Skye from '../../../assets/pups/new-skye-flying.png';
 import SkyeSit from '../../../assets/pups/skye.png';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
-import {questions} from './AddGameData';
+import {questions} from './SightWordsGameData';
 
-export default function App() {
+export default function SightWordsGame() {
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
