@@ -5,7 +5,7 @@ import SkyeSit from '../../../assets/pups/skye.png';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
 import {questions} from './AddGameData';
 
-export default function AddGame() {
+export default function App() {
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);

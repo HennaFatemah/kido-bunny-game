@@ -1,0 +1,172 @@
+.add {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/mainImages/scenery.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__pic{
+        width: 300px;
+        position: absolute;
+        z-index: 0;
+        transition: 2s;
+        &--one{
+            top: 60vh;
+            left: 1vw;
+            transition: 2s;
+        }
+        &--two{
+            top: 40vh;
+            left: 7vw;
+            transition: 1s;
+        }
+        &--three{
+            top: 20vh;
+            left: 5vw;
+            transition: 1s;
+        }
+        &--four{
+            top: 10vh;
+            left: 20vw;
+            transition: 1s;
+        }
+        &--five{
+            top: 7vh;
+            left: 45vw;
+            transform: rotate(15deg);
+            transition: 2s;
+        }
+        &--six{
+            top: 13vh;
+            left: 55vw;
+            transform: rotate(30deg);
+            transition: 2s;
+        }
+        &--seven{
+            top: 20vh;
+            left: 65vw;
+            transform: rotate(15deg);
+            transition: 1s;
+        }
+        &--eight{
+            top: 40vh;
+            left: 75vw;
+            transform: rotate(10deg);
+            transition: 1s;
+        }
+        &--nine{
+            top: 57vh;
+            left: 80vw;
+            transform: rotate(-10deg);
+            transition: 2s;
+        }
+        &--ten{
+            top: 58vh;
+            left: 80vw;
+            transition: 3s;
+        }
+        &--score{
+            position: absolute;
+            width: 200px;
+            top: 63vh;
+            left: 80vw;
+
+        }
+    }
+    &__answer-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__score-section p{
+        color: greenyellow;
+        text-align: center;
+        font-size: 55px;
+        font-weight: bolder;
+    }
+    &__card{
+        background-color: rgba(0, 0, 0, 0.137);
+        width: 750px;
+        min-height: 500px;
+        height: min-content;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__score-section {
+        display: flex;
+        font-size: 24px;
+        align-items: center;
+    }
+    &__question-section {
+        font-weight: bolder;
+        color: orange;
+        text-shadow: 1px 1px black;
+        font-size: 30px;
+        width: 100%;
+        position: relative;
+        text-align: right;
+        margin-top: -70px;
+    }
+    &__question-count {
+        margin-bottom: 20px;
+    }
+    &__question-count span {
+        color: orange;
+        text-shadow: 1px 1px black;
+        font-size: 30px;
+    }
+    &__question-text {
+        color: greenyellow;
+        text-align: center;
+        font-size: 55px;
+        font-weight: bolder;
+        margin-top: 100px;
+        margin-bottom: 2px;
+    }
+    &__timer-text {
+        background: rgb(230, 153, 12);
+        padding: 15px;
+        margin-top: 20px;
+        margin-right: 20px;
+        border: 5px solid rgb(255, 189, 67);
+        border-radius: 15px;
+        text-align: center;
+    }
+    &__btn {
+        width: 40%;
+        font-size: 35px;
+        font-weight: bolder;
+        color: #ffffff;
+        background-color:rgba(172, 255, 47, 0.52);
+        border-radius: 15px;
+        display: flex;
+        padding: 25px;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #70abcd;
+        cursor: pointer;
+        margin: 5px;
+        &:hover {
+            transform: translate(4px, -4px);
+            box-shadow: -4px 4px 1px rgba(0, 0, 0, 0.137);
+        }
+        &:active{
+            transform: translate(-4px, 4px);
+            box-shadow: none;
+        }
+        &:focus {
+            outline: none;
+        
+        }
+    }
+}

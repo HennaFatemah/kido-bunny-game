@@ -1,7 +1,7 @@
 
 import {Link} from 'react-router-dom';
-import Rocky from '../../../../assets/pups/new-marshal-paw-patrol-png.png';
-import Chase from '../../../../assets/pups/everest-paw-patrol-png-41896.png';
+import Rocky from '../../../../assets/pups/rocky-paw-patrol-png-41890 copy.png';
+import Chase from '../../../../assets/pups/v-new-chase-paw-patrol-png-41888 copy.png';
 import RiderOne from '../../../../assets/rider/rider-angle-1.png';
 import RiderTwo from '../../../../assets/rider/rider-angle-2.png';
 import RiderMain from '../../../../assets/rider/rider-paw-patrol-png-41895.png'
@@ -30,13 +30,13 @@ class SlideTwo extends Component {
                 <div className="slide-three__tile" onMouseOver={LinkTo} onMouseLeave={LinkLeave}>
                     <h3 className="slide-three__tile-title">Sight Words With Rocky</h3>
                     <Link className="slide-three__link" to='/choosegame/sightwords'>
-                        <img className="slide-three__tile-pic" src={Rocky} alt="Pup named Rocky"/>
+                        <img className="slide-three__tile-pic slide-three__tile-rocky" src={Rocky} alt="Pup named Rocky"/>
                     </Link>
                 </div>
                 <div className="slide-three__tile" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
                     <h3 className="slide-three__tile-title">General Knowledge with Chase</h3>
                     <Link className="slide-three__link" to='/choosegame/generalknowledge'>
-                        <img className="slide-three__tile-pic" src={Chase} alt="Pup named Chase"/>
+                        <img className="slide-three__tile-pic slide-three__tile-chase" src={Chase} alt="Pup named Chase"/>
                     </Link>
                 </div>
             </div>
