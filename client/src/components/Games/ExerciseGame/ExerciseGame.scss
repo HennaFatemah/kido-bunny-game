@@ -1,11 +1,11 @@
-.add {
+.exercise {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../assets/mainImages/scenery.jpg);
-    background-position: center;
+    background-image: url(../../../assets/mainImages/yoga.png);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     &__pic{
@@ -14,65 +14,93 @@
         z-index: 0;
         transition: 2s;
         &--one{
-            top: 60vh;
-            left: 1vw;
+            top: 43vh;
+            left: 5vw;
+            transform: rotate(3deg);
             transition: 2s;
+            animation: MoveFrontBack 2s linear infinite;
+            @keyframes MoveFrontBack {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-95px);
+            }
+            }
         }
         &--two{
             top: 40vh;
             left: 7vw;
             transition: 1s;
+            animation: MoveUpDown 1.5s linear infinite;
+            @keyframes MoveUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-95px);
+            }
+            }
         }
         &--three{
-            top: 20vh;
-            left: 5vw;
+            top: 40vh;
+            left: 6vw;
             transition: 1s;
+            animation: Shake 1.5s linear infinite;
+            @keyframes Shake {
+            0%, 100% {
+                transform: rotate(-15deg);
+            }
+            50% {
+                transform: rotate(15deg);
+            }
+            }
         }
         &--four{
-            top: 10vh;
-            left: 20vw;
+            top: 40vh;
+            left: 5vw;
             transition: 1s;
+            animation: MoveUpDown 1.5s linear infinite;
+            @keyframes MoveUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-95px);
+            }
+            }
         }
         &--five{
-            top: 7vh;
-            left: 45vw;
+            width: 400px;
+            top: 50vh;
+            left: 5vw;
             transform: rotate(15deg);
             transition: 2s;
-        }
-        &--six{
-            top: 13vh;
-            left: 55vw;
-            transform: rotate(30deg);
-            transition: 2s;
-        }
-        &--seven{
-            top: 20vh;
-            left: 65vw;
-            transform: rotate(15deg);
-            transition: 1s;
-        }
-        &--eight{
-            top: 40vh;
-            left: 75vw;
-            transform: rotate(10deg);
-            transition: 1s;
-        }
-        &--nine{
-            top: 57vh;
-            left: 80vw;
-            transform: rotate(-10deg);
-            transition: 2s;
-        }
-        &--ten{
-            top: 58vh;
-            left: 80vw;
-            transition: 3s;
+            animation: Squat 1.5s linear infinite;
+            @keyframes Squat {
+            0%, 100% {
+                transform: rotate(0);
+            }
+            50% {
+                transform: rotate(-9deg);
+            }
+            }
         }
         &--score{
             position: absolute;
-            width: 200px;
-            top: 63vh;
-            left: 80vw;
+            width: 300px;
+            top: 45vh;
+            left: 5vw;
+            transition: 2s;
+            animation: Spin 10s;
+            @keyframes Spin {
+            0%, 100% {
+                transform: rotate(0);
+            }
+            50% {
+                transform: rotate(720deg);
+            }
+            }
 
         }
     }
@@ -147,7 +175,7 @@
         font-size: 35px;
         font-weight: bolder;
         color: #ffffff;
-        background-color:rgba(172, 255, 47, 0.52);
+        background-color:rgba(172, 255, 47, 0.746);
         border-radius: 15px;
         display: flex;
         padding: 25px;

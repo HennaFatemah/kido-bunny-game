@@ -1,5 +1,6 @@
+@import '../../../../partials/mixins';
 .slide-one {
-    cursor: url('../../../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+    @include cursor;
     &:focus{
         outline: none;
     }
@@ -28,7 +29,7 @@
         top: 15vh;
     }
     &__tile{
-        cursor: url('../../../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+        @include cursor;
         display: flex;
         align-items: center;
         margin: 2rem 0;
@@ -40,7 +41,7 @@
         background-color: white;
         padding: 0.4rem;
         &:hover {
-            cursor: url('../../../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+            @include cursor;
             background-color: rgba(97, 96, 96, 0.01);
         }
         content: '';
@@ -48,11 +49,11 @@
         &:active{
             transform: translate(1%, -1%);
             box-shadow: 0 4px 15px -4px rgba(54, 58, 61, 0.7);
-            cursor: url('../../../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+            @include cursor;
         }
     }
     &__tile-pic{
-        cursor: url('../../../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+        @include cursor;
         width: 15.5rem;
         object-fit: cover;
         margin: 0 0 0 -40px;
@@ -77,6 +78,6 @@
     }
     &__link{
         text-decoration: none;
-        cursor: url('../../../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+        @include cursor;
     }
 }

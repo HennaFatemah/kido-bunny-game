@@ -29,7 +29,7 @@ class SlideTwo extends Component {
                 {this.state.riderPosition === 1 ? <img className="slide-two__rider-up" src={RiderOne} alt="Rider with hand up"/> : this.state.riderPosition === 2 ? <img className="slide-two__rider-down" src={RiderTwo} alt="Rider with hand down"/> : this.state.riderPosition === 3 ? <img className="slide-two__rider-main" src={RiderMain} alt="Rider dancing"/> : <img className="slide-two__rider-main" src={RiderMain} alt="Rider dancing"/>}
                 <div className="slide-two__tile" onMouseOver={LinkTo} onMouseLeave={LinkLeave}>
                     <h3 className="slide-two__tile-title">Exercise with Marshal</h3>
-                    <Link className="slide-two__link" to='/choosegame/exercise'>
+                    <Link className="slide-two__link" to='/choosegame/exercisegame'>
                         <img className="slide-two__tile-pic" src={Marshal} alt="Pup named Marshal"/>
                     </Link>
                 </div>

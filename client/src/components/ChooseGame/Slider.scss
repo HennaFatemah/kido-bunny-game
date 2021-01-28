@@ -1,3 +1,4 @@
+@import '../../partials/mixins';
 .game {
     font-family: sans-serif;
     display: flex;
@@ -16,7 +17,7 @@ button.rec-dot{
 .rec.rec-arrow{
     margin: 1vw;
     background-color: white;
-    cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+    @include cursor;
     &:hover, &:active, &:checked, &:focus-visible{
         background-color: white;
     }
@@ -33,7 +34,7 @@ button.rec-dot{
     background-color: white;
 }
 .arrow{
-    cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+    @include cursor;
     width: 4vw;
     &:focus{
         outline: none;
@@ -41,7 +42,7 @@ button.rec-dot{
 }
 
 .button {
-    cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+    @include cursor;
     background-color: transparent;
     border: transparent;
     height: fit-content;

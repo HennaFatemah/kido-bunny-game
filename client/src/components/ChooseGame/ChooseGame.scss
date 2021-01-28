@@ -1,5 +1,6 @@
+@import '../../partials/mixins';
 .choose {
-    cursor: url('../../assets/cursor/v-v-small-paw-new.png') 50 50, auto;
+    @include cursor;
     margin: 0;
     padding: 0;
     height: 100vh;
