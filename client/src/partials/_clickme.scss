@@ -1,58 +1,58 @@
 @import './variables';
+@import './media-points';
 
 @mixin click-me {
-    font-size: 2.5rem;
+    font-size: 5rem;
     text-shadow: -.02rem -.02rem 0 #000,.02rem -.02rem 0 #000, -.02rem .02rem 0 #000, .02rem .02rem 0 #000, .4rem .4rem 0 rgba(0, 0, 0, .2);
 }
 
 @mixin click-me-big {
     font-size: 3rem;
-    text-shadow: -.02rem -.02rem 0 #000,.02rem -.02rem 0 #000, -.02rem .02rem 0 #000, .02rem .02rem 0 #000, .4rem .4rem 0 rgba(0, 0, 0, .2);
 }
 
 @mixin white {
-    -webkit-animation-delay: 0.05s;
+    -webkit-animation-delay: 0.15s;
     left: 0.1rem;
     z-index: -10;
 }
 
 @mixin red {
-    -webkit-animation-delay: 0.1s;
+    -webkit-animation-delay: 0.3s;
     left: 2px;
     z-index: -20;
     color:red
 }
 
 @mixin orange {
-    -webkit-animation-delay: 0.15s;
+    -webkit-animation-delay: 0.45s;
     left: 3px;
     z-index: -30;
     color:orange;
 }
 
 @mixin yellow {
-    -webkit-animation-delay: 0.20s;
+    -webkit-animation-delay: 0.6s;
     left: 4px;
     z-index: -40;
     color: yellow;
 }
 
 @mixin green {
-    -webkit-animation-delay: 0.25s;
+    -webkit-animation-delay: 0.75s;
     left: 5px;
     z-index: -50;
     color: greenyellow;
 }
 
 @mixin blue {
-    -webkit-animation-delay: 0.3s;
+    -webkit-animation-delay: 0.9s;
     left: 6px;
     z-index: -60;
     color:blue;
 }
 
 @mixin violet {
-    -webkit-animation-delay: 0.35s;
+    -webkit-animation-delay: 1.05s;
     left: 7px;
     z-index: -70;
     color:  rgb(196, 64, 248);
@@ -67,4 +67,73 @@
             transform: translateY(-0.5rem);
         }
     }
+}
+
+@mixin point-2 {
+    margin-top: -5rem;
+    margin-left: -1rem;
+    font-size: 4rem;
+}
+@mixin point-3 {
+    margin-top: -5rem;
+    margin-left: -4rem;
+    font-size: 8rem;
+}
+
+@mixin point-1 {
+    font-size: 3rem;
+    margin-left: 2.3rem;
+    margin-top: -10rem;
+}
+
+@mixin point-4 {
+    margin-top: -6.5rem;
+    margin-left: 2rem;
+    font-size: 3rem;
+}
+
+@mixin point-5 {
+    font-size: 3rem;
+    margin-left: 2.5rem;
+}
+
+@mixin point-6 {
+    font-size: 6rem;
+    margin-left: -2rem;
+}
+
+@mixin point-7 {
+    font-size: 4rem;
+    margin-top: -5rem;
+    margin-left: 1.5rem;
+}
+
+@mixin point-8 {
+    font-size: 6rem;
+    margin-top: -1rem;
+    margin-left: -2rem;
+}
+
+@mixin point-9 {
+    font-size: 4rem;
+    margin-top: -4rem;
+    margin-left: 1rem;
+}
+
+@mixin point-10 {
+    font-size: 3rem;
+    margin-top: -10rem;
+    margin-left: 3rem;
+}
+
+@mixin point-11 {
+    font-size: 2rem;
+    margin-top: -8rem;
+    margin-left: 4rem;
+}
+
+@mixin point-12 {
+    font-size: 1.5rem;
+    margin-top: -11rem;
+    margin-left: 4.5rem;
 }

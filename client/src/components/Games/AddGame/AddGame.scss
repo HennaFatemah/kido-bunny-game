@@ -8,48 +8,250 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
+    z-index: -2;
     &__pic{
-        width: 300px;
+        width: 110px;
         position: absolute;
-        z-index: 0;
+        z-index: -1;
         transition: 2s;
         &--one{
-            top: 60vh;
+            bottom: 2.5px;
             left: 1vw;
             transition: 2s;
+            animation: Appear 1.2s linear infinite;
+            @keyframes Appear {
+            0%, 100% {
+                opacity: 0.5;
+                transform: translateY(0);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(4px);
+            }
+            }
+        }
+        &--ones{
+            bottom: 0;
+            left: 1vw;
+            transition: 2s;
+            animation: Appears 1.2s linear infinite;
+            @keyframes Appears {
+                0%, 100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                50% {
+                    opacity: 0.5;
+                    transform: translateY(4px);
+                }
+            }
         }
         &--two{
-            top: 40vh;
-            left: 7vw;
-            transition: 1s;
+            bottom: 92.5px;
+            left: 6vw;
+            transition: 2s;
+            animation: Appear 1.2s linear infinite;
+            @keyframes Appear {
+            0%, 100% {
+                opacity: 0.5;
+                transform: translateY(0);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(4px);
+            }
+            }
+        }
+        &--twos{
+            bottom: 90px;
+            left: 6vw;
+            transition: 2s;
+            animation: Appears 1.2s linear infinite;
+            @keyframes Appears {
+                0%, 100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                50% {
+                    opacity: 0.5;
+                    transform: translateY(4px);
+                }
+            }
         }
         &--three{
-            top: 20vh;
-            left: 5vw;
-            transition: 1s;
+            bottom: 182.5px;
+            left: 1vw;
+            transition: 2s;
+            animation: Appear 1.2s linear infinite;
+            @keyframes Appear {
+            0%, 100% {
+                opacity: 0.5;
+                transform: translateY(0);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(4px);
+            }
+            }
+        }
+        &--threes{
+            bottom: 180px;
+            left: 1vw;
+            transition: 2s;
+            animation: Appears 1.2s linear infinite;
+            @keyframes Appears {
+                0%, 100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                50% {
+                    opacity: 0.5;
+                    transform: translateY(4px);
+                }
+            }
         }
         &--four{
-            top: 10vh;
-            left: 20vw;
-            transition: 1s;
+            bottom: 272.5px;
+            left: 6vw;
+            transition: 2s;
+            animation: Appear 1.2s linear infinite;
+            @keyframes Appear {
+            0%, 100% {
+                opacity: 0.5;
+                transform: translateY(0);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(4px);
+            }
+            }
+        }
+        &--fours{
+            bottom: 270px;
+            left: 6vw;
+            transition: 2s;
+            animation: Appears 1.2s linear infinite;
+            @keyframes Appears {
+                0%, 100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                50% {
+                    opacity: 0.5;
+                    transform: translateY(4px);
+                }
+            }
         }
         &--five{
-            top: 7vh;
-            left: 45vw;
-            transform: rotate(15deg);
+            bottom: 362.5px;
+            left: 12vw;
             transition: 2s;
+            animation: Appear 1.2s linear infinite;
+            @keyframes Appear {
+            0%, 100% {
+                opacity: 0.5;
+                transform: translateY(0);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(4px);
+            }
+            }
+        }
+        &--fives{
+            bottom: 360px;
+            left: 12vw;
+            transition: 2s;
+            animation: Appears 1.2s linear infinite;
+            @keyframes Appears {
+                0%, 100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                50% {
+                    opacity: 0.5;
+                    transform: translateY(4px);
+                }
+            }
         }
         &--six{
-            top: 13vh;
-            left: 55vw;
-            transform: rotate(30deg);
-            transition: 2s;
+            bottom: 362.5px;
+            left: 12vw;
+            left: 60vw;
+            
+            animation: Tilt 1.2s linear infinite;
+            @keyframes Tilt {
+                0%, 100% {
+                    opacity: 0.5;
+                    transform: translateY(0);
+                    transform: rotate(45deg);
+                }
+                50% {
+                    opacity: 1;
+                    transform: translateY(4px);
+                    transform: rotate(45deg);
+                }
+            }
+            transition: 4s;
+        }
+        &--sixes{
+            bottom: 360px;
+            left: 60vw;
+            
+            animation: Tilts 1.2s linear infinite;
+            @keyframes Tilts {
+                0%, 100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transform: rotate(45deg);
+                }
+                50% {
+                    opacity: 0.5;
+                    transform: translateY(4px);
+                    transform: rotate(45deg);
+                }
+            }
+            transition: 4s;
         }
         &--seven{
-            top: 20vh;
-            left: 65vw;
-            transform: rotate(15deg);
-            transition: 1s;
+            bottom: 452.5px;
+            left: 12vw;
+            left: 60vw;
+            
+            animation: Seven 1.2s linear infinite;
+            @keyframes Seven {
+                0%, 100% {
+                    opacity: 0.5;
+                    transform: translateY(0);
+                    transform: rotate(-45deg);
+                }
+                50% {
+                    opacity: 1;
+                    transform: translateY(4px);
+                    transform: rotate(-45deg);
+                }
+            }
+            transition: 4s;
+        }
+        &--sevens{
+            bottom: 450px;
+            left: 60vw;
+            
+            animation: Sevens 1.2s linear infinite;
+            @keyframes Sevens {
+                0%, 100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transform: rotate(-45deg);
+                }
+                50% {
+                    opacity: 0.5;
+                    transform: translateY(4px);
+                    transform: rotate(-45deg);
+                }
+            }
+            transition: 4s;
         }
         &--eight{
             top: 40vh;
@@ -91,7 +293,7 @@
     }
     &__card{
         background-color: rgba(0, 0, 0, 0.137);
-        width: 750px;
+        width: 90vw;
         min-height: 500px;
         height: min-content;
         border-radius: 15px;
@@ -115,10 +317,10 @@
         width: 100%;
         position: relative;
         text-align: right;
-        margin-top: -70px;
+        margin-top: -40px;
     }
     &__question-count {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     &__question-count span {
         color: orange;
@@ -128,7 +330,7 @@
     &__question-text {
         color: greenyellow;
         text-align: center;
-        font-size: 55px;
+        font-size: 38px;
         font-weight: bolder;
         margin-top: 100px;
         margin-bottom: 2px;
@@ -136,7 +338,7 @@
     &__timer-text {
         background: rgb(230, 153, 12);
         padding: 15px;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-right: 20px;
         border: 5px solid rgb(255, 189, 67);
         border-radius: 15px;

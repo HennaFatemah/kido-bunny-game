@@ -1,20 +1,75 @@
 @import '../../partials/clickme';
 @import '../../partials/media-points';
+@import '../../partials/mixins';
 .click {
+    @include cursor;
+    margin-top: 60%;
+    margin-left: 8%;
     counter-reset: rainbow;
     position: relative;
     list-style: none;
     padding: 0;
-    margin: 0;
     &__layer {
         color: #fff;
         position: absolute;
-        top: 0;
+        top: 10%;
+        @include point-2;
+        @include mobile {
+            @include point-1;
+        }
+        @include mobile-landscape {
+            @include point-4;
+        }
+        @include tablet {
+            @include point-3;
+        }
+        @include tablet-landscape {
+            @include point-5;
+        }
+        @media (width: 600px) {
+            @include point-6;
+        }
+        @include big-tablet-landscape {
+            @include point-7;
+        }
+        // @include blackberry-z-30 {
+        //     @include point-1;
+        // }
+        // @include blackberry-z-30-landscape {
+        //     @include point-2;
+        // }
+        // @include blackberry-playbook {
+        //     @include point-3;
+        // }
+        // @include kindle-fire-hdx {
+        //     @include point-4;
+        // }
+        // @include nokia-lumia-520 {
+        //     @include point-5;
+        // }
+        // @include nokia-lumia-520-landscape {
+        //     @include point-6;
+        // }
+        // @include ipad-mini {
+        //     @include point-7;
+        // }
+        // @include ipad-mini-landscape {
+        //     @include point-8;
+        // }
+        // @include iphone-4 {
+        //     @include point-9;
+        // }
+        // @include iphone-4-landscape {
+        //     @include point-10;
+        // }
+        // @include jiophone-2 {
+        //     @include point-11;
+        // }
+        // @include jiophone-2-landscape {
+        //     @include point-12;
+        // }
         -moz-animation-iteration-count: rainbow; 
         @include click-me;
-        @include tablet {
-            @include click-me-big;
-        }
         -webkit-animation: rainbow 1.5s ease-in-out infinite;
         @include rainbow;
         &--white {

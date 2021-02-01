@@ -1,0 +1,53 @@
+@import './partials/mixins';
+.main {
+    &__clipboard{
+        width: 3.3rem;
+        height: 3.3rem;
+        background-image:url('./assets/icons/clipboard.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #f6e601;
+        border-radius: .6rem;
+    }
+    // &__sticky {
+    //     position: fixed;
+    //     left: 0;
+    //     top: 0;
+    //     transform: translateZ(0);
+    //     height: 100vh;
+    //     width: fit-content
+    // }
+    &__social-icons {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 30vw;
+        @include cursor;
+        width: 25rem;
+        height: 5.1rem;
+        //position: absolute;
+        //top: 5%;
+        margin: 0;
+        //margin-left: 92.3vw;
+        
+        background-color: rgba(0, 0, 0, 0.061);
+        border-radius: 6px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.109), 2px 2px 2px rgba(0, 0, 0, 0.109), -2px -2px 2px rgba(0, 0, 0, 0.109), -2px -2px 2px rgba(0, 0, 0, 0.109);
+        z-index: 20;
+        padding: 0;
+        display: flex;
+        //flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__page{
+        //position: absolute;
+        //top: 0;
+        margin: 0;
+        height: fit-content;
+    }
+    &__corner{
+        position: absolute;
+        top: 0;
+    }
+}
