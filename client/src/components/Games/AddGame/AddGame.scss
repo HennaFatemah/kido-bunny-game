@@ -11,12 +11,12 @@
     position: absolute;
     z-index: -2;
     &__pic{
-        width: 110px;
+        width: 25vw;
         position: absolute;
         z-index: -1;
         transition: 2s;
         &--one{
-            bottom: 2.5px;
+            bottom: 0;
             left: 1vw;
             transition: 2s;
             animation: Appear 1.2s linear infinite;
@@ -48,7 +48,7 @@
             }
         }
         &--two{
-            bottom: 92.5px;
+            bottom: 20vh;
             left: 6vw;
             transition: 2s;
             animation: Appear 1.2s linear infinite;
@@ -64,7 +64,7 @@
             }
         }
         &--twos{
-            bottom: 90px;
+            bottom: 20vh;
             left: 6vw;
             transition: 2s;
             animation: Appears 1.2s linear infinite;
@@ -80,7 +80,7 @@
             }
         }
         &--three{
-            bottom: 182.5px;
+            bottom: 40vh;
             left: 1vw;
             transition: 2s;
             animation: Appear 1.2s linear infinite;
@@ -96,7 +96,7 @@
             }
         }
         &--threes{
-            bottom: 180px;
+            bottom: 40vh;
             left: 1vw;
             transition: 2s;
             animation: Appears 1.2s linear infinite;
@@ -112,7 +112,7 @@
             }
         }
         &--four{
-            bottom: 272.5px;
+            bottom: 60vh;
             left: 6vw;
             transition: 2s;
             animation: Appear 1.2s linear infinite;
@@ -128,7 +128,7 @@
             }
         }
         &--fours{
-            bottom: 270px;
+            bottom: 60vh;
             left: 6vw;
             transition: 2s;
             animation: Appears 1.2s linear infinite;
@@ -144,7 +144,7 @@
             }
         }
         &--five{
-            bottom: 362.5px;
+            bottom: 70vh;
             left: 12vw;
             transition: 2s;
             animation: Appear 1.2s linear infinite;
@@ -160,7 +160,7 @@
             }
         }
         &--fives{
-            bottom: 360px;
+            bottom: 70vh;
             left: 12vw;
             transition: 2s;
             animation: Appears 1.2s linear infinite;
@@ -176,7 +176,7 @@
             }
         }
         &--six{
-            bottom: 362.5px;
+            bottom: 80vh;
             left: 12vw;
             left: 60vw;
             
@@ -196,7 +196,7 @@
             transition: 4s;
         }
         &--sixes{
-            bottom: 360px;
+            bottom: 80vh;
             left: 60vw;
             
             animation: Tilts 1.2s linear infinite;
@@ -215,7 +215,7 @@
             transition: 4s;
         }
         &--seven{
-            bottom: 452.5px;
+            bottom: 90vh;
             left: 12vw;
             left: 60vw;
             
@@ -235,7 +235,7 @@
             transition: 4s;
         }
         &--sevens{
-            bottom: 450px;
+            bottom: 90vh;
             left: 60vw;
             
             animation: Sevens 1.2s linear infinite;

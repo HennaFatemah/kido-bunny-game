@@ -1,6 +1,6 @@
 
 import {Link} from 'react-router-dom';
-import Skye from '../../../../assets/pups/skye.png';
+import Skye from '../../../../assets/pups/Color-bunny-1.png';
 import Zuma from '../../../../assets/pups/zuma-paw-patrol-png-41900.png';
 import RiderOne from '../../../../assets/rider/rider-angle-1.png';
 import RiderTwo from '../../../../assets/rider/rider-angle-2.png';
@@ -29,7 +29,7 @@ class SlideOne extends Component {
                 {this.state.riderPosition === 1 ? <img className="slide-one__rider-up" src={RiderOne} alt="Rider with hand up"/> : this.state.riderPosition === 2 ? <img className="slide-one__rider-down" src={RiderTwo} alt="Rider with hand down"/> : this.state.riderPosition === 3 ? <img className="slide-one__rider-main" src={RiderMain} alt="Rider dancing"/> : <img className="slide-one__rider-main" src={RiderMain} alt="Rider dancing"/>}
                 <Link className="slide-one__link" to='/choosegame/addgame'>
                     <div className="slide-one__tile" onMouseOver={LinkTo} onMouseLeave={LinkLeave}>
-                        <h3 className="slide-one__tile-title">Add with Skye</h3>
+                        <h3 className="slide-one__tile-title">Add with Bunny Berry</h3>
                         <img className="slide-one__tile-pic" src={Skye} alt="Pup named Skye"/>
                     </div>
                 </Link>

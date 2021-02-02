@@ -25,6 +25,9 @@ button.rec-dot{
 // .rec.rec-arrow:hover{
 //     background-color: white;
 // }
+.rec-slider-container{
+    width: 80vw;
+}
 .rec.rec-arrow-right:hover{
     background-color: white;
 }
@@ -35,7 +38,7 @@ button.rec-dot{
 }
 .arrow{
     @include cursor;
-    width: 4vw;
+    width: 8vw;
     &:focus{
         outline: none;
     }
@@ -48,6 +51,8 @@ button.rec-dot{
     height: fit-content;
     width: fit-content;
     margin-top: 45vh;
+    margin-right: 0;
+    margin-left: 0;
     &:focus{
         outline: none;
     }

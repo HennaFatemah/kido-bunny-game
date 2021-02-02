@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AddGame.scss'
 import Skye from '../../../assets/pups/Color-bunny-1 copy.png';
-import BunnyWing from '../../../assets/pups/Color-bunny-wing-moving-1.png';
+import BunnyWing from '../../../assets/pups/Color-bunny-wing-moving-1 2.png';
 import SkyeSit from '../../../assets/pups/skye.png';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
 import {questions} from './AddGameData';

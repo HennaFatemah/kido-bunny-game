@@ -7,7 +7,7 @@ const ChooseGame = () => {
     return (
         <div className="choose">
             <div className="choose__head-container">
-                    <h1 className="choose__primary-head">Hello Friends,</h1>
+                    <h1 className="choose__primary-head">Hello Friends</h1>
                     <h2 className="choose__secondary-head">Choose Your Game</h2>
                     <div className="choose__instruction-container">
                         <h2 className="choose__instruction">Instructions</h2>
