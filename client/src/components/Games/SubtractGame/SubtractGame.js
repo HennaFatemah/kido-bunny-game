@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './SubtractGame.scss'
-import Zuma from '../../../assets/pups/zuma-patrol-coloring-book-pup-fu-others-e66ab975932a3322e6c663a65df9cd6c.png';
+import Zuma from '../../../assets/pups/bunny-flippy-angle-2.png';
 import ZumaOne from '../../../assets/pups/zuma-1.png';
 import ZumaTwo from '../../../assets/pups/zuma-2.png';
 import ZumaSit from '../../../assets/pups/zuma-paw-patrol-png-41900.png';
+import Bubbles from '../../../assets/icons/bubble.png'
 import {questions} from './SubtractGameData';
 import SeaPortion from '../../../assets/mainImages/sea-portion.png';
 
@@ -45,7 +46,7 @@ export default function SubtractGame() {
                     </>
                 ) : (
                     <>
-                        {questions[currentQuestion].id === 1 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--one" />: questions[currentQuestion].id === 2 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--two" />: questions[currentQuestion].id === 3 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--three" />: questions[currentQuestion].id === 4 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--four" />: questions[currentQuestion].id === 5 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--five" />: questions[currentQuestion].id === 6 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--six" />: questions[currentQuestion].id === 7 ? <img src={ZumaTwo} alt="Flying pup called Skye" className="subtract__pic subtract__pic--seven" />: questions[currentQuestion].id === 8 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--eight" />: questions[currentQuestion].id === 9 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--nine" />: questions[currentQuestion].id === 10 ? <img src={Zuma} alt="Sitting pup called Skye" className="subtract__pic subtract__pic--ten" />: null}
+                        {questions[currentQuestion].id === 1 ? <><img src={Bubbles} alt="Bubbles" className="subtract__bubbles subtract__bubbles--one" /><img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--one" /></>: questions[currentQuestion].id === 2 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--two" />: questions[currentQuestion].id === 3 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--three" />: questions[currentQuestion].id === 4 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--four" />: questions[currentQuestion].id === 5 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--five" />: questions[currentQuestion].id === 6 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--six" />: questions[currentQuestion].id === 7 ? <img src={ZumaTwo} alt="Flying pup called Skye" className="subtract__pic subtract__pic--seven" />: questions[currentQuestion].id === 8 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--eight" />: questions[currentQuestion].id === 9 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--nine" />: questions[currentQuestion].id === 10 ? <img src={Zuma} alt="Sitting pup called Skye" className="subtract__pic subtract__pic--ten" />: null}
                         <div className='subtract__question-section'>
                             <div className='subtract__question-count'>
                                 <span>Question {currentQuestion + 1}</span>/{questions.length}

@@ -18,24 +18,46 @@
         top: 16vh;
         transform: rotate(-3deg);
     }
-    &__pic{
-        width: 300px;
+    &__bubbles{
+        width: 40px;
         position: absolute;
-        z-index: -2;
-        animation: MoveUpDown 3s linear infinite;
-        @keyframes MoveUpDown {
+        top:40vh;
+        left: 18vw;
+        animation: bubbles 3s ease-in-out infinite;
+        @keyframes bubbles {
             0%, 100% {
+                //transform: scale(0);
                 transform: translateY(0);
+                width: 4px;
             }
             50% {
-                transform: translateY(-15px);
+                //transform: scale(1);
+                transform: translateY(10px);
+                width: 40px;
+            }
+        }
+    }
+    &__pic{
+        width: 250px;
+        position: absolute;
+        z-index: -2;
+        animation: swim 3s ease-in-out infinite;
+        top: 3vh;
+        @keyframes swim {
+            0%, 100% {
+                transform: translateY(0);
+                //transform: translateX(0);
+            }
+            50% {
+                transform: translateY(20px);
+                //transform: translateX(10px);
             }
         }
         transition: 2s;
         &--one{
-            top: -1vh;
+            top: 25vh;
             left: 1vw;
-            transform: rotate(20deg);
+            //transform: rotate(80deg);
             transition: 3s;
         }
         &--two{

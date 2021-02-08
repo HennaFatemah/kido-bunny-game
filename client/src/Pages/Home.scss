@@ -15,7 +15,8 @@
     &__bg-image-wrapper {
         @include lookout-tower-bg;
         transition: 0.4s;
-        transform-origin: bottom;
+        transform-origin: center;
+        z-index: 5;
     }
     &__game{
         @include cursor;
@@ -46,4 +47,189 @@
     &__link {
         text-decoration: none;
     }
+    &__tractor-path{
+        position: absolute;
+        width: 100vw;
+        right: 0;
+        height: 10vw;
+        background-color: transparent;
+        top: 26.9vw;
+        transform: rotate(-1deg);
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        z-index: -10;
+    }
+    &__tractor{
+        width: 10vw;
+        animation: x-motion 10s ease-in-out infinite;
+        position: absolute;
+        right: 0;
+        z-index: -10;
+        &::before{
+            animation: y-motion 3s ease-in-out 0s infinite alternate;
+        }
+    }
+    &__bunny-pop{
+        position: absolute;
+        left:3vw;
+        bottom: 2vw;
+        &--two {
+            bottom: 11vw;
+            left: 0;
+            //transform: perspectiveY(100cm);
+        }
+        &--three{
+            bottom: 6vw;
+            left: 70vw;
+            transform: rotate(-12deg);
+        }
+        &--four {
+            bottom: 5vw;
+            left: 35vw;
+        }
+    }
+    &__hole{
+        position: absolute;
+        width: 12rem;
+        height: 13rem;
+        left: 15vw;
+        bottom: 4vw;
+        z-index: 3;
+        overflow-y: hidden;
+        &--two{
+            width: 10rem;
+            height: 13rem;
+        }
+        &--four{
+            width: 14rem;
+            // height: 13rem;
+        }
+    }
+    &__hole-pic {
+        width: 19rem;
+        height: 4rem;
+        //height: 12rem;
+        position: absolute;
+        bottom: 2.7vw;
+        left: 12.2vw;
+        z-index: 5;
+        &--two{
+            width: 15rem;
+            height: 3rem;
+        }
+        &--four{
+            // width: 15rem;
+            // height: 3rem;
+        }
+    }
+    &__hole-back-pic {
+        width: 18.3rem;
+        height: 4rem;
+        //height: 12rem;
+        position: absolute;
+        bottom: 3.8vw;
+        left: 12.1vw;
+        z-index: 1;
+        &--two{
+            width: 14.35rem;
+            height: 3rem;
+            bottom: 3.55vw;
+        }
+        &--four{
+            // width: 14.35rem;
+            // height: 3rem;
+            // bottom: 3.55vw;
+        }
+    }
+    &__span1{
+        position: absolute;
+        z-index: 1;
+        height: 22rem;
+        width: 12.5rem;
+        left: -3px;
+        bottom: -130px;
+        background-image: url('../assets/pups/Color-bunny-1-wings-change.png');
+        background-position-y: top;
+        background-position-x: -8px;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        animation: move 3s infinite linear;
+        &--two{
+            background-image: url('../assets/pups/bunny-flippy.png');
+            animation: flippyMove 4s infinite linear;
+            width: 14.5rem;
+            background-size: 65%;
+            left: -10px;
+            bottom: -160px;
+        }
+        &--three {
+            background-image: url('../assets/pups/bunny-naut.png');
+            animation: nautMove 4s infinite linear;
+            background-size: 80%;
+            //left: 15px;
+            bottom: -140px;
+            width: 15.5rem;
+        }
+        &--four{
+            background-image: url('../assets/pups/bunny-venger.png');
+            animation: flippyMove 4s infinite linear;
+            //width: 15.5rem;
+            background-size: contain;
+            left: 15px;
+            // bottom: -160px;
+        }
+    }
 }
+@keyframes move {
+    0%, 100% {
+        transform: translateY(-2rem);
+    }
+    50% {
+        transform: translateY(9rem);
+    }
+}
+
+@keyframes flippyMove {
+    0%, 100% {
+        transform: translateY(9rem);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+
+@keyframes nautMove {
+    0%, 100% {
+        transform: translateY(10rem);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+
+
+@keyframes moveLeft {
+    0% {
+        
+    }
+    100% {
+        
+    }
+}
+@keyframes x-motion {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-100vw);
+    }
+    0%, 100% {
+        top: 20px;
+      }
+      
+      50% {
+        top: 0;
+      }
+  }

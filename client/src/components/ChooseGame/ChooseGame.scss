@@ -4,7 +4,8 @@
     margin: 0;
     padding: 1rem;
     height: fit-content;
-    background-color: #fded00;
+    background-color: #6cd3ed57;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,19 +20,21 @@
         align-items: center;
         margin: 0;
         //padding: 0;
-        background-color:white;
+        background-color:rgba(255, 255, 255, 0.24);
         box-shadow: 5px 3px 5px rgba($color: #e2e2e2, $alpha: 0.7);
     }
     &__primary-head{
         text-align: center;
-        color: #fded00;
+        color:white;
+        text-shadow: 2.5px 2.5px #a3a3a3;
         font-size: 9rem;
         font-weight: bolder;
         padding: 0;
         margin: 0;
     }
     &__secondary-head{
-        color: #fded00;
+        color:white;
+        text-shadow: 1px 1px #a3a3a3;
         font-size: 50px;
         font-weight: normal;
         padding: 0;
@@ -39,22 +42,26 @@
         text-align: center;
     }
     &__instruction-container{
-        border: 3px solid #fded00;
+        border: rgba(255, 255, 255, 0.411);
+        border-radius: 4px;
+        border-style: ridge;
         height: fit-content;
         width: 85vw;
     }
     &__instruction{
-        color: #fded00;
+        color:white;
+        // text-shadow: 3px 3px #a3a3a3;
         padding: 0 0 20px 40px;
         font-size: 35px;
-        font-weight: bolder;
+        font-weight: normal;
         margin: 0;
     }
     &__pointers{
         padding: 0 0 10px 40px;
         font-size: 30px;
-        font-weight: bolder;
-        color: #fded00;
+        font-weight: normal;
+        color:white;
+        // text-shadow: 3px 3px #a3a3a3;
         margin: 0;
     }
     &__paw-img{

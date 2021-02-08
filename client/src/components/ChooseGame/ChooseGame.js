@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from './Slider';
-import Paw from '../../assets/cursor/yellow-paw-new.png';
+import Paw from '../../assets/cursor/white-paw-new.png';
 import './ChooseGame.scss'
 
 const ChooseGame = () => {

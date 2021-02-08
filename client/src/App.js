@@ -7,6 +7,7 @@ import AddGame from './components/Games/AddGame/AddGame';
 import SubtractGame from './components/Games/SubtractGame/SubtractGame';
 import ExerciseGame from './components/Games/ExerciseGame/ExerciseGame';
 import ScavengerHunt from './components/Games/ScavengerHunt/ScavengerHunt';
+import SightWords from './components/Games/SightWordsGame/SightWordsGame';
 import './App.scss';
 import Share from './components/Share/Share';
 
@@ -22,6 +23,7 @@ const App = () => {
         <BrowserRouter>
           <Switch>
               <Route exact path='/' component={Home}/>
+              <Route path='/choosegame/sightwords' component={SightWords}/>
               <Route path='/choosegame/scavengerhunt' component={ScavengerHunt}/>
               <Route path='/choosegame/exercisegame' component={ExerciseGame}/>
               <Route path='/choosegame/subtractgame' component={SubtractGame}/>

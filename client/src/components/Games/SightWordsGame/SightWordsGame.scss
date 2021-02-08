@@ -1,49 +1,62 @@
-.add {
+.space {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../assets/mainImages/scenery.jpg);
+    background-image: url(../../../assets/mainImages/milkyway.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     &__pic{
-        width: 300px;
+        width: 150px;
         position: absolute;
         z-index: 0;
         transition: 2s;
         &--one{
-            top: 60vh;
-            left: 1vw;
+            top: 5vh;
+            left: 0;
+        }
+        &--one-text{
+            position: absolute;
+            top: 50vh;
+            left: 0;
+            font-size: 5rem;
+            color: yellow;
             transition: 2s;
         }
         &--two{
-            top: 40vh;
-            left: 7vw;
-            transition: 1s;
+            top: 32vh;
+            left: 14vw;
+        }
+        &--two-text{
+            position: absolute;
+            top: 62vh;
+            left: 14vw;
+            font-size: 5rem;
+            color: silver;
+            transition: 2s;
         }
         &--three{
-            top: 20vh;
-            left: 5vw;
-            transition: 1s;
+            top: 0;
+            left: 24vw;
+            width: 70px;
         }
         &--four{
-            top: 10vh;
-            left: 20vw;
-            transition: 1s;
+            top: 29vh;
+            left: 35vw;
+            width: 90px;
         }
         &--five{
-            top: 7vh;
-            left: 45vw;
-            transform: rotate(15deg);
-            transition: 2s;
+            top: 68vh;
+            left: 39vw;
+            width: 100px;
+            z-index: 0;
         }
         &--six{
-            top: 13vh;
-            left: 55vw;
-            transform: rotate(30deg);
-            transition: 2s;
+            top: 0;
+            left: 65vw;
+            width: 60px;
         }
         &--seven{
             top: 20vh;
@@ -96,7 +109,7 @@
         height: min-content;
         border-radius: 15px;
         padding: 20px;
-        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 42px 0px rgba(245, 239, 239, 0.75);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -110,7 +123,7 @@
     &__question-section {
         font-weight: bolder;
         color: orange;
-        text-shadow: 1px 1px black;
+        text-shadow: 1px 1px rgb(221, 221, 221);
         font-size: 30px;
         width: 100%;
         position: relative;
@@ -122,7 +135,7 @@
     }
     &__question-count span {
         color: orange;
-        text-shadow: 1px 1px black;
+        text-shadow: 1px 1px rgb(245, 245, 245);
         font-size: 30px;
     }
     &__question-text {
@@ -158,7 +171,7 @@
         margin: 5px;
         &:hover {
             transform: translate(4px, -4px);
-            box-shadow: -4px 4px 1px rgba(0, 0, 0, 0.137);
+            box-shadow: -4px 4px 1px rgba(214, 214, 214, 0.5);
         }
         &:active{
             transform: translate(-4px, 4px);
