@@ -49,26 +49,24 @@
     }
     &__tractor-path{
         position: absolute;
-        width: 100vw;
-        right: 0;
-        height: 10vw;
+        width: 125vw;
+        right: -10vw;
+        height: 15vw;
         background-color: transparent;
-        top: 26.9vw;
+        top: 63vh;
         transform: rotate(-1deg);
         overflow: hidden;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
         z-index: -10;
+        @media(max-width: 411px) {
+            height: 20vw;
+        }
     }
     &__tractor{
-        width: 10vw;
+        width: 18vw;
         animation: x-motion 10s ease-in-out infinite;
         position: absolute;
         right: 0;
         z-index: -10;
-        &::before{
-            animation: y-motion 3s ease-in-out 0s infinite alternate;
-        }
     }
     &__bunny-controller{
         position: absolute;
