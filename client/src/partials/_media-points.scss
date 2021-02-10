@@ -3,7 +3,7 @@
 // <<<<<<<< MEDIA-QUERY BREAKPOINTS >>>>>>>> \\
 
 @mixin mobile {
-    @media(max-width: $mobile-breakpoint) {
+    @media(min-width: $mobile-breakpoint) {
         @content;
     }
 }
