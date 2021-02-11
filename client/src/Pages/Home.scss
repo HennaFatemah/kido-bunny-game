@@ -125,6 +125,9 @@
                 transform: rotate(12deg);
             }
         }
+        &--five{
+            bottom: 40vw;
+        }
         // &--three{
         //     bottom: 6vw;
         //     left: 70vw;
@@ -350,6 +353,14 @@
                 bottom: -19vw;
             }
         }
+        &--five{
+            background-image: url('../assets/pups/bunny-toughy.png');
+            animation: toughyMove 6s infinite linear;
+            width: 14.5rem;
+            background-size: 32%;
+            left: -10px;
+            bottom: -7vw;
+        }
         // &--three {
         //     background-image: url('../assets/pups/bunny-naut.png');
         //     animation: nautMove 4s infinite linear;
@@ -387,6 +398,14 @@
 }
 
 @keyframes flippyMove {
+    0%, 100% {
+        transform: translateY(9rem);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+@keyframes toughyMove {
     0%, 100% {
         transform: translateY(9rem);
     }
