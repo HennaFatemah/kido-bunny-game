@@ -6,7 +6,7 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: -11;
+    z-index: -100;
 }
 
 @mixin main-bg {
@@ -15,11 +15,12 @@
     background-position-y: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -11;
+    z-index: -100;
 }
 
 @mixin lookout-tower-bg {
-    //position: absolute;
+    position: absolute;
+    z-index: -1;
     // background: url('../assets/mainImages//lookout-tower.png');
     background-size: cover;
     background-position: bottom;

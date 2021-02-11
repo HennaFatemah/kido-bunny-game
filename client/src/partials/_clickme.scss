@@ -13,7 +13,7 @@
 @mixin white {
     -webkit-animation-delay: 0.15s;
     left: 0.1rem;
-    z-index: -10;
+    z-index: 100;
 }
 
 @mixin red {
