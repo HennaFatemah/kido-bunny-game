@@ -4,7 +4,7 @@
     margin: 0;
     padding: 1rem;
     height: fit-content;
-    background-color: #6cd3ed57;
+    background-color: #7cd7ee;
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,19 @@
         margin: 0;
         //padding: 0;
         background-color:rgba(255, 255, 255, 0.24);
-        box-shadow: 5px 3px 5px rgba($color: #e2e2e2, $alpha: 0.7);
+        //box-shadow: 5px 3px 5px rgba($color: #e2e2e2, $alpha: 0.7);
+        @media(min-width: 600px){
+            padding: 7rem;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 4rem;
+        }
+        @media(min-width: 768px){
+            padding: 7rem;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 4rem;
+        }
     }
     &__primary-head{
         text-align: center;
@@ -30,7 +42,31 @@
         font-size: 9rem;
         font-weight: bolder;
         padding: 0;
-        margin: 0;
+        margin: 2rem;
+        line-height: 9rem;
+        @media(min-width: 600px){
+            font-size: 14rem;
+            line-height: 13rem;
+            margin: 0;
+        }
+        @media(min-width: 768px){
+            font-size: 18rem;
+            line-height: 18rem;
+        }
+        @media(width: 320px) and (height:533px){
+            font-size: 8rem;
+            line-height: 8rem;
+        }
+        @media(width: 320px) and (height:480px){
+            font-size: 8rem;
+        }
+        @media(width: 320px) and (height:568px){
+            font-size: 8rem;
+        }
+        @media(width: 280px) and (height:653px){
+            font-size: 7rem;
+            line-height: 7rem;
+        }
     }
     &__secondary-head{
         color:white;
@@ -38,8 +74,19 @@
         font-size: 50px;
         font-weight: normal;
         padding: 0;
-        margin: 0;
+        margin: 0 0 2rem 0;
         text-align: center;
+        line-height: 5rem;
+        @media(min-width: 600px){
+            font-size: 8rem;
+            line-height: 8rem;
+            margin: 3rem 0 6rem 0;
+        }
+        @media(min-width: 768px){
+            font-size: 9rem;
+            line-height: 9rem;
+            margin: 3rem 0 6rem 0;
+        }
     }
     &__instruction-container{
         border: rgba(255, 255, 255, 0.411);
@@ -47,6 +94,20 @@
         border-style: ridge;
         height: fit-content;
         width: 85vw;
+        @media(min-width: 600px){
+            width: 70vw;
+            border: 8px rgba(255, 255, 255, 0.411) ridge;
+            border-radius: 12px;
+            padding: 3rem;
+        }
+        @media(min-width: 768px){
+            width: 70vw;
+            border: 8px rgba(255, 255, 255, 0.411) ridge;
+            border-radius: 12px;
+        }
+        @media(width: 320px) and (height:533px){
+            padding: 2rem 0;
+        }
     }
     &__instruction{
         color:white;
@@ -55,6 +116,16 @@
         font-size: 35px;
         font-weight: normal;
         margin: 0;
+        @media(min-width: 600px){
+            font-size: 6rem;
+            text-align: center;
+            padding-left: 0;
+        }
+        @media(min-width: 768px){
+            font-size: 6rem;
+            text-align: center;
+            padding-left: 0;
+        }
     }
     &__pointers{
         padding: 0 0 10px 40px;
@@ -63,6 +134,21 @@
         color:white;
         // text-shadow: 3px 3px #a3a3a3;
         margin: 0;
+        @media(min-width: 600px){
+            //font-size: 4.5rem;
+            padding: 2.5rem 0 2.5rem 2.5rem;
+            letter-spacing: .2rem;
+        }
+        @media(min-width: 768px){
+            font-size: 4.5rem;
+            padding: 2.5rem;
+            letter-spacing: .2rem;
+        }
+        @media(width: 320px) and (height:533px){
+            font-size: 2.5rem;
+            padding: 1rem 1rem;
+            letter-spacing: .1rem;
+        }
     }
     &__paw-img{
         width: 25px;

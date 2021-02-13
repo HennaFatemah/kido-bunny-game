@@ -17,7 +17,6 @@
         position: absolute;
         left: 27vw;
         top: 30vh;
-        
     }
     &__rider-down{
         display: none;
@@ -41,6 +40,37 @@
         justify-content: center;
         margin: 1rem 0;
         margin-left: 8rem;
+        @media(min-width: 600px){
+            margin-left: 13.5rem;
+            height: 44vh;
+        }
+        @media(min-width: 768px){
+            margin-left: 19rem;
+            height: 44vh;
+        }
+        @media(width: 320px) and (height:533px){
+            margin-left: 6rem;
+            height: 40vh;
+        }
+        @media(width: 320px) and (height:480px){
+            margin-left: 6rem;
+            height: 40vh;
+            width: 75%;
+        }
+        @media(width: 320px) and (height:568px){
+            margin-left: 5.5rem;
+            height: 40vh;
+            width: 75%;
+        }
+        @media(width: 1024px) and (height:1366px){
+            margin-left: 24rem;
+        }
+        @media(width: 540px) and (height:720px){
+            margin-left: 12rem;
+        }
+        @media(width: 280px) and (height:653px){
+            margin-left: 5.7rem;
+        }
         width: 65%;
         height: 40vh;
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -61,12 +91,102 @@
     }
     &__tile-pic{
         @include cursor;
-        width: 58%;
+        width: 60%;
         object-fit: cover;
         height: 16rem;
         padding: 0;
         margin: 0 auto;
         margin-top: -3rem;
+        @media(width: 600px){
+            object-fit: contain;
+            height: 75rem;
+            margin-top: -20rem;
+        }
+        @media(width: 1024px) and (height:1366px){
+            object-fit: contain;
+            height: 65rem;
+            margin-top: -20rem;
+        }
+        &--berry{
+            @media(width: 600px){
+                margin-top: -10rem;
+            }
+            @media(min-width: 768px){
+                margin-top: -16rem;
+            }
+            @media(width: 412px) and (max-height: 732px){
+                object-fit: contain;
+                height: 30rem;
+                margin-top: -7rem;
+                margin-bottom: -5rem;
+            }
+            @media(width: 480px) and (height:854px){
+                object-fit: contain;
+                height: 30rem;
+                margin-top: -7rem;
+                margin-bottom: -5rem;
+            }
+            @media(width: 768px) and (height:1024px){
+                object-fit: contain;
+                height: 45rem;
+                margin-top: -9rem;
+                margin-bottom: -5rem;
+            }
+            @media(width: 411px) and (height:731px){
+                object-fit: contain;
+                height: 45rem;
+                margin-top: -10rem;
+                margin-bottom: -5rem;
+            }
+            @media(width: 411px) and (height:823px){
+                object-fit: contain;
+                height: 45rem;
+                margin-top: -10rem;
+                margin-bottom: -5rem;
+            }
+            @media(width: 414px) and (height:736px){
+                object-fit: contain;
+                height: 45rem;
+                margin-top: -10rem;
+                margin-bottom: -5rem;
+            }
+            @media(width: 540px) and (height:720px){
+                object-fit: contain;
+                height: 25rem;
+                margin-top: -5rem;
+            }
+            @media(width: 280px) and (height:653px){
+                object-fit: contain;
+            }
+        }
+        &--flippy{
+            margin-top: 0;
+            object-fit: contain;
+            width: 64%;
+            @media(min-width: 768px){
+                width: 60%;
+            }
+            @media(width: 480px) and (height:854px){
+                object-fit: contain;
+                height: 25rem;
+                margin-top: -1rem;
+                margin-bottom: -5rem;
+            }
+            @media(width: 768px) and (height:1024px){
+                object-fit: contain;
+                height: 30rem;
+                margin-top: -1rem;
+                //margin-bottom: -5rem;
+            }
+            @media(width: 1024px) and (height:1366px){
+                object-fit: contain;
+                height: 45rem;
+                //margin-top: -20rem;
+            }
+            @media(width: 280px) and (height:653px){
+                margin-bottom: 2rem;
+            }
+        }
     }
     &__tile-title{
         text-transform: uppercase;
@@ -84,6 +204,72 @@
         padding: 0;
         margin: 0;
         //margin-left: 10px;
+        @media(width: 280px) and (height:653px){
+            margin-top: 3rem;
+            font-size: 1.4rem;
+        }
+        @media(min-width: 768px){
+            font-size: 4rem;
+            margin-top: 1rem;
+            padding: 0 1rem;
+        }
+        @media(min-width: 600px){
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 0 1rem;
+        }
+        @media(width: 320px) and (height:533px){
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0 1rem;
+            line-height: 2rem;
+        }
+        @media(width: 768px) and (height:1024px){
+            font-size: 3rem;
+        }
+        @media(width: 320px) and (height:480px){
+            font-size: 1.25rem;
+            margin-top: 1rem;
+        }
+        @media(width: 320px) and (height:568px){
+            font-size: 1.6rem;
+        }
+        @media(width: 1024px) and (height:1366px){
+            font-size: 4rem;
+        }
+        &--berry{
+            @media(min-width: 768px){
+                margin-top: 4rem;
+            }
+            @media(min-width: 600px){
+                margin-top: 2rem;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            @media(width: 768px) and (height:1024px){
+                font-size: 3rem;
+            }
+            @media(width: 320px) and (height:480px){
+                margin-top: 0;
+            }
+            @media(width: 411px) and (height:731px){
+                margin-top: 2rem;
+            }
+            @media(width: 411px) and (height:823px){
+                margin-top: 4rem;
+            }
+            @media(width: 414px) and (height:736px){
+                margin-top: 4rem;
+            }
+            @media(width: 1024px) and (height:1366px){
+                font-size: 4rem;
+            }
+            @media(width: 280px) and (height:653px){
+                margin-top: 0rem;
+            }
+        }
     }
     &__link{
         text-decoration: none;
