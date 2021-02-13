@@ -9,8 +9,11 @@
     @include flex-center;
     @include full-scale;
     @include main-bg;
-    @include tablet {
+    @include desktop {
         @include main-bg-big;
+    }
+    @media(width: 800px) and (height:1280px){
+        background-position: right;
     }
     &__bg-image-wrapper {
         @include lookout-tower-bg;
@@ -146,14 +149,21 @@
                 bottom: 12vw;
             }
         }
+        &--four {
+            bottom: 10vw;
+            left: 50vw;
+            transform: rotate(0);
+            @media(width: 375px) and (height:812px){
+                bottom: 12vw;
+            }
+            @media(width: 280px) and (height:653px){
+                bottom: 25vw;
+            }
+        }
         // &--five{
         //     bottom: 37vw;
         //     left: 62vw;
         //     transform: rotate(-2deg);
-        // }
-        // &--four {
-        //     bottom: 5vw;
-        //     left: 35vw;
         // }
     }
     &__hole{
@@ -173,6 +183,10 @@
         &--two{
             width: 10rem;
             height: 13rem;
+            @media(width: 280px) and (height:653px){
+                width: 19vw;
+                bottom: 0vw;
+            }
         }
         &--three{
             bottom: .5vw;
@@ -194,10 +208,10 @@
                 width: 20vw;
             }
         }
-        // &--four{
-        //     // width: 10rem;
-        //     // height: 13rem;
-        // }
+        &--four{
+            // width: 10rem;
+            // height: 13rem;
+        }
         // &--five{
         //     bottom: 3vw;
         //     left: 5vw;
@@ -267,6 +281,12 @@
                 bottom: -1vw;
                 width: 8.2rem;
             }
+            @media(width: 280px) and (height:653px){
+                height: 2.7rem;
+                bottom: -3vw;
+                width: 6.6rem;
+                left: .5vw;
+            }
         }
         &--three{
             bottom: -1vw;
@@ -297,12 +317,18 @@
             @media(width: 280px) and (height:653px){
                 bottom: -2vw;
             }
-            
+            @media(width: 800px) and (height:1280px){
+                width: 14rem;
+            }
         }
-        // &--four{
-        //     // width: 15rem;
-        //     // height: 3rem;
-        // }
+        &--four{
+            width: 9rem;
+            height: 3rem;
+            @media(width: 1024px) and (height:1366px){
+                bottom: 0;
+                left: 1vw;
+            }
+        }
     }
     &__hole-back-pic {
         width: 10.3rem;
@@ -371,13 +397,57 @@
             @media(width: 800px) and (height:1280px){
                 bottom: 0vw;
                 height: 3rem;
+                width: 13rem;
             }
         }
-        // &--four{
-        //     // width: 14.35rem;
-        //     // height: 3rem;
-        //     // bottom: 3.55vw;
-        // }
+        &--four{
+            width: 8.7rem;
+            // height: 3rem;
+            bottom: 3vw;
+            @media(width: 800px) and (height:1280px){
+                bottom: 0;
+                height: 3rem;
+            }
+            @media(width: 600px) and (height:960px){
+                bottom: 0;
+            }
+            @media(width: 480px) and (height:854px){
+                bottom: 0;
+            }
+            @media(width: 768px) and (height:1024px){
+                bottom: 0;
+            }
+            @media(width: 411px) and (height:823px){
+                bottom: 0;
+            }
+            @media(width: 414px) and (height:736px){
+                bottom: 0;
+            }
+            @media(width: 375px) and (height:812px){
+                bottom: 0;
+            }
+            @media(width: 280px) and (height:653px){
+                bottom: 4vw;
+            }
+            @media(width: 1024px) and (height:1366px){
+                bottom: 1.1vw;
+                height: 3rem;
+                left: .9vw;
+            }
+            @media(width: 540px) and (height:720px){
+                bottom: 1.7vw;
+                height: 3rem;
+            }
+            @media(width: 412px) and (max-height:732px){
+                height: 3.5rem;
+                bottom: 1vw;
+                width: 8.8rem;
+            }
+            @media(width: 384px) and (height:640px){
+                height: 3rem;
+                bottom: 2vw;
+            }
+        }
     }
     &__span1{
         position: absolute;
@@ -480,7 +550,7 @@
         }
         &--three {
             background-image: url('../assets/pups/bunny-naut.png');
-            animation: nautMove 8s infinite linear;
+            animation: nautMove 6s infinite linear;
             background-size: 30%;
             //left: 15px;
             bottom: -17vw;
@@ -508,14 +578,44 @@
                 background-size: 50%;
             }
             @media(width: 540px) and (height:720px){
-                bottom: -15vw;
+                bottom: -12vw;
                 left: -1vw;
             }
             @media(width: 280px) and (height:653px){
                 bottom: -25vw;
             }
             @media(width: 800px) and (height:1280px){
-                bottom: -8.5vw;
+                bottom: -3.5vw;
+                background-size: 60%;
+            }
+        }
+        &--four{
+            background-image: url('../assets/pups/bunny-venger.png');
+            animation: flippyMove 7s infinite linear;
+            //width: 15.5rem;
+            background-size: 50%;
+            left: 1vw;
+            bottom: -11vw;
+            @media(width: 800px) and (height:1280px){
+                bottom: -7vw;
+            }
+            @media(width: 600px) and (height:960px){
+                bottom: -8vw;
+            }
+            @media(width: 768px) and (height:1024px){
+                bottom: -7vw;
+            }
+            @media(width: 375px) and (height:812px){
+                bottom: -13vw;
+            }
+            @media(width: 280px) and (height:653px){
+                bottom: -15vw;
+            }
+            @media(width: 1024px) and (height:1366px){
+                bottom: -5vw;
+            }
+            @media(width: 540px) and (height:720px){
+                bottom: -8vw;
             }
         }
         // &--five{
@@ -525,14 +625,6 @@
         //     background-size: 32%;
         //     left: -10px;
         //     bottom: -7vw;
-        // }
-        // &--four{
-        //     background-image: url('../assets/pups/bunny-venger.png');
-        //     animation: flippyMove 4s infinite linear;
-        //     //width: 15.5rem;
-        //     background-size: 90%;
-        //     left: 15px;
-        //     // bottom: -160px;
         // }
     }
 }
@@ -573,7 +665,7 @@
 
 @keyframes nautMove {
     0%, 100% {
-        transform: translateY(8rem);
+        transform: translateY(12rem);
     }
     50% {
         transform: translateY(-2rem);
