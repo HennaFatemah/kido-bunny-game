@@ -71,6 +71,9 @@
         @media(width: 280px) and (height:653px){
             margin-left: 5.7rem;
         }
+        @media(width: 480px) and (height:854px){
+            margin-left: 10rem;
+        }
         width: 65%;
         height: 40vh;
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -108,6 +111,10 @@
             margin-top: -20rem;
         }
         &--berry{
+            @media(width: 800px) and (height:1280px){
+                object-fit: contain;
+                height: 55rem;
+            }
             @media(width: 600px){
                 margin-top: -10rem;
             }
@@ -163,6 +170,9 @@
             margin-top: 0;
             object-fit: contain;
             width: 64%;
+            @media(width: 800px) and (height:1280px){
+                height: 35rem;
+            }
             @media(min-width: 768px){
                 width: 60%;
             }
@@ -204,6 +214,7 @@
         padding: 0;
         margin: 0;
         //margin-left: 10px;
+        
         @media(width: 280px) and (height:653px){
             margin-top: 3rem;
             font-size: 1.4rem;
@@ -218,6 +229,9 @@
             text-align: center;
             font-size: 2.5rem;
             padding: 0 1rem;
+        }
+        @media(width: 800px) and (height:1280px){
+            font-size: 4rem;
         }
         @media(width: 320px) and (height:533px){
             margin-top: 1rem;
@@ -247,6 +261,9 @@
                 margin-top: 2rem;
                 text-align: center;
                 font-size: 2.5rem;
+            }
+            @media(width: 800px) and (height:1280px){
+                font-size: 4rem;
             }
             @media(width: 768px) and (height:1024px){
                 font-size: 3rem;
