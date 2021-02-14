@@ -34,7 +34,7 @@ class SlideOne extends Component {
                     </div>
                 </Link>
                 <Link className="slide-one__link" to='/choosegame/subtractgame'>
-                    <div className="slide-one__tile" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
+                    <div className="slide-one__tile slide-one__tile--flippy" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
                         <h3 className="slide-one__tile-title">Subtract with Bunny Flippy</h3>
                         <img className="slide-one__tile-pic slide-one__tile-pic--flippy" src={Zuma} alt="Pup named Zuma"/>
                     </div>
