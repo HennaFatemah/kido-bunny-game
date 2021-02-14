@@ -80,10 +80,7 @@ class Home extends Component {
                         <img className="container__hole-back-pic container__hole-back-pic--five" src={HoleBack} />
                         <img className="container__hole-pic container__hole-pic--five" src={Hole} />
                         <b className="container__hole container__hole--five">
-                            
-                            <span className="container__span1 container__span1--five">
-
-                            </span>
+                            <span className="container__span1 container__span1--five"></span>
                         </b>
                         </div>
                     </div>
