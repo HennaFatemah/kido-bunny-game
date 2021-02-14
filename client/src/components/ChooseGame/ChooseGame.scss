@@ -158,4 +158,37 @@
     &__part{
         width: 60vw;
     }
+    &__back {
+        background-color: rgba(180, 245, 128, 0.37);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
+        border-radius: 6px;
+        border: transparent;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
+        font-size: 6vw;
+        margin-top: 3vw;
+        width: 85vw;
+        height: 12vw;
+        font-weight: bold;
+        outline: none;
+        &:active{
+            transform: translate(1px, 1px);
+        }
+        @media (width: 800px) {
+            width: 70vw;
+            font-size: 5vw;
+        }
+        @media (width: 600px) {
+            width: 70vw;
+            font-size: 5vw;
+        }
+        @media (width: 768px) {
+            width: 70vw;
+            font-size: 5vw;
+        }
+        @media (width: 1024px) {
+            width: 70vw;
+            font-size: 5vw;
+        }
+    }
 }

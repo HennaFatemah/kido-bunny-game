@@ -1,7 +1,7 @@
 
 import {Link} from 'react-router-dom';
-import Skye from '../../../../assets/pups/Color-bunny-1.png';
-import Zuma from '../../../../assets/pups/bunny-flippy.png';
+import Skye from '../../../../assets/pups/bunny-berry-wings-close.png';
+import Zuma from '../../../../assets/pups/bunny-fllipy.png';
 import RiderOne from '../../../../assets/rider/rider-angle-1.png';
 import RiderTwo from '../../../../assets/rider/rider-angle-2.png';
 import RiderMain from '../../../../assets/rider/rider-paw-patrol-png-41895.png'

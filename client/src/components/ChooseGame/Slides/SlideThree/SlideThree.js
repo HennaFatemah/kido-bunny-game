@@ -1,7 +1,7 @@
 
 import {Link} from 'react-router-dom';
-import Rocky from '../../../../assets/pups/rocky-paw-patrol-png-41890 copy.png';
-import Chase from '../../../../assets/pups/v-new-chase-paw-patrol-png-41888 copy.png';
+import Rocky from '../../../../assets/pups/bunny-naut.png';
+import Chase from '../../../../assets/pups/bunny-naut.png';
 import RiderOne from '../../../../assets/rider/rider-angle-1.png';
 import RiderTwo from '../../../../assets/rider/rider-angle-2.png';
 import RiderMain from '../../../../assets/rider/rider-paw-patrol-png-41895.png'
@@ -28,15 +28,15 @@ class SlideTwo extends Component {
             <div className="slide-three">
                 {this.state.riderPosition === 1 ? <img className="slide-three__rider-up" src={RiderOne} alt="Rider with hand up"/> : this.state.riderPosition === 2 ? <img className="slide-three__rider-down" src={RiderTwo} alt="Rider with hand down"/> : this.state.riderPosition === 3 ? <img className="slide-three__rider-main" src={RiderMain} alt="Rider dancing"/> : <img className="slide-three__rider-main" src={RiderMain} alt="Rider dancing"/>}
                 <div className="slide-three__tile" onMouseOver={LinkTo} onMouseLeave={LinkLeave}>
-                    <h3 className="slide-three__tile-title">Sight Words With Rocky</h3>
+                    <h3 className="slide-three__tile-title slide-three__tile-title--naut">Sight Words With Bunny Naut</h3>
                     <Link className="slide-three__link" to='/choosegame/sightwords'>
-                        <img className="slide-three__tile-pic slide-three__tile-rocky" src={Rocky} alt="Pup named Rocky"/>
+                        <img className="slide-three__tile-pic slide-three__tile-pic--naut" src={Rocky} alt="Pup named Rocky"/>
                     </Link>
                 </div>
                 <div className="slide-three__tile" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
-                    <h3 className="slide-three__tile-title">General Knowledge with Chase</h3>
+                    <h3 className="slide-three__tile-title slide-three__tile-title--muse">General Knowledge with Bunny Muse</h3>
                     <Link className="slide-three__link" to='/choosegame/generalknowledge'>
-                        <img className="slide-three__tile-pic slide-three__tile-chase" src={Chase} alt="Pup named Chase"/>
+                        <img className="slide-three__tile-pic slide-three__tile-pic--muse" src={Chase} alt="Pup named Chase"/>
                     </Link>
                 </div>
             </div>

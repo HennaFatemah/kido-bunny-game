@@ -95,8 +95,8 @@
     &__tile-pic{
         @include cursor;
         width: 60%;
-        object-fit: cover;
-        height: 16rem;
+        object-fit: contain;
+        height: 18rem;
         padding: 0;
         margin: 0 auto;
         margin-top: -3rem;
@@ -111,15 +111,19 @@
             margin-top: -20rem;
         }
         &--berry{
-            @media(width: 800px) and (height:1280px){
-                object-fit: contain;
-                height: 55rem;
-            }
             @media(width: 600px){
                 margin-top: -10rem;
             }
             @media(min-width: 768px){
                 margin-top: -16rem;
+            }
+            @media (width: 384px) and (height:640px) {
+                margin-top: 1px;
+            }
+            @media(width: 800px) and (height:1280px){
+                height: 50rem;
+                margin-top: 0.5rem;
+                width: 55%;
             }
             @media(width: 412px) and (max-height: 732px){
                 object-fit: contain;
@@ -136,6 +140,7 @@
             @media(width: 768px) and (height:1024px){
                 object-fit: contain;
                 height: 45rem;
+                width: 50%;
                 margin-top: -9rem;
                 margin-bottom: -5rem;
             }
@@ -164,6 +169,18 @@
             }
             @media(width: 280px) and (height:653px){
                 object-fit: contain;
+            }
+            @media(width: 375px) and (height:812px){
+                margin-top: 1rem;
+            }
+            @media(width: 1024px) and (height:1366px){
+                margin-top: 1rem;
+                width: 50%;
+            }
+            @media(width: 540px) and (height:720px){
+                width: 50%;
+                margin-top: 0.1rem;
+                height: 18rem;
             }
         }
         &--flippy{
