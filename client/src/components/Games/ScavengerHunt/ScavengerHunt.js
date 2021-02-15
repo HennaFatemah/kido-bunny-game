@@ -6,9 +6,10 @@ import MarshalSquat from '../../../assets/pups/squods-marshall.png';
 import MarshalTongue from '../../../assets/pups/marshal-tongue.png';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
 import {questions} from './ScavengerHuntData';
+import { useHistory } from "react-router-dom";
 
 export default function ScavengerHunt() {
-
+    const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
@@ -54,6 +55,8 @@ export default function ScavengerHunt() {
                                 <button className="hunt__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                             ))}
                         </div>
+                        <button className="choose__back" onClick={() => history.push("/choosegame")}>Go Back</button>
+                        <button className="choose__back" onClick={() => history.push("/")}>Home</button>
                     </>
                 )}
             </div>

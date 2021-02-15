@@ -7,9 +7,10 @@ import ZumaSit from '../../../assets/pups/zuma-paw-patrol-png-41900.png';
 import Bubbles from '../../../assets/icons/bubble.png'
 import {questions} from './SubtractGameData';
 import SeaPortion from '../../../assets/mainImages/sea-portion.png';
+import { useHistory } from "react-router-dom";
 
 export default function SubtractGame() {
-
+    const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
@@ -58,6 +59,8 @@ export default function SubtractGame() {
                                 <button className="subtract__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                             ))}
                         </div>
+                        <button className="choose__back" onClick={() => history.push("/choosegame")}>Go Back</button>
+                        <button className="choose__back" onClick={() => history.push("/")}>Home</button>
                     </>
                 )}
             </div>

@@ -103,6 +103,14 @@
         @media(min-width: 1024px) {
             left: 18vw;
         }
+        @media(min-width: 640px) and (min-height:360px) {
+            left: 9vw;
+            bottom: 10vw;
+        }
+        @media(min-width: 1280px) and (min-height:800px) {
+            left: 10vw;
+            bottom: 3vw;
+        }
         &--two {
             bottom: 21vw;
             left: 25vw;
@@ -130,6 +138,16 @@
             @media(width: 375px) and (height:812px){
                 bottom: 35vw;
             }
+            @media(min-width: 640px) and (min-height:360px) {
+                left: 12vw;
+                bottom: 19vw;
+                transform: rotate(15deg);
+            }
+            @media(min-width: 1280px) and (min-height:800px) {
+                left: 14vw;
+                bottom: 15vw;
+                transform: rotate(10deg);
+            }
         }
         &--three{
             bottom: 3vw;
@@ -151,6 +169,16 @@
             @media(width: 280px) and (height:653px){
                 bottom: 12vw;
             }
+            @media(min-width: 640px) and (min-height:360px) {
+                left: 80vw;
+                bottom: 12vw;
+                transform: rotate(-15deg);
+            }
+            @media(min-width: 1280px) and (min-height:800px) {
+                left: 82vw;
+                bottom: 10vw;
+                transform: rotate(-15deg);
+            }
         }
         &--four {
             bottom: 10vw;
@@ -165,6 +193,14 @@
             @media(width: 375px) and (height:812px){
                 bottom: 20vw;
             }
+            @media(min-width: 640px) and (min-height:360px) {
+                left: 90vw;
+                bottom: 3vw;
+            }
+            @media(min-width: 1280px) and (min-height:800px) {
+                left: 90vw;
+                bottom: 3vw;
+            }
         }
         &--five{
             bottom: 27vw;
@@ -175,6 +211,14 @@
             }
             @media(width: 280px) and (height:653px){
                 bottom: 45vw;
+            }
+            @media(min-width: 640px) and (min-height:360px) {
+                left: 45vw;
+                bottom: 8vw;
+            }
+            @media(min-width: 1280px) and (min-height:800px) {
+                left: 45vw;
+                bottom: 6vw;
             }
         }
         &--six{
@@ -219,6 +263,14 @@
             @media(width: 540px) and (height:720px){
                 bottom: 25vw;
                 left: 40vw;
+            }
+            @media(min-width: 640px) and (min-height:360px) {
+                left: 38vw;
+                bottom: 15vw;
+            }
+            @media(min-width: 1280px) and (min-height:800px) {
+                left: 38vw;
+                bottom: 12vw;
             }
         }
     }

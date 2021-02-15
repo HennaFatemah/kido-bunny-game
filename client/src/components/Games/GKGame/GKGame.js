@@ -4,9 +4,10 @@ import Skye from '../../../assets/pups/new-skye-flying.png';
 import SkyeSit from '../../../assets/pups/skye.png';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
 import {questions} from './GKGameData';
+import { useHistory } from "react-router-dom";
 
 export default function GKGame() {
-
+    const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
@@ -52,6 +53,8 @@ export default function GKGame() {
                                 <button className="add__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                             ))}
                         </div>
+                        <button className="choose__back" onClick={() => history.push("/choosegame")}>Go Back</button>
+                        <button className="choose__back" onClick={() => history.push("/")}>Home</button>
                     </>
                 )}
             </div>
