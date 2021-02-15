@@ -1,7 +1,7 @@
 
 import {Link} from 'react-router-dom';
 import Rocky from '../../../../assets/pups/bunny-naut.png';
-import Chase from '../../../../assets/pups/bunny-naut.png';
+import Chase from '../../../../assets/pups/bunny-muse.png';
 import RiderOne from '../../../../assets/rider/rider-angle-1.png';
 import RiderTwo from '../../../../assets/rider/rider-angle-2.png';
 import RiderMain from '../../../../assets/rider/rider-paw-patrol-png-41895.png'
@@ -34,7 +34,7 @@ class SlideTwo extends Component {
                     </Link>
                 </div>
                 <div className="slide-three__tile" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
-                    <h3 className="slide-three__tile-title slide-three__tile-title--muse">General Knowledge with Bunny Muse</h3>
+                    <h3 className="slide-three__tile-title slide-three__tile-title--muse">Sounds with Bunny Muse</h3>
                     <Link className="slide-three__link" to='/choosegame/generalknowledge'>
                         <img className="slide-three__tile-pic slide-three__tile-pic--muse" src={Chase} alt="Pup named Chase"/>
                     </Link>
