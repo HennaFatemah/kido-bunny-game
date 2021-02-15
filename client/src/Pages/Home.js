@@ -83,6 +83,13 @@ class Home extends Component {
                             <span className="container__span1 container__span1--five"></span>
                         </b>
                         </div>
+                        <div className="container__bunny-pop container__bunny-pop--six">
+                        <img className="container__hole-back-pic container__hole-back-pic--six" src={HoleBack} />
+                        <img className="container__hole-pic container__hole-pic--six" src={Hole} />
+                        <b className="container__hole container__hole--six">
+                            <span className="container__span1 container__span1--six"></span>
+                        </b>
+                        </div>
                     </div>
                     {/* <div className="container__clearfix"></div> */}
                 </div>
