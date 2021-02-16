@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(../../../assets/mainImages/scenery.jpg);
@@ -10,12 +11,133 @@
     background-size: cover;
     position: absolute;
     z-index: -2;
+    &__back-container{
+        width: 40vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        //display: flex;
+        margin-top: 2.5vw;
+    }
+    &__back{
+        background: transparent;
+        border: transparent;
+        color: orange;
+        text-shadow: 1px 1px black;
+        font-size: 2.5vh;
+        width: 30vw;
+        padding: 0;
+        @media (min-width: 640px) and (min-height: 360px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 533px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            font-size: 2.5vh;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            font-size: 2.5vh;
+        }
+    }
+    &__back-pic{
+        width: 3.5vh;
+        margin-left: -3.5vw;
+        margin-bottom: -1vh;
+        @media (min-width: 640px) and (min-height: 360px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 533px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            width: 3.5vh;
+            margin-left: -3.5vw;
+            margin-bottom: -1vh;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            width: 3.5vh;
+            margin-left: -3.5vw;
+            margin-bottom: -1vh;
+        }
+    }
     &__pic{
-        width: 25vw;
+        width: 35vw;
+        @media (min-width: 640px) and (min-height: 360px) {
+            width: 15vw;
+        }
+        @media (width: 533px) and (height: 320px) {
+            width: 15vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            width: 15vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            width: 15vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            width: 15vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            width: 35vw;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            width: 35vw;
+        }
         position: absolute;
         z-index: -1;
         transition: 2s;
         &--one{
+            width: 25vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                width: 10vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                width: 10vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                width: 25vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                width: 25vw;
+            }
             bottom: 0;
             left: 1vw;
             transition: 6s;
@@ -32,6 +154,28 @@
             }
         }
         &--ones{
+            width: 25vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                width: 10vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                width: 10vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                width: 25vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                width: 25vw;
+            }
             bottom: 0;
             left: 1vw;
             transition: 6s;
@@ -48,9 +192,29 @@
             }
         }
         &--two{
-            width: 35vw;
             bottom: 10vh;
             left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
             transition: 6s;
             animation: Appear 1.2s linear infinite;
             @keyframes Appear {
@@ -65,9 +229,29 @@
             }
         }
         &--twos{
-            width: 35vw;
             bottom: 10vh;
             left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
             transition: 6s;
             animation: Appears 1.2s linear infinite;
             @keyframes Appears {
@@ -82,7 +266,6 @@
             }
         }
         &--three{
-            width: 35vw;
             bottom: 20vh;
             left: 5vw;
             transition: 6s;
@@ -99,7 +282,6 @@
             }
         }
         &--threes{
-            width: 35vw;
             bottom: 20vh;
             left: 5vw;
             transition: 6s;
@@ -116,9 +298,29 @@
             }
         }
         &--four{
-            width: 35vw;
             bottom: 30vh;
             left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
             transition: 6s;
             animation: Appear 1.2s linear infinite;
             @keyframes Appear {
@@ -133,9 +335,29 @@
             }
         }
         &--fours{
-            width: 35vw;
             bottom: 30vh;
             left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
             transition: 6s;
             animation: Appears 1.2s linear infinite;
             @keyframes Appears {
@@ -150,7 +372,6 @@
             }
         }
         &--five{
-            width: 35vw;
             bottom: 40vh;
             left: 5vw;
             transition: 6s;
@@ -167,7 +388,6 @@
             }
         }
         &--fives{
-            width: 35vw;
             bottom: 40vh;
             left: 5vw;
             transition: 6s;
@@ -184,9 +404,29 @@
             }
         }
         &--six{
-            width: 35vw;
             bottom: 50vh;
             left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
             transition: 6s;
             animation: Tilt 1.2s linear infinite;
             @keyframes Tilt {
@@ -201,9 +441,29 @@
             }
         }
         &--sixes{
-            width: 35vw;
             bottom: 50vh;
             left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
             transition: 6s;
             animation: Tilts 1.2s linear infinite;
             @keyframes Tilts {
@@ -218,7 +478,6 @@
             }
         }
         &--seven{
-            width: 35vw;
             bottom: 60vh;
             left: 5vw;
             transition: 6s;
@@ -235,7 +494,6 @@
             }
         }
         &--sevens{
-            width: 35vw;
             bottom: 60vh;
             left: 5vw;
             transition: 6s;
@@ -252,9 +510,29 @@
             }
         }
         &--eight{
-            width: 35vw;
             bottom: 70vh;
             left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
             transition: 6s;
             animation: Eight 1.2s linear infinite;
             @keyframes Eight {
@@ -269,9 +547,29 @@
             }
         }
         &--eights{
-            width: 35vw;
             bottom: 70vh;
             left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
             transition: 6s;
             animation: Eights 1.2s linear infinite;
             @keyframes Eights {
@@ -286,7 +584,6 @@
             }
         }
         &--nine{
-            width: 35vw;
             bottom: 80vh;
             left: 5vw;
             transition: 6s;
@@ -303,7 +600,6 @@
             }
         }
         &--nines{
-            width: 35vw;
             bottom: 80vh;
             left: 5vw;
             transition: 6s;
@@ -320,7 +616,6 @@
             }
         }
         &--ten{
-            width: 35vw;
             bottom: 0vh;
             left: 20vw;
             transition: 6s;
@@ -337,7 +632,6 @@
             }
         }
         &--tens{
-            width: 35vw;
             bottom: 0;
             left: 20vw;
             transition: 6s;
@@ -356,11 +650,36 @@
         &--score{
             position: absolute;
             width: 30vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                width: 10vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                width: 10vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                width: 30vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                width: 30vw;
+            }
             bottom: 0;
             left: 20vw;
 
         }
     }
+    // &__contains{
+    //     width: 100vw;
+    //     height: 75vh;
+    // }
     &__answer-section {
         width: 100%;
         display: flex;
@@ -377,70 +696,98 @@
     &__card{
         background-color: rgba(0, 0, 0, 0.137);
         width: 90vw;
-        min-height: 500px;
+        min-height: 75vh;
         height: min-content;
         border-radius: 15px;
-        padding: 20px;
+        padding: 0;
         box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        @media (min-width: 640px) and (min-height: 360px) {
+            width: 50vw;
+        }
+        @media (width: 533px) and (height: 320px) {
+            width: 50vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            width: 50vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            width: 50vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            width: 50vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            width: 90vw;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            width: 90vw;
+        }
     }
     &__score-section {
         display: flex;
-        font-size: 24px;
+        font-size: 7.5%;
         align-items: center;
     }
     &__question-section {
         font-weight: bolder;
         color: orange;
         text-shadow: 1px 1px black;
-        font-size: 30px;
+        font-size: 4vh;
         width: 100%;
         position: relative;
-        text-align: right;
-        margin-top: -40px;
+        // width: 85vw;
+        height: 20vh;
+        padding: 3vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        //text-align: right;
+        //margin-top: -40px;
     }
     &__question-count {
-        margin-bottom: 10px;
+        text-align: right;
     }
     &__question-count span {
         color: orange;
         text-shadow: 1px 1px black;
-        font-size: 30px;
+        font-size: 4vh;
     }
     &__question-text {
         color: greenyellow;
         text-align: center;
-        font-size: 38px;
+        font-size: 6vh;
         font-weight: bolder;
-        margin-top: 100px;
-        margin-bottom: 2px;
+        //margin-top: 100px;
+        //margin-bottom: 2px;
     }
-    &__timer-text {
-        background: rgb(230, 153, 12);
-        padding: 15px;
-        margin-top: 30px;
-        margin-right: 20px;
-        border: 5px solid rgb(255, 189, 67);
-        border-radius: 15px;
-        text-align: center;
-    }
+    // &__timer-text {
+    //     background: rgb(230, 153, 12);
+    //     padding: 15px;
+    //     margin-top: 30px;
+    //     margin-right: 20px;
+    //     border: 5px solid rgb(255, 189, 67);
+    //     border-radius: 15px;
+    //     text-align: center;
+    // }
     &__btn {
         width: 40%;
-        font-size: 35px;
+        font-size: 4vh;
         font-weight: bolder;
         color: #ffffff;
         background-color:rgba(172, 255, 47, 0.52);
-        border-radius: 15px;
+        border-radius: 3vh;
         display: flex;
-        padding: 25px;
+        padding: 8%;
         justify-content: center;
         align-items: center;
-        border: 5px solid #70abcd;
+        border: 1vh solid #70abcd;
         cursor: pointer;
-        margin: 5px;
+        margin: 2%;
         &:hover {
             transform: translate(4px, -4px);
             box-shadow: -4px 4px 1px rgba(0, 0, 0, 0.137);

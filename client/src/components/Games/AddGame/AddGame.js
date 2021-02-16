@@ -6,6 +6,7 @@ import BunnyWingFlyRight from '../../../assets/pups/bunny-berry-fly-right.png';
 import BunnyFlyRight from '../../../assets/pups/bunny-berry-moving-wing-fly-right.png';
 import BunnyWingFlyLeft from '../../../assets/pups/bunny-berry-fly-left.png';
 import BunnyFlyLeft from '../../../assets/pups/bunny-berry-moving-wing-fly-left.png';
+import BackArrow from '../../../assets/icons/back-arrow.svg';
 import SkyeSit from '../../../assets/pups/skye.png';
 import SkyeHappy from '../../../assets/pups/bunny-berry.png';
 import {questions} from './AddGameData';
@@ -34,6 +35,11 @@ export default function AddGame() {
 
 	return (
         <section className='add'>
+            <div className="add__back-container">
+            <button className="add__back" onClick={() => history.push("/choosegame")}><img src={BackArrow} alt="Sitting pup called Skye" className="add__back-pic" />Go Back</button>
+                        <button className="add__back" onClick={() => history.push("/")}><img src={BackArrow} alt="Sitting pup called Skye" className="add__back-pic" /><img src={BackArrow} alt="Sitting pup called Skye" className="add__back-pic" />Home</button>
+                        </div>
+                        {/* <div className="choose__check"></div> */}
             <div className='add__card'>
                 {showScore ? (
                     <>
@@ -62,9 +68,7 @@ export default function AddGame() {
                     </>
                 )}
             </div>
-            <button className="choose__back" onClick={() => history.push("/choosegame")}>Go Back</button>
-                        <button className="choose__back" onClick={() => history.push("/")}>Home</button>
-                        <div className="choose__check"></div>
+            
             </section>
 	);
 }
