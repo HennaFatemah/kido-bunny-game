@@ -3,35 +3,37 @@
 @import '../../partials/mixins';
 .click {
     @include cursor;
-    margin-top: 60%;
-    margin-left: 8%;
+    //margin-top: 60%;
+    //margin-left: 8%;
     counter-reset: rainbow;
-    position: relative;
+    position: absolute;
+    left: calc((100vw - 150px) / 2);
+    top: 10vh;
     list-style: none;
     padding: 0;
     &__layer {
         color: #fff;
         position: absolute;
-        top: 10%;
-        @include point-2;
-        @include mobile {
-            @include point-1;
-        }
-        @include mobile-landscape {
-            @include point-4;
-        }
-        @include tablet {
-            @include point-3;
-        }
-        @include tablet-landscape {
-            @include point-5;
-        }
-        @media (width: 600px) {
-            @include point-6;
-        }
-        @include big-tablet-landscape {
-            @include point-7;
-        }
+        //top: 10%;
+        // @include point-2;
+        // @include mobile {
+        //     @include point-1;
+        // }
+        // @include mobile-landscape {
+        //     @include point-4;
+        // }
+        // @include tablet {
+        //     @include point-3;
+        // }
+        // @include tablet-landscape {
+        //     @include point-5;
+        // }
+        // @media (width: 600px) {
+        //     @include point-6;
+        // }
+        // @include big-tablet-landscape {
+        //     @include point-7;
+        // }
         // @include blackberry-z-30 {
         //     @include point-1;
         // }

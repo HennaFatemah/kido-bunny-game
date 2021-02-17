@@ -3,10 +3,8 @@ import Creator from '../components/Creator/Creator';
 import './Home.scss'
 import ClickMe from '../components/Home/ClickMe';
 import StartGame from '../components/Home/StartGame';
-import Background from '../assets/mainImages/close-barn-scenery-transparent.png';
+import Background from '../assets/mainImages/close-barn-scencery-division-with-burrows.png';
 import BackgroundAfter from '../assets/mainImages/open-barn-scenery.png';
-import Hole from '../assets/hole/burroh-bottom.png';
-import HoleBack from '../assets/hole/burroh-back.png';
 import Tractor from '../assets/mainImages/tractor-girl copy.png'
 class Home extends Component {
     state = {
@@ -35,63 +33,37 @@ class Home extends Component {
                     <button className="container__game container__game--zoom" onClick={this.zoomIn}>
                     {this.clickButton()}
                     </button>
-                    <div className="container__bunny-controller">
                         <div className="container__bunny-pop">
-                        <img className="container__hole-back-pic" src={HoleBack} />
-                        <img className="container__hole-pic" src={Hole} />
-                        <b className="container__hole">
-                            
-                            <span className="container__span1">
-
-                            </span>
-                        </b>
+                            <div className="container__hole">
+                                <span className="container__span1">
+                                </span>
+                            </div>
                         </div>
                         <div className="container__bunny-pop container__bunny-pop--two">
-                        <img className="container__hole-back-pic container__hole-back-pic--two" src={HoleBack} />
-                        <img className="container__hole-pic container__hole-pic--two" src={Hole} />
-                        <b className="container__hole container__hole--two">
-                            
-                            <span className="container__span1 container__span1--two">
-
-                            </span>
-                        </b>
+                            <div className="container__hole container__hole--two">
+                                <span className="container__span1 container__span1--two"></span>
+                            </div>
                         </div>
                         <div className="container__bunny-pop container__bunny-pop--three">
-                        <img className="container__hole-back-pic container__hole-back-pic--three" src={HoleBack} />
-                        <img className="container__hole-pic container__hole-pic--three" src={Hole} />
-                        <b className="container__hole container__hole--three">
-                            
-                            <span className="container__span1 container__span1--three">
-
-                            </span>
-                        </b>
+                            <div className="container__hole container__hole--three">
+                                <span className="container__span1 container__span1--three"></span>
+                            </div>
                         </div>
                         <div className="container__bunny-pop container__bunny-pop--four">
-                        <img className="container__hole-back-pic container__hole-back-pic--four" src={HoleBack} />
-                        <img className="container__hole-pic container__hole-pic--four" src={Hole} />
-                        <b className="container__hole container__hole--four">
-                            
-                            <span className="container__span1 container__span1--four">
-
-                            </span>
-                        </b>
+                            <div className="container__hole container__hole--four">
+                                <span className="container__span1 container__span1--four"></span>
+                            </div>
                         </div>
                         <div className="container__bunny-pop container__bunny-pop--five">
-                        <img className="container__hole-back-pic container__hole-back-pic--five" src={HoleBack} />
-                        <img className="container__hole-pic container__hole-pic--five" src={Hole} />
-                        <b className="container__hole container__hole--five">
-                            <span className="container__span1 container__span1--five"></span>
-                        </b>
+                            <div className="container__hole container__hole--five">
+                                <span className="container__span1 container__span1--five"></span>
+                            </div>
                         </div>
                         <div className="container__bunny-pop container__bunny-pop--six">
-                        <img className="container__hole-back-pic container__hole-back-pic--six" src={HoleBack} />
-                        <img className="container__hole-pic container__hole-pic--six" src={Hole} />
-                        <b className="container__hole container__hole--six">
-                            <span className="container__span1 container__span1--six"></span>
-                        </b>
+                            <div className="container__hole container__hole--six">
+                                <span className="container__span1 container__span1--six"></span>
+                            </div>
                         </div>
-                    </div>
-                    {/* <div className="container__clearfix"></div> */}
                 </div>
             </div>
         );

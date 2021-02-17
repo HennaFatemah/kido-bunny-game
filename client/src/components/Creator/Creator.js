@@ -4,7 +4,7 @@ import './Creator.scss'
 
 const Creator = () => {
     return (
-        <Link to="/about" className="creator">About The Creator</Link>
+        <Link to="/about" className="creator"><p className="creator__text">About The Creator</p></Link>
     );
 };
 

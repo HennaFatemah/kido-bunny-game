@@ -15,11 +15,13 @@ export default function AddGame() {
     const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
+    // const [showCorrect, setShowCorrect] = useState(false);
 	const [score, setScore] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
-			setScore(score + 1)
+			// {setScore(score + 1) === true ? setShowCorrect('correct') && setScore(score + 1) : setShowCorrect('incorrect') && setScore(score + 1)}
+            setScore(score + 1)
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -65,10 +67,11 @@ export default function AddGame() {
                                 </>
                             ))}
                         </div>
+                        {questions[currentQuestion].answerOptions.filter(answerOption => answerOption.isCorrect === true) ? <p>Correct</p> : <p>incorrect</p>}
                     </>
                 )}
             </div>
-            
+            {/* {showCorrect?<p className="add__back">Correct</p>:null} */}
             </section>
 	);
 }

@@ -13,7 +13,7 @@ const Share = () => {
                 hashtag="#camperstribe"
             >
                 <FacebookIcon
-                    size={35}
+                    size={28}
                     borderRadius={8}
                 />
             </FacebookShareButton>
@@ -23,7 +23,7 @@ const Share = () => {
                 hashtag="#camperstribe"
             >
                 <TwitterIcon
-                    size={35}
+                    size={28}
                     borderRadius={8}
                 />
             </TwitterShareButton>
@@ -32,7 +32,7 @@ const Share = () => {
                 separator=":: "
             >
                 <WhatsappIcon
-                    size={35}
+                    size={28}
                     borderRadius={8}
                 />
             </WhatsappShareButton>
@@ -42,7 +42,7 @@ const Share = () => {
                 separator=":: "
             >
                 <PinterestIcon
-                    size={35}
+                    size={28}
                     borderRadius={8}
                 />
             </PinterestShareButton>

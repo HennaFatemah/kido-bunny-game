@@ -11,27 +11,6 @@
     margin-left: -20vw;
     outline: none;
     margin-top: 5rem;
-    &__rider-up{
-        display: none;
-        width: 390px;
-        position: absolute;
-        left: 27vw;
-        top: 30vh;
-    }
-    &__rider-down{
-        display: none;
-        width: 390px;
-        position: absolute;
-        left: 27vw;
-        top: 30vh;
-    }
-    &__rider-main{
-        display: none;
-        width: 590px;
-        position: absolute;
-        left: 27vw;
-        top: 15vh;
-    }
     &__tile{
         @include cursor;
         display: flex;
