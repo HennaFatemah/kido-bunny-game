@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const StartGame = () => {
     return (
         <>
-        <Link className="start" to="/choosegame">Start New Game</Link>
+        <Link className="start" to="/choosegame">Start</Link>
         {/* <Link className="start" to="/readstory">Read A Story</Link> */}
         </>
     );

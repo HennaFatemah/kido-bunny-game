@@ -4,46 +4,46 @@
     @include buttonAnimate;
     @include cursor;
     position: absolute;
-    top: 60vh;
-    width: 15vw;
-    height: 7vw;
-    left: 20vw;
-    @media (width: 800px) {
-        left: 5vw;
-    }
-    @media (width: 384px) {
-        left: 18.5vw;
-    }
-    @media (width: 412px) {
-        left: 17vw;
-    }
-    @media (width: 600px) {
-        left: 9vw;
-    }
-    @media (width: 320px) {
-        left: 24vw;
-    }
-    @media (width: 480px) {
-        left: 14vw;
-    }
-    @media (width: 768px) {
-        left: 6vw;
-    }
-    @media (width: 411px) {
-        left: 17vw;
-    }
-    @media (width: 414px) {
-        left: 17vw;
-    }
-    @media (width: 1024px) {
-        left: 2.5vw;
-    }
-    @media (width: 540px) {
-        left: 11.5vw;
-    }
-    @media (width: 280px) {
-        left: 29vw;
-    }
+    top: calc((100vh - (calc(3rem + (3 - 2) * (100vh - 280px) / (1440 - 280)))) / 2);
+    width: calc(6.5rem + (6.5 - 4) * (100vh - 280px) / (1440 - 280));
+    height: calc(3rem + (3 - 2) * (100vh - 280px) / (1440 - 280));
+    left: calc((100vw - (calc(6.5rem + (6.5 - 4) * (100vh - 280px) / (1440 - 280)))) / 2);
+    // @media (width: 800px) {
+    //     left: 5vw;
+    // }
+    // @media (width: 384px) {
+    //     left: 18.5vw;
+    // }
+    // @media (width: 412px) {
+    //     left: 17vw;
+    // }
+    // @media (width: 600px) {
+    //     left: 9vw;
+    // }
+    // @media (width: 320px) {
+    //     left: 24vw;
+    // }
+    // @media (width: 480px) {
+    //     left: 14vw;
+    // }
+    // @media (width: 768px) {
+    //     left: 6vw;
+    // }
+    // @media (width: 411px) {
+    //     left: 17vw;
+    // }
+    // @media (width: 414px) {
+    //     left: 17vw;
+    // }
+    // @media (width: 1024px) {
+    //     left: 2.5vw;
+    // }
+    // @media (width: 540px) {
+    //     left: 11.5vw;
+    // }
+    // @media (width: 280px) {
+    //     left: 29vw;
+    // }
     // @media only screen and (device-width: 640px) and (device-height: 360px) and (-webkit-min-device-pixel-ratio: 2) {
     //     width: 9.5rem;
     //     height: 5rem;
@@ -238,7 +238,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: calc(1.5rem + (1.5 - 1) * (100vh - 280px) / (1440 - 280));
     font-weight: bold;
     text-decoration: none;
     color: white;
