@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './ExerciseGame.scss'
-import Marshal from '../../../assets/pups/new-marshal-paw-patrol-png.png';
-import MarshalHop from '../../../assets/pups/MARSHAL-HOP.png';
-import MarshalSquat from '../../../assets/pups/squods-marshall.png';
-import MarshalTongue from '../../../assets/pups/marshal-tongue.png';
+import Marshal from '../../../assets/pups/bunny-toughy.png';
+import MarshalHop from '../../../assets/pups/bunny-toughy.png';
+import MarshalSquat from '../../../assets/pups/bunny-toughy.png';
+import MarshalTongue from '../../../assets/pups/bunny-toughy.png';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
 import {questions} from './ExerciseGameData';
 import { useHistory } from "react-router-dom";
+import BackArrow from '../../../assets/icons/back-arrow.svg';
 
 export default function ExerciseGame() {
     const history = useHistory();
@@ -32,6 +33,10 @@ export default function ExerciseGame() {
 
 	return (
         <section className='exercise'>
+            <div className="exercise__back-container">
+            <button className="exercise__back" onClick={() => history.push("/choosegame")}><img src={BackArrow} alt="Sitting pup called Skye" className="exercise__back-pic" />Go Back</button>
+                        <button className="exercise__back" onClick={() => history.push("/")}><img src={BackArrow} alt="Sitting pup called Skye" className="exercise__back-pic" /><img src={BackArrow} alt="Sitting pup called Skye" className="exercise__back-pic" />Home</button>
+                        </div>
             <div className='exercise__card'>
                 {showScore ? (
                     <>
@@ -55,8 +60,6 @@ export default function ExerciseGame() {
                                 <button className="exercise__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                             ))}
                         </div>
-                        <button className="choose__back" onClick={() => history.push("/choosegame")}>Go Back</button>
-                        <button className="choose__back" onClick={() => history.push("/")}>Home</button>
                     </>
                 )}
             </div>

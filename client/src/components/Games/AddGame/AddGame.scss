@@ -48,6 +48,19 @@
         @media (width: 768px) and (height: 1024px) {
             font-size: 2.5vh;
         }
+        &--correct{
+            animation: hide 0.5s ease-in forwards .1s;
+            @keyframes hide {
+                0% {
+                    opacity: 1;
+                    display: block;
+                }
+                100% {
+                    opacity: 0;
+                    display: none;
+                }
+            }
+        }
     }
     &__back-pic{
         width: 3.5vh;

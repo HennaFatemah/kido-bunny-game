@@ -437,8 +437,6 @@
             }
         }
         &--four {
-            // bottom: 11vw;
-            // left: 50vw;
             transform: rotate(-4deg);
             //LG Optimus landscape
             @media(min-width: 640px) and (min-height: 384px) {
@@ -582,80 +580,157 @@
             }
         }
         &--five{
-            bottom: 27vw;
-            left: 62vw;
-            transform: rotate(-2deg);
-            @media(width: 375px) and (height:812px){
-                bottom: 35vw;
-            }
-            @media(width: 280px) and (height:653px){
-                bottom: 45vw;
-            }
-            @media(max-width: 640px) and (max-height:360px) {
-                left: 45vw;
-                bottom: 8vw;
-            }
-            @media(width: 640px) and (height:360px) {
-                left: 45vw;
-                bottom: 8vw;
-            }
+            transform: rotate(10deg);
+            width: 45vw;
+            height: 30vh;
+            //Nexus 5X landscape
             @media(max-width: 732px) and (max-height: 412px) {
-                bottom: 8vw;
-                left: 45vw;
+                left: 60.5vw;
+                bottom: 17.8vh;
             }
-            @media(width: 960px) and (height: 600px) {
-                bottom: 8vw;
-                left: 45vw;
+            //Nexus 5x portrait
+            @media(max-width: 412px) and (max-height: 732px) {
+                bottom: 16vh;
+                left: 74vw;
             }
-            @media(width: 640px) and (height:384px) {
-                left: 45vw;
-                bottom: 6vw;
+            //Nexus 5x portrait
+            @media(max-width: 480px) and (max-height: 320px) {
+                bottom: 6vh;
+                left: 51vw;
             }
-            @media(width: 1280px) and (height:800px) {
-                left: 45vw;
-                bottom: 6vw;
+            //Nexus 7 portrait
+            @media(width: 600px) and (height: 960px) {
+                bottom: 5vh;
+                left: 55vw;
             }
-            @media(width: 533px) and (height: 320px) {
-                bottom: 6vw;
+            //Ipad mini portrait
+            @media(min-width: 768px) and (min-height: 1024px) {
+                left: 52vw;
+                bottom: 5vh;
             }
+            //Ipad mini landscape
+            @media(min-width: 1024px) and (min-height: 768px) {
+                left: 51vw;
+                bottom: 6.5vh;
+            }
+            // //Kindle fire landscape
+            // @media(width: 1280px) and (height: 800px) {
+            //     left: 59.5vw;
+            //     bottom: 21.5vh;
+            //     transform: rotate(-2deg);
+            // }
+            //Nokia N9 landscape
             @media(width: 854px) and (height: 480px) {
-                bottom: 8vw;
-                left: 45vw;
+                left: 51vw;
+                bottom: 7.5vh;
             }
-            @media(width: 1024px) and (height: 768px) {
-                bottom: 6vw;
-                left: 45vw;
+            //Nokia N9 portrait
+            @media(width: 480px) and (height: 854px) {
+                left: 52vw;
+                bottom: 5.2vh;
             }
-            @media(width: 480px) and (height: 320px) {
-                bottom: 3vw;
-            }
+            //Pixel 2 XL Landscape
             @media(width: 823px) and (height: 411px) {
-                bottom: 15vw;
-                left: 45vw;
+                left: 52vw;
+                bottom: 8vh;
             }
+            //Iphone 6/7/8 landscape
+            @media(width: 667px) and (height: 375px) {
+                left: 52vw;
+                bottom: 8vh;
+            }
+            //Iphone 6/7/8 Plus landscape
             @media(width: 736px) and (height: 414px) {
-                bottom: 8vw;
-                left: 45vw;
+                left: 52vw;
+                bottom: 8vh;
             }
+            //Iphone X portrait
+            @media(width: 375px) and (height: 812px) {
+                bottom: 5.5vh;
+                left: 52.5vw;
+            }
+            //Iphone X landscape
             @media(width: 812px) and (height: 375px) {
-                bottom: 17vw;
-                left: 45vw;
-            }
-            @media(min-width: 1366px) and (min-height: 1024px) {
-                left: 45vw;
+                left: 52vw;
                 bottom: 9vh;
             }
+            //LG Optimus portrait
+            @media(width: 384px) and (height: 640px) {
+                left: 76vw;
+                bottom: 16vh;
+            }
+            //LG Optimus landscape
+            @media(min-width: 640px) and (min-height: 384px) {
+                left: 59vw;
+                bottom: 23.5vh;
+                transform: rotate(-2deg);
+            }
+            //laptop with HiDPI
+            @media(min-width: 1280px) and (min-height: 800px) {
+                left: 59vw;
+                bottom: 21.5vh;
+                transform: rotate(-2deg);
+            }
+            //laptop with touch
+            @media(width: 1280px) and (height: 950px) {
+                bottom: 18vh;
+                left: 59.5vw;
+            }
+            //Pixel 2 XL portrait
+            @media(width: 411px) and (height: 823px) {
+                bottom: 5vh;
+                left: 53vw;
+            }
+            //Iphone 6/7/8 Plus portrait
+            @media(width: 414px) and (height: 736px) {
+                bottom: 5.5vh;
+                left: 52.5vw;
+            }
+            //Ipad pro landscape
+            @media(width: 1366px) and (height: 1024px) {
+                left: 52vw;
+                bottom: 6vh;
+            }
+            //Ipad pro portrait
+            @media(width: 1024px) and (height: 1366px) {
+                bottom: 5.5vh;
+                left: 52.5vw;
+            }
+            //Surface Duo landscape
             @media(width: 720px) and (height: 540px) {
-                left: 44vw;
-                bottom: 7vh;
+                left: 50.5vw;
+                bottom: 6vh;
             }
+            //Surface Duo portrait
+            @media(width: 540px) and (height: 720px) {
+                bottom: 5.5vh;
+                left: 51vw;
+            }
+            //Galaxy fold portrait
+            @media(width: 280px) and (height: 653px) {
+                bottom: 5.5vh;
+                left: 56vw;
+            }
+            //Galaxy fold landscape
             @media(width: 653px) and (height: 280px) {
-                left: 50vw;
-                bottom: 55vh;
+                left: 52vw;
+                bottom: 11vh;
             }
-            @media(min-width: 1280px) and (min-height: 900px) {
-                left: 45vw;
-                bottom: 9vh;
+            //Galaxy portrait
+            @media(width: 360px) and (height:640px) {
+                left: 76vw;
+                bottom: 16vh;
+            }
+            //Galaxy landscape
+            @media(width: 640px) and (height:360px) {
+                left: 59vw;
+                bottom: 23.5vh;
+                transform: rotate(-2deg);
+            }
+            //Kindle fire portrait
+            @media(width: 800px) and (height: 1280px) {
+                left: 71vw;
+                bottom: 17.5vh;
             }
         }
         &--six{
@@ -854,38 +929,6 @@
                 border-bottom-right-radius: 12%;
             }
         }
-        &--five{
-            left: 7vw;
-            width: 4rem;
-            bottom: .5vw;
-            @media (width: 800px) {
-                bottom: 1vw;
-                width: 5rem;
-            }
-            @media (width: 600px) {
-                bottom: 1vw;
-            }
-            @media(width: 320px) and (height:533px){
-                bottom: 1vw;
-            }
-            @media(width: 768px) and (height:1024px){
-                width: 7rem;
-                bottom: 0;
-            }
-            @media(width: 320px) and (height:568px){
-                bottom: 1vw;
-            }
-            @media(width: 540px) and (height:720px){
-                bottom: 0.7vw;
-                left: 5.5vw;
-            }
-            @media(width: 280px) and(height: 653px) {
-                bottom: 1vw;
-            }
-            @media(width: 1024px) and (height:1366px){
-                width: 10vw;
-            }
-        }
         &--six{
             left: 7vw;
             width: 4rem;
@@ -1044,7 +1087,6 @@
         &--four{
             background-image: url('../assets/pups/bunny-venger.png');
             animation: flippyMove 7s infinite linear;
-            //background-size: 50%;
             bottom: -14vh;
             //Kindle fire landscape
             @media(width: 1280px) and (height: 800px) {
@@ -1130,45 +1172,86 @@
             }
         }
         &--five{
-            display: none;
             background-image: url('../assets/pups/bunny-toughy.png');
             animation: toughyMove 7s infinite linear;
-            width: 14.5rem;
-            background-size: 22%;
-            left: -10px;
-            bottom: -15vw;
-            @media (width: 800px) {
-                bottom: -7vw;
-                background-size: 32%;
+            bottom: -25vh;
+            background-size: 30%;
+            //Galaxyy landscape
+            @media(min-width: 640px) and (min-height: 360px) {
+                bottom: -20vh;
+                background-size: 15%;
             }
-            @media (width: 600px) {
-                bottom: -7vw;
-                background-size: 25%;
+            //Kindle fire portrait
+            @media(width: 800px) and (height: 1280px) {
+                bottom: -30vh;
+                background-size: 30%;
             }
-            @media(width: 480px) and (height:854px){
-                background-size: 25%;
-                left: -3vw;
-                bottom: -12vw;
+            // //Kindle fire landscape
+            // @media(width: 1280px) and (height: 800px) {
+            //     bottom: -12vh;
+            // }
+            // //LG Optimus landscape
+            // @media(min-width: 640px) and (min-height: 384px) {
+            // }
+            // //Ipad mini portrait
+            // @media(min-width: 768px) and (min-height: 1024px) {
+            //     bottom: -16vh;
+            // }
+            // //Nexus 5X portrait
+            // @media(max-width: 412px) and (max-height: 732px) {
+            //     bottom: -17vh;
+            // }
+            // //LG Optimus portrait
+            // @media(max-width: 384px) and (max-height: 640px) {
+            //     bottom: -17vh;
+            // }
+            // //Nexus 7 portrait
+            // @media(width: 600px) and (height: 960px) {
+            // }
+            //Nexus 5 landscape
+            @media(max-width: 640px) and (max-height: 360px) {
+                background-size: 15%;
             }
-            @media(width: 768px) and (height:1024px){
-                bottom: -5vw;
-                background-size: 40%;
-            }
-            @media(width: 320px) and (height:480px){
-                bottom: -18vw;
-            }
-            @media(width: 1024px) and (height:1366px){
-                bottom: -3vw;
-                background-size: 48%;
-                left: 0vw;
-            }
-            @media(width: 540px) and (height:720px){
-                bottom: -10vw;
-                background-size: 25%;
-            }
-            @media(width: 280px) and(height: 653px) {
-                bottom: -20vw;
-            }
+            // //Kindle fire portrait
+            // @media(width: 800px) and (height: 1280px) {
+            //     bottom: -15vh;
+            // }
+            // //Galaxy landscape
+            // @media(width: 640px) and (height: 360px) {
+            // }
+            // //Iphone 5/SE portrait
+            // @media(width: 320px) and (height: 568px) {
+            //     bottom: -15vh;
+            // }
+            // //Iphone 6/7/8 landscape
+            // @media(width: 667px) and (height: 375px) {
+            // }
+            // //Iphone X landscape
+            // @media(width: 812px) and (height: 375px) {
+            // }
+            // //Ipad pro landscape
+            // @media(width: 1366px) and (height: 1024px) {
+            // }
+            // //Ipad pro portrait
+            // @media(width: 1024px) and (height: 1366px) {
+            //     bottom: -12vh;
+            // }
+            // //Surface Duo landscape
+            // @media(width: 720px) and (height: 540px) {
+            //     bottom: -12vh;
+            // }
+            // //Galaxy fold portrait
+            // @media(width: 280px) and (height: 653px) {
+            //     bottom: -14vh;
+            // }
+            // //Galaxy fold landscape
+            // @media(width: 653px) and (height: 280px) {
+            //     bottom: -9vh;
+            // }
+            // //Nokia N9 portrait
+            // @media(width: 480px) and (height: 854px) {
+            //     bottom: -17vh;
+            // }
         }
         &--six{
             display: none;

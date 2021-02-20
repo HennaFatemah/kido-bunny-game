@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './SubtractGame.scss'
 import Zuma from '../../../assets/pups/bunny-flippy-angle-2.png';
-import ZumaOne from '../../../assets/pups/zuma-1.png';
+import FlippyStraight from '../../../assets/pups/bunny-fllipy.png';
 import ZumaTwo from '../../../assets/pups/zuma-2.png';
 import ZumaSit from '../../../assets/pups/zuma-paw-patrol-png-41900.png';
 import Bubbles from '../../../assets/icons/bubble.png'
 import {questions} from './SubtractGameData';
 import SeaPortion from '../../../assets/mainImages/sea-portion.png';
 import { useHistory } from "react-router-dom";
+import BackArrow from '../../../assets/icons/back-arrow.svg';
 
 export default function SubtractGame() {
     const history = useHistory();
@@ -33,21 +34,22 @@ export default function SubtractGame() {
 
 	return (
         <section className='subtract'>
-            <div className="subtract__front-bg">
-                <img className="subtract__sea-portion" src={SeaPortion} alt="portion of the sea"/>
-            </div>
+            <div className="add__back-container">
+            <button className="subtract__back" onClick={() => history.push("/choosegame")}><img src={BackArrow} alt="Sitting pup called Skye" className="subtract__back-pic" />Go Back</button>
+                        <button className="subtract__back" onClick={() => history.push("/")}><img src={BackArrow} alt="Sitting pup called Skye" className="subtract__back-pic" /><img src={BackArrow} alt="Sitting pup called Skye" className="subtract__back-pic" />Home</button>
+                        </div>
             <div className='subtract__card'>
                 {showScore ? (
                     <>
                     <div className='subtract__score-section'>
                         <p>You scored {score} out of {questions.length}</p>
                     </div>
-                    <img src={ZumaSit} alt="Sitting pup called Skye" className="subtract__pic--score" />
+                    <img src={FlippyStraight} alt="Sitting pup called Skye" className="subtract__pic--score" />
                     <button className="subtract__btn" onClick={refreshPage}>Start Again</button>
                     </>
                 ) : (
                     <>
-                        {questions[currentQuestion].id === 1 ? <><img src={Bubbles} alt="Bubbles" className="subtract__bubbles subtract__bubbles--one" /><img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--one" /></>: questions[currentQuestion].id === 2 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--two" />: questions[currentQuestion].id === 3 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--three" />: questions[currentQuestion].id === 4 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--four" />: questions[currentQuestion].id === 5 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--five" />: questions[currentQuestion].id === 6 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--six" />: questions[currentQuestion].id === 7 ? <img src={ZumaTwo} alt="Flying pup called Skye" className="subtract__pic subtract__pic--seven" />: questions[currentQuestion].id === 8 ? <img src={ZumaOne} alt="Flying pup called Skye" className="subtract__pic subtract__pic--eight" />: questions[currentQuestion].id === 9 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--nine" />: questions[currentQuestion].id === 10 ? <img src={Zuma} alt="Sitting pup called Skye" className="subtract__pic subtract__pic--ten" />: null}
+                        {questions[currentQuestion].id === 1 ? <><img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--one" /></>: questions[currentQuestion].id === 2 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--two" />: questions[currentQuestion].id === 3 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--three" />: questions[currentQuestion].id === 4 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--four" />: questions[currentQuestion].id === 5 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--five" />: questions[currentQuestion].id === 6 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--six" />: questions[currentQuestion].id === 7 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--seven" />: questions[currentQuestion].id === 8 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--eight" />: questions[currentQuestion].id === 9 ? <img src={Zuma} alt="Flying pup called Skye" className="subtract__pic subtract__pic--nine" />: questions[currentQuestion].id === 10 ? <img src={FlippyStraight} alt="Sitting pup called Skye" className="subtract__pic subtract__pic--ten" />: null}
                         <div className='subtract__question-section'>
                             <div className='subtract__question-count'>
                                 <span>Question {currentQuestion + 1}</span>/{questions.length}
@@ -59,11 +61,11 @@ export default function SubtractGame() {
                                 <button className="subtract__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                             ))}
                         </div>
-                        <button className="choose__back" onClick={() => history.push("/choosegame")}>Go Back</button>
-                        <button className="choose__back" onClick={() => history.push("/")}>Home</button>
                     </>
                 )}
             </div>
             </section>
 	);
 }
+
+{/* <img src={Bubbles} alt="Bubbles" className="subtract__bubbles subtract__bubbles--one" /> */}
