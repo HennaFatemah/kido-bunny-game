@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-
+import './Contact.scss'
 
 export default function ContactUs() {
 
@@ -17,14 +17,13 @@ function sendEmail(e) {
     }
 
     return (
-    <form className="contact-form" onSubmit={sendEmail}>
-        Name
-        <input name="message" placeholder="Name"/>
-        Contact
-        <input name="message" placeholder="Contact"/>
-        Message
-        <textarea name="message" placeholder="Message"/>
-        <input type="submit" value="Send" />
+    <form className="contact__card" onSubmit={sendEmail}>
+        <h2 className="contact__label">Contact The Creator</h2>
+        <label className="contact__label contact__label--name">Name<input className="contact__main" name="message" placeholder="Full Name"/></label>
+        <label className="contact__label">Contact<input className="contact__main" name="message" placeholder="Email"/></label>
+        <label className="contact__label contact__label--message">Message<textarea className="contact__main" name="message" placeholder="Type your review or message here"/></label>
+        
+        <input  className="contact__btn" type="submit" value="Send" />
     </form>
     );
 }

@@ -32,6 +32,7 @@ const ContactDetails = ({showContactWindow, setShowContactWindow}) => {
             {showContactWindow? 
             <div className="contact__form-container" ref={contactRef} onClick = {closeContact}>
                 <animated.div style={animation}>
+                <button className="contact__cancel" onClick={()=> setShowContactWindow(prev=>!prev)}>✖︎</button>
                     <ContactUs/>
                 </animated.div>
             </div>: null}
