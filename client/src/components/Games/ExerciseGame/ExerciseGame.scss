@@ -29,6 +29,7 @@
         font-size: 2.5vh;
         width: 30vw;
         padding: 0;
+        outline: none;
         @media (min-width: 640px) and (min-height: 360px) {
             font-size: 2.5vw;
         }
@@ -105,540 +106,82 @@
         }
     }
     &__pic{
-        width: 35vw;
-        @media (min-width: 640px) and (min-height: 360px) {
-            width: 15vw;
-        }
-        @media (width: 533px) and (height: 320px) {
-            width: 15vw;
-        }
-        @media (width: 568px) and (height: 320px) {
-            width: 15vw;
-        }
-        @media (width: 480px) and (height: 320px) {
-            width: 15vw;
-        }
-        @media (width: 653px) and (height: 280px) {
-            width: 15vw;
-        }
-        @media (width: 800px) and (height: 1280px) {
-            width: 35vw;
-        }
-        @media (width: 768px) and (height: 1024px) {
-            width: 35vw;
-        }
+        width: 15vw;
         position: absolute;
-        z-index: -1;
-        transition: 6s;
+        z-index: 0;
+        transition: 2s;
+        top: 53vh;
+        left: 20vw;
         &--one{
-            @media (min-width: 640px) and (min-height: 360px) {
-                width: 10vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                width: 10vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                width: 25vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                width: 25vw;
-            }
-            top: 0;
-            left: 1vw;
-            transition: 6s;
-            animation: Appear 1.2s linear infinite;
-            @keyframes Appear {
+            animation: MoveFrontBack 2s linear infinite;
+            @keyframes MoveFrontBack {
             0%, 100% {
-                transform: translateY(0);
+                transform: translateX(0);
             }
             50% {
-                transform: translateY(4px);
+                transform: translateX(-95px);
             }
             }
         }
         &--two{
-            top: 10vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
-            transition: 6s;
-            animation: Appear 1.2s linear infinite;
-            @keyframes Appear {
+            animation: MoveUpDown 1.5s linear infinite;
+            @keyframes MoveUpDown {
             0%, 100% {
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(4px);
+                transform: translateY(-95px);
             }
-            }
-        }
-        &--twos{
-            top: 10vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
-            transition: 6s;
-            animation: Appears 1.2s linear infinite;
-            @keyframes Appears {
-                0%, 100% {
-                    transform: translateY(0);
-                }
-                50% {
-                    transform: translateY(4px);
-                }
             }
         }
         &--three{
-            top: 20vh;
-            left: 5vw;
-            transition: 6s;
-            animation: Appear 1.2s linear infinite;
-            @keyframes Appear {
+            animation: Shake 1.5s linear infinite;
+            @keyframes Shake {
             0%, 100% {
-                transform: translateY(0);
+                transform: rotate(-15deg);
             }
             50% {
-                transform: translateY(4px);
+                transform: rotate(15deg);
             }
-            }
-        }
-        &--threes{
-            top: 20vh;
-            left: 5vw;
-            transition: 6s;
-            animation: Appears 1.2s linear infinite;
-            @keyframes Appears {
-                0%, 100% {
-                    transform: translateY(0);
-                }
-                50% {
-                    transform: translateY(4px);
-                }
             }
         }
         &--four{
-            top: 30vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
-            transition: 6s;
-            animation: Appear 1.2s linear infinite;
-            @keyframes Appear {
+            animation: MoveUpDown 1.5s linear infinite;
+            @keyframes MoveUpDown {
             0%, 100% {
-                
                 transform: translateY(0);
             }
             50% {
-                
-                transform: translateY(4px);
+                transform: translateY(-95px);
             }
-            }
-        }
-        &--fours{
-            top: 30vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
-            transition: 6s;
-            animation: Appears 1.2s linear infinite;
-            @keyframes Appears {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
             }
         }
         &--five{
-            top: 40vh;
-            left: 5vw;
-            transition: 6s;
-            animation: Appear 1.2s linear infinite;
-            @keyframes Appear {
+            animation: Squat 1.5s linear infinite;
+            @keyframes Squat {
             0%, 100% {
-                
-                transform: translateY(0);
+                transform: rotate(0);
             }
             50% {
-                
-                transform: translateY(4px);
+                transform: rotate(-9deg);
             }
-            }
-        }
-        &--fives{
-            top: 40vh;
-            left: 5vw;
-            transition: 6s;
-            animation: Appears 1.2s linear infinite;
-            @keyframes Appears {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--six{
-            top: 50vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
-            transition: 6s;
-            animation: Tilt 1.2s linear infinite;
-            @keyframes Tilt {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--sixes{
-            top: 50vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
-            transition: 6s;
-            animation: Tilts 1.2s linear infinite;
-            @keyframes Tilts {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--seven{
-            top: 60vh;
-            left: 5vw;
-            transition: 6s;
-            animation: Seven 1.2s linear infinite;
-            @keyframes Seven {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--sevens{
-            top: 60vh;
-            left: 5vw;
-            transition: 6s;
-            animation: Sevens 1.2s linear infinite;
-            @keyframes Sevens {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--eight{
-            top: 70vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
-            transition: 6s;
-            animation: Eight 1.2s linear infinite;
-            @keyframes Eight {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--eights{
-            top: 70vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
-            transition: 6s;
-            animation: Eights 1.2s linear infinite;
-            @keyframes Eights {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--nine{
-            top: 80vh;
-            left: 5vw;
-            transition: 6s;
-            animation: Nine 1.2s linear infinite;
-            @keyframes Nine {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--nines{
-            top: 80vh;
-            left: 5vw;
-            transition: 6s;
-            animation: Nines 1.2s linear infinite;
-            @keyframes Nines {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--ten{
-            bottom: 0;
-            left: 20vw;
-            transition: 6s;
-            animation: Ten 1.2s linear infinite;
-            @keyframes Ten {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
-            }
-        }
-        &--tens{
-            top: 0;
-            left: 20vw;
-            transition: 6s;
-            animation: Tens 1.2s linear infinite;
-            @keyframes Tens {
-                0%, 100% {
-                    
-                    transform: translateY(0);
-                }
-                50% {
-                    
-                    transform: translateY(4px);
-                }
             }
         }
         &--score{
             position: absolute;
-            width: 30vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                width: 10vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                width: 10vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                width: 30vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                width: 30vw;
-            }
-            bottom: 0;
+            width: 15vw;
+            top: 53vh;
             left: 20vw;
+            transition: 2s;
+            animation: Spin 10s;
+            @keyframes Spin {
+            0%, 100% {
+                transform: rotate(0);
+            }
+            50% {
+                transform: rotate(720deg);
+            }
+            }
 
         }
     }

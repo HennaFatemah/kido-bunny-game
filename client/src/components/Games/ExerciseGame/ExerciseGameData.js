@@ -1,9 +1,3 @@
-const numberOne = Math.abs(Math.round(Math.random() * 5));
-const numberTwo = Math.abs(numberOne);
-const correctAnswerOne = numberOne + numberTwo;
-const optionOne = correctAnswerOne + 2;
-const optionTwo = correctAnswerOne + 1;
-const optionThree = correctAnswerOne + 3;
 export const questions = [
     {
         id: 1,
