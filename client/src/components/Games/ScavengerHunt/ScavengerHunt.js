@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './ScavengerHunt.scss'
-import Marshal from '../../../assets/pups/new-marshal-paw-patrol-png.png';
+import Marshal from '../../../assets/pups/bunny-venger.png';
 import MarshalHop from '../../../assets/pups/MARSHAL-HOP.png';
 import MarshalSquat from '../../../assets/pups/squods-marshall.png';
 import MarshalTongue from '../../../assets/pups/marshal-tongue.png';
+import BackArrow from '../../../assets/icons/back-arrow.svg';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
 import {questions} from './ScavengerHuntData';
 import { useHistory } from "react-router-dom";
@@ -32,6 +33,11 @@ export default function ScavengerHunt() {
 
 	return (
         <section className='hunt'>
+            <div className="hunt__back-container">
+            <button className="hunt__back" onClick={() => history.push("/choosegame")}><img src={BackArrow} alt="Sitting pup called Skye" className="hunt__back-pic" />Go Back</button>
+                        <button className="hunt__back" onClick={() => history.push("/")}><img src={BackArrow} alt="Sitting pup called Skye" className="hunt__back-pic" /><img src={BackArrow} alt="Sitting pup called Skye" className="hunt__back-pic" />Home</button>
+                        </div>
+            <div className="hunt__bg">
             <div className='hunt__card'>
                 {showScore ? (
                     <>
@@ -55,10 +61,9 @@ export default function ScavengerHunt() {
                                 <button className="hunt__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                             ))}
                         </div>
-                        <button className="choose__back" onClick={() => history.push("/choosegame")}>Go Back</button>
-                        <button className="choose__back" onClick={() => history.push("/")}>Home</button>
                     </>
                 )}
+            </div>
             </div>
             </section>
 	);

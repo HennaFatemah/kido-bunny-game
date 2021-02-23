@@ -39,6 +39,7 @@ export const questions = [
             { answerText: `${numberThree + numberFour}`, isCorrect: true},
             { answerText: `${numberThree + numberFour + 2}`, isCorrect: false},
         ],
+        correctAnswer: `Correct answer for question 1 is: ${numberOne + numberTwo}`
     },
     {
         id: 3,
@@ -49,6 +50,7 @@ export const questions = [
             { answerText: `${numberFive + numberSix + 1}`, isCorrect: false},
             { answerText: `${numberFive + numberSix + 2}`, isCorrect: false},
         ],
+        correctAnswer: `Correct answer for question 2 is: ${numberThree + numberFour}`
     },
     {
         id: 4,
@@ -59,6 +61,7 @@ export const questions = [
             { answerText: `${numberSeven + numberEight + 3}`, isCorrect: false},
             { answerText: `${numberSeven + numberEight}`, isCorrect: true},
         ],
+        correctAnswer: `Correct answer for question 3 is: ${numberFive + numberSix}`
     },
     {
         id: 5,
@@ -69,6 +72,7 @@ export const questions = [
             { answerText: `${numberNine + numberTen}`, isCorrect: true},
             { answerText: `${numberNine + numberTen + 5}`, isCorrect: false},
         ],
+        correctAnswer: `Correct answer for question 4 is: ${numberSeven + numberEight}`
     },
     {
         id: 6,
@@ -79,6 +83,7 @@ export const questions = [
             { answerText: `${numberEleven + numberTwelve}`, isCorrect: true},
             { answerText: `${numberEleven + numberTwelve + 3}`, isCorrect: false},
         ],
+        correctAnswer: `Correct answer for question 5 is: ${numberNine + numberTen}`
     },
     {
         id: 7,
@@ -89,6 +94,7 @@ export const questions = [
             { answerText: `${numberThirteen + numberFourteen + 3}`, isCorrect: false},
             { answerText: `${numberThirteen + numberFourteen + 7}`, isCorrect: false},
         ],
+        correctAnswer: `Correct answer for question 6 is: ${numberEleven + numberTwelve}`
     },
     {
         id: 8,
@@ -99,6 +105,7 @@ export const questions = [
             { answerText: `${numberFifteen + numberSixteen + 3}`, isCorrect: false},
             { answerText: `${numberFifteen + numberSixteen + 4}`, isCorrect: false},
         ],
+        correctAnswer: `Correct answer for question 7 is: ${numberThirteen + numberFourteen}`
     },
     {
         id: 9,
@@ -109,6 +116,7 @@ export const questions = [
             { answerText: `${numberSeventeen + numberEighteen + 1}`, isCorrect: false},
             { answerText: `${numberSeventeen + numberEighteen + 3}`, isCorrect: false},
         ],
+        correctAnswer: `Correct answer for question 8 is: ${numberFifteen + numberSixteen}`
     },
     {
         id: 10,
@@ -119,5 +127,7 @@ export const questions = [
             { answerText: `${numberNineteen + numberTwenty + 3}`, isCorrect: false },
             { answerText: `${numberNineteen + numberTwenty + 2}`, isCorrect: false },
         ],
+        correctAnswer: `Correct answer for question 9 is: ${numberSeventeen + numberEighteen}`,
+        correctAnswerTen: `Correct answer for question 10 is: ${numberNineteen + numberTwenty}`
     }
 ];

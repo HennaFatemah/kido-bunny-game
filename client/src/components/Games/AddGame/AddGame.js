@@ -15,6 +15,7 @@ export default function AddGame() {
     const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
+    const [showAnswer, setShowAnswer] = useState(false);
 	const [score, setScore] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
@@ -22,6 +23,7 @@ export default function AddGame() {
             setScore(score + 1)
 		}
 
+        setShowAnswer('answer')
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < questions.length) {
 			setCurrentQuestion(nextQuestion);
@@ -48,6 +50,7 @@ export default function AddGame() {
                     </div>
                     <img src={SkyeHappy} alt="Sitting pup called Skye" className="add__pic--score" />
                     <button className="add__btn" onClick={refreshPage}>Start Again</button>
+                    <p>{questions[9].correctAnswerTen}</p>
                     </>
                 ) : (
                     <>
@@ -64,6 +67,7 @@ export default function AddGame() {
                                 <button className="add__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                                 </>
                             ))}
+                            {showAnswer ? <p>{questions[currentQuestion].correctAnswer}</p>:null}
                         </div>
                     </>
                 )}
