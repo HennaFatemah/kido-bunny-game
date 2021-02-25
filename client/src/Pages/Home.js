@@ -5,7 +5,13 @@ import ClickMe from '../components/Home/ClickMe';
 import StartGame from '../components/Home/StartGame';
 import Background from '../assets/mainImages/close-barn-scencery-division-with-burrows.png';
 import BackgroundAfter from '../assets/mainImages/open-barn-scenery.png';
-import Tractor from '../assets/mainImages/tractor-girl copy.png'
+import Tractor from '../assets/mainImages/tractor-girl copy.png';
+import {Howl, Howler} from "howler";
+import Audio from "../assets/sounds/buttons.mp3";
+
+const audioClip = [
+    {sound: Audio, label:<ClickMe/>}
+]
 class Home extends Component {
     state = {
         scale: 1
@@ -14,12 +20,31 @@ class Home extends Component {
         return this.state.scale === 2.5 ? BackgroundAfter : Background;
     }
     clickButton = () => {
-        return this.state.scale === 2.5 ? <StartGame/> : <ClickMe/>
+        return this.state.scale === 2.5 ? <StartGame/> : this.renderButtonAndSound()
     }
     zoomIn = () => {
         this.setState({scale: 2.5});
     }
+
+    soundPlay = (src) =>{
+        const sound = new Howl({
+            src 
+        })
+            sound.play();
+    }
+
+    renderButtonAndSound = () =>{
+        return audioClip.map((soundObj, index) =>{
+            return(
+            <button className="container__game container__game--zoom" key={index} onClick={() => this.soundPlay(soundObj.sound)}>
+                    {soundObj.label}
+            </button>
+                    )
+                })
+            }
+
     render() {
+        Howler.volume(1.0)
         return (
             <div className="container">
                 <Creator/>
@@ -31,7 +56,7 @@ class Home extends Component {
                 style={{ 'backgroundImage': `url(${this.backgroundState()})`, 'transform': `scale(${this.state.scale})`, 'transition': '3s' }}>
                     
                     <button className="container__game container__game--zoom" onClick={this.zoomIn}>
-                    {this.clickButton()}
+                    {this.clickButton()} 
                     </button>
                         <div className="container__bunny-pop">
                             <div className="container__hole">

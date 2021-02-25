@@ -50,7 +50,7 @@ export default function AddGame() {
                     </div>
                     <img src={SkyeHappy} alt="Sitting pup called Skye" className="add__pic--score" />
                     <button className="add__btn" onClick={refreshPage}>Start Again</button>
-                    <p>{questions[9].correctAnswerTen}</p>
+                    <p  className='add__question-section  add__question-section--disappear'>{questions[9].correctAnswerTen}</p>
                     </>
                 ) : (
                     <>
@@ -67,7 +67,7 @@ export default function AddGame() {
                                 <button className="add__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                                 </>
                             ))}
-                            {showAnswer ? <p>{questions[currentQuestion].correctAnswer}</p>:null}
+                            {showAnswer ? <p  className='add__question-section add__question-section--disappear'>{questions[currentQuestion].correctAnswer}</p>:null}
                         </div>
                     </>
                 )}
