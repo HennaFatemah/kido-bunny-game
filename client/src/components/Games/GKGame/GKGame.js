@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
-import './GKGame.scss';
-import Skye from '../../../assets/pups/new-skye-flying.png';
-import SkyeSit from '../../../assets/pups/skye.png';
+import './GKGame.scss'
+import Marshal from '../../../assets/pups/bunny-venger.png';
+import MarshalHop from '../../../assets/pups/bunny-venger.png';
+import MarshalSquat from '../../../assets/pups/bunny-venger.png';
+import MarshalTongue from '../../../assets/pups/bunny-venger.png';
+import BackArrow from '../../../assets/icons/back-arrow.svg';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
 import {questions} from './GKGameData';
 import { useHistory } from "react-router-dom";
+import Sound from './Sound';
 
-export default function GKGame() {
+export default function ScavengerHunt() {
     const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+    const [makeSound, setMakeSound] = useState(false)
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
@@ -29,34 +34,39 @@ export default function GKGame() {
     } 
 
 	return (
-        <section className='add'>
-            <div className='add__card'>
+        <section className='sound'>
+            <div className="sound__back-container">
+            <button className="sound__back" onClick={() => history.push("/choosegame")}><img src={BackArrow} alt="Sitting pup called Skye" className="sound__back-pic" />Go Back</button>
+                        <button className="sound__back" onClick={() => history.push("/")}><img src={BackArrow} alt="Sitting pup called Skye" className="sound__back-pic" /><img src={BackArrow} alt="Sitting pup called Skye" className="sound__back-pic" />Home</button>
+                        </div>
+            <div className="sound__bg">
+            <div className='sound__card'>
                 {showScore ? (
                     <>
-                    <div className='add__score-section'>
+                    <div className='sound__score-section'>
                         <p>You scored {score} out of {questions.length}</p>
                     </div>
-                    <img src={SkyeHappy} alt="Sitting pup called Skye" className="add__pic--score" />
-                    <button className="add__btn" onClick={refreshPage}>Start Again</button>
+                    <img src={MarshalTongue} alt="Sitting pup called Skye" className="sound__pic--score" />
+                    <button className="sound__btn" onClick={refreshPage}>Start Again</button>
                     </>
                 ) : (
                     <>
-                        {questions[currentQuestion].id === 1 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--one" />: questions[currentQuestion].id === 2 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--two" />: questions[currentQuestion].id === 3 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--three" />: questions[currentQuestion].id === 4 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--four" />: questions[currentQuestion].id === 5 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--five" />: questions[currentQuestion].id === 6 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--six" />: questions[currentQuestion].id === 7 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--seven" />: questions[currentQuestion].id === 8 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--eight" />: questions[currentQuestion].id === 9 ? <img src={Skye} alt="Flying pup called Skye" className="add__pic add__pic--nine" />: questions[currentQuestion].id === 10 ? <img src={SkyeSit} alt="Sitting pup called Skye" className="add__pic add__pic--ten" />: null}
-                        <div className='add__question-section'>
-                            <div className='add__question-count'>
+                        {questions[currentQuestion].id === 1 ? <img src={Marshal} alt="pup called Marshal" className="sound__pic sound__pic--one" />: questions[currentQuestion].id === 2 ? <img src={Marshal} alt="Flying pup called Skye" className="sound__pic sound__pic--two" />: questions[currentQuestion].id === 3 ? <img src={Marshal} alt="Flying pup called Skye" className="sound__pic sound__pic--three" />: questions[currentQuestion].id === 4 ? <img src={MarshalHop} alt="Flying pup called Skye" className="sound__pic sound__pic--four" />: questions[currentQuestion].id === 5 ? <img src={MarshalSquat} alt="Flying pup called Skye" className="sound__pic sound__pic--five" />:  null}
+                        <div className='sound__question-section'>
+                            <div className='sound__question-count'>
                                 <span>Question {currentQuestion + 1}</span>/{questions.length}
                             </div>
-                            <div className='add__question-text'>{questions[currentQuestion].questionText}</div>
+                            <div className='sound__question-text'>{questions[currentQuestion].questionText}</div>
+                            <button><Sound/></button>
                         </div>
-                        <div className='add__answer-section'>
+                        <div className='sound__answer-section'>
                             {questions[currentQuestion].answerOptions.map((answerOption) => (
-                                <button className="add__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+                                <button className="sound__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                             ))}
                         </div>
-                        <button className="choose__back" onClick={() => history.push("/choosegame")}>Go Back</button>
-                        <button className="choose__back" onClick={() => history.push("/")}>Home</button>
                     </>
                 )}
+            </div>
             </div>
             </section>
 	);

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './ScavengerHunt.scss'
 import Marshal from '../../../assets/pups/bunny-venger.png';
-import MarshalHop from '../../../assets/pups/MARSHAL-HOP.png';
-import MarshalSquat from '../../../assets/pups/squods-marshall.png';
-import MarshalTongue from '../../../assets/pups/marshal-tongue.png';
+import MarshalHop from '../../../assets/pups/bunny-venger.png';
+import MarshalSquat from '../../../assets/pups/bunny-venger.png';
+import MarshalTongue from '../../../assets/pups/bunny-venger.png';
 import BackArrow from '../../../assets/icons/back-arrow.svg';
 import SkyeHappy from '../../../assets/pups/happy-skye.png';
 import {questions} from './ScavengerHuntData';

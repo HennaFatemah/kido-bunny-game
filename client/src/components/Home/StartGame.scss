@@ -5,9 +5,10 @@
     @include cursor;
     position: absolute;
     top: calc((100vh - (calc(3rem + (3 - 2) * (100vh - 280px) / (1440 - 280)))) / 2);
-    width: calc(6.5rem + (6.5 - 4) * (100vh - 280px) / (1440 - 280));
+    //width: calc(6.5rem + (6.5 - 4) * (100vh - 280px) / (1440 - 280));
     height: calc(3rem + (3 - 2) * (100vh - 280px) / (1440 - 280));
     left: calc((100vw - (calc(6.5rem + (6.5 - 4) * (100vh - 280px) / (1440 - 280)))) / 2);
+    text-decoration: none;
     // @media (width: 800px) {
     //     left: 5vw;
     // }

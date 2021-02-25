@@ -35,7 +35,7 @@ class SlideTwo extends Component {
                 </div>
                 <div className="slide-three__tile" onMouseOver={LinkDown} onMouseLeave={LinkLeave}>
                     <h3 className="slide-three__tile-title slide-three__tile-title--muse">Sounds with Bunny Muse</h3>
-                    <Link className="slide-three__link" to='/choosegame/generalknowledge'>
+                    <Link className="slide-three__link" to='/choosegame/soundgame'>
                         <img className="slide-three__tile-pic slide-three__tile-pic--muse" src={Chase} alt="Pup named Chase"/>
                     </Link>
                 </div>

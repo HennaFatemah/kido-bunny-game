@@ -1,3 +1,4 @@
+import Audio from '../../../assets/sounds/new-skye-laughing.mp3'
 const numberOne = Math.abs(Math.round(Math.random() * 5));
 const numberTwo = Math.abs(numberOne);
 const correctAnswerOne = numberOne + numberTwo;
@@ -7,7 +8,8 @@ const optionThree = correctAnswerOne + 3;
 export const questions = [
     {
         id: 1,
-        questionText: `What is ${numberOne} + ${numberTwo}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${correctAnswerOne}`, isCorrect: true },
             { answerText: `${optionOne}`, isCorrect: false },
@@ -17,7 +19,8 @@ export const questions = [
     },
     {
         id: 2,
-        questionText: `What is ${numberOne + 1} + ${numberTwo + 2}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${numberOne + numberTwo + 1}`, isCorrect: false },
             { answerText: `${numberOne + numberTwo + 6}`, isCorrect: false },
@@ -27,7 +30,8 @@ export const questions = [
     },
     {
         id: 3,
-        questionText: `What is ${numberOne + 3} + ${numberTwo + 1}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${numberOne + numberTwo + 4}`, isCorrect: true },
             { answerText: `${numberOne + numberTwo + 3}`, isCorrect: false },
@@ -37,7 +41,8 @@ export const questions = [
     },
     {
         id: 4,
-        questionText: `What is ${Math.abs(numberOne - 1)} + ${numberTwo + 3}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${Math.abs(numberOne - 1) + numberTwo + 4}`, isCorrect: false },
             { answerText: `${Math.abs(numberOne - 1) + numberTwo + 2}`, isCorrect: false },
@@ -47,7 +52,8 @@ export const questions = [
     },
     {
         id: 5,
-        questionText: `What is ${Math.abs(numberOne - 2)} + ${numberTwo + 3}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${Math.abs(numberOne - 1) + numberTwo + 3}`, isCorrect: false },
             { answerText: `${Math.abs(numberOne - 3) + numberTwo + 3}`, isCorrect: false },
@@ -57,7 +63,8 @@ export const questions = [
     },
     {
         id: 6,
-        questionText: `What is ${Math.abs(numberOne - 3)} + ${numberTwo}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${Math.abs(numberOne - 2) + numberTwo}`, isCorrect: false },
             { answerText: `${Math.abs(numberOne - 4) + numberTwo}`, isCorrect: false },
@@ -67,7 +74,8 @@ export const questions = [
     },
     {
         id: 7,
-        questionText: `What is ${Math.abs(numberOne - 1)} + ${Math.abs(numberTwo - 2)}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${Math.abs(numberOne - 1) + Math.abs(numberTwo - 2) + 1}`, isCorrect: false },
             { answerText: `${Math.abs(numberOne - 1) + Math.abs(numberTwo - 2)}`, isCorrect: true },
@@ -77,7 +85,8 @@ export const questions = [
     },
     {
         id: 8,
-        questionText: `What is ${Math.abs(numberOne - 1)} + ${Math.abs(numberOne - 1)}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${Math.abs(numberOne - 1) + Math.abs(numberOne - 1)}`, isCorrect: true },
             { answerText: `${Math.abs(numberOne - 2) + Math.abs(numberOne - 1)}`, isCorrect: false },
@@ -87,7 +96,8 @@ export const questions = [
     },
     {
         id: 9,
-        questionText: `What is ${Math.abs(numberOne)} + ${Math.abs(numberOne - 3)}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${Math.abs(numberOne - 3) + numberOne}`, isCorrect: true },
             { answerText: `${Math.abs(numberOne - 2) + numberOne}`, isCorrect: false },
@@ -97,7 +107,8 @@ export const questions = [
     },
     {
         id: 10,
-        questionText: `What is ${Math.abs(numberOne - 3)} + ${Math.abs(numberOne + 3)}?`,
+        questionText: `Recognize the sound. Click on Audio`,
+        audio: Audio,
         answerOptions: [
             { answerText: `${Math.abs(numberOne - 3) + Math.abs(numberOne + 1)}`, isCorrect: false },
             { answerText: `${Math.abs(numberOne - 3) + Math.abs(numberOne + 3)}`, isCorrect: true },
