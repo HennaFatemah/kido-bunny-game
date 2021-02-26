@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './GKGame.scss'
-import Marshal from '../../../assets/pups/bunny-venger.png';
+import Marshal from '../../../assets/pups/bunny-muse.png';
 import MarshalHop from '../../../assets/pups/bunny-venger.png';
 import MarshalSquat from '../../../assets/pups/bunny-venger.png';
 import MarshalTongue from '../../../assets/pups/bunny-venger.png';

@@ -1,23 +1,19 @@
-// // <<<<<<<< FONT FACE >>>>>>>> \\
+// <<<<<<<< FONT FACE >>>>>>>> \\
 
-// // <<<<<<<< REGULAR >>>>>>>> \\
+// <<<<<<<< REGULAR >>>>>>>> \\
 
-// @font-face {
-//     font-family: 'Titillium';
-//     src: url('../assets/fonts/TitilliumWebRegular.ttf') format('truetype'),
-//     url('../assets/fonts/TitilliumWebRegular.woff') format('woff'),
-//     url('../assets/fonts/TitilliumWebRegular.woff2') format('woff2');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'Happy';
+    src: url('../assets/fonts/shaka_pow/Shaka\ Pow\ Upright\ Hollow.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
 
 // // <<<<<<<< SEMI-BOLD >>>>>>>> \\
 
-// @font-face {
-//     font-family: 'Titillium';
-//     src: url('../assets/fonts/TitilliumWebSemiBold.ttf') format('truetype'),
-//     url('../assets/fonts/TitilliumWebSemiBold.woff') format('woff'),
-//     url('../assets/fonts/TitilliumWebSemiBold.woff2') format('woff2');
-//     font-weight: 600;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'Happy-full';
+    src: url('../assets/fonts/shaka_pow/Shaka\ Pow\ Upright\ Hollow.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}

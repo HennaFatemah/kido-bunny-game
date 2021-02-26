@@ -2,7 +2,7 @@
 @import './media-points';
 
 @mixin click-me {
-    font-size:calc(45px + (50 - 45) * (100vw - 280px) / (1440 - 280));
+    font-size:calc(55px + (60 - 55) * (100vw - 280px) / (1440 - 280));
     text-shadow: -.02rem -.02rem 0 #000,.02rem -.02rem 0 #000, -.02rem .02rem 0 #000, .02rem .02rem 0 #000, .4rem .4rem 0 rgba(0, 0, 0, .2);
 }
 

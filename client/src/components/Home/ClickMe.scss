@@ -1,7 +1,9 @@
 @import '../../partials/clickme';
 @import '../../partials/media-points';
 @import '../../partials/mixins';
+@import '../../partials/typography';
 .click {
+    letter-spacing: 20px;
     @include cursor;
     //margin-top: 60%;
     //margin-left: 8%;
