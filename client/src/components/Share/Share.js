@@ -3,10 +3,11 @@ import {FacebookShareButton, FacebookIcon} from "react-share";
 import {TwitterShareButton, TwitterIcon} from "react-share";
 import {WhatsappShareButton, WhatsappIcon} from "react-share";
 import {PinterestShareButton, PinterestIcon} from "react-share";
+import './Share.scss';
 
 const Share = () => {
     return (
-        <div className="main__social-icons">
+        <div className="social-icons">
             <FacebookShareButton
                 url={"http://www.camperstribe.com"}
                 quote={"CampersTribe - World is yours to explore"}
@@ -46,7 +47,7 @@ const Share = () => {
                     borderRadius={8}
                 />
             </PinterestShareButton>
-            <div className="main__clipboard"></div>
+            <div className="social-icons__clipboard"></div>
         </div>
     );
 };

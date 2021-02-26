@@ -1,7 +1,8 @@
-@import '../partials/home';
+@import '../partials/home/home';
 @import '../partials/media-points';
 @import '../partials/mixins';
 @import '../partials/typography';
+@import '../partials/home/home-animation';
 
 .container{
     position: relative;
@@ -17,48 +18,22 @@
         background-position: right;
     }
     &__bg-image-wrapper {
-        @include lookout-tower-bg;
+        @include barn-bg;
         transition: 0.4s;
         transform-origin: center;
-        z-index: 20;
-        display: flex;
-        justify-content: center;
     }
-    &__game{
+    &__btn{
         @include cursor;
-        padding: 0.7px;
         font-weight: bolder;
         font-family: 'Happy';
         outline: none;
         width: fit-content;
         height: fit-content;
-        &--zoom{
-            z-index: 100;
-            background: none;
-            box-shadow: none;
-            border: none;
-            &:hover{
-                background: none;
-                box-shadow: none;
-            }
-            &::before{
-                box-shadow: none;
-            }
-        }
-    }
-    &__link {
-        text-decoration: none;
+        background: none;
+        border: none;
     }
     &__tractor-path{
-        position: absolute;
-        width: 125vw;
-        right: -10vw;
-        height: 15vw;
-        background-color: transparent;
-        bottom: 27vh;
-        transform: rotate(-1deg);
-        overflow: hidden;
-        z-index: 10;
+        @include tractor-path;
         @media(max-width: 411px) {
             height: 20vw;
         }
@@ -97,96 +72,8 @@
         margin: 0;
     }
     &__bunny{
-        height: 100%;
-        width: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        &--berry{
-            background-image: url('../assets/pups/bunny-berry.png');
-            animation: move 6s infinite linear;
-        }
-        &--flippy{
-            height: 120%;
-            width: 120%;
-            background-image: url('../assets/pups/bunny-fllipy.png');
-            animation: flippyMove 6s infinite linear;
-        }
-        &--naut {
-            background-image: url('../assets/pups/bunny-naut.png');
-            animation: nautMove 6.5s infinite linear;
-        }
-        &--venger{
-            background-image: url('../assets/pups/bunny-venger.png');
-            animation: nautMove 7s infinite linear;
-        }
-        &--toughy{
-            background-image: url('../assets/pups/bunny-toughy.png');
-            animation: toughyMove 6s infinite linear;
-        }
-        &--muse{
-            height: 150%;
-            width: 150%;
-            background-image: url('../assets/pups/bunny-muse-opposite.png');
-            animation: flippyMove 6s infinite linear;
-        }
-    }
-    &__burrow{
-        background-image: url('../assets/hole/burrow.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 20vw;
-        height: 20vh;
-    }
-}
-@keyframes move {
-    0%, 100% {
-        transform: translateY(-7vh);
-        }
-    50% {
-        transform: translateY(7vh);
+        @include bunny;
     }
 }
 
-
-@keyframes flippyMove {
-    0%, 100% {
-        transform: translateY(9vh);
-    }
-    50% {
-        transform: translateY(-5vh);
-    }
-}
-@keyframes toughyMove {
-    0%, 100% {
-        transform: translateY(11rem);
-    }
-    50% {
-        transform: translateY(-2rem);
-    }
-}
-
-@keyframes nautMove {
-    0%, 100% {
-        transform: translateY(12rem);
-    }
-    50% {
-        transform: translateY(-2rem);
-    }
-}
-
-@keyframes x-motion {
-    0% {
-        transform: translateX(0);
-    }
-    
-    100% {
-        transform: translateX(-100vw);
-    }
-    0%, 100% {
-        top: 20px;
-    }
-
-    50% {
-        top: 0;
-    }
-}
+@include keyframing;

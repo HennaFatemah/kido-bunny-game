@@ -1,5 +1,5 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Home from './Pages/Home'
 import ChooseGame from './components/ChooseGame/ChooseGame';
 import About from './Pages/About';
@@ -13,13 +13,11 @@ import './App.scss';
 import Share from './components/Share/Share';
 
 const App = () => {
-  
   return (
     <section className="main">
       <div className="main__sticky">
         <Share/>
       </div>
-      
       <div className="main__page">
         <BrowserRouter>
           <Switch>

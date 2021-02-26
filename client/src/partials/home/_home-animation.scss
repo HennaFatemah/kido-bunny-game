@@ -1,0 +1,52 @@
+@mixin keyframing {
+    @keyframes move {
+        0%, 100% {
+            transform: translateY(-7vh);
+            }
+        50% {
+            transform: translateY(7vh);
+        }
+    }
+    @keyframes flippyMove {
+        0%, 100% {
+            transform: translateY(9vh);
+        }
+        50% {
+            transform: translateY(-5vh);
+        }
+    }
+    @keyframes toughyMove {
+        0%, 100% {
+            transform: translateY(11rem);
+        }
+        50% {
+            transform: translateY(-2rem);
+        }
+    }
+    
+    @keyframes nautMove {
+        0%, 100% {
+            transform: translateY(12rem);
+        }
+        50% {
+            transform: translateY(-2rem);
+        }
+    }
+    
+    @keyframes x-motion {
+        0% {
+            transform: translateX(0);
+        }
+        
+        100% {
+            transform: translateX(-100vw);
+        }
+        0%, 100% {
+            top: 20px;
+        }
+    
+        50% {
+            top: 0;
+        }
+    }
+}

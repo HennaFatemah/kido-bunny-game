@@ -36,7 +36,7 @@ class Home extends Component {
     renderButtonAndSound = () =>{
         return audioClip.map((soundObj, index) =>{
             return(
-                <button className="container__game container__game--zoom" key={index} onClick={() => this.soundPlay(soundObj.sound)}>
+                <button className="container__btn" key={index} onClick={() => this.soundPlay(soundObj.sound)}>
                     {soundObj.label}
                 </button>
             )
@@ -54,7 +54,7 @@ class Home extends Component {
                 <div
                 className="container__bg-image-wrapper"
                 style={{ 'backgroundImage': `url(${this.backgroundState()})`, 'transform': `scale(${this.state.scale})`, 'transition': '3s' }}>
-                    <button className="container__game container__game--zoom" onClick={this.zoomIn}>
+                    <button className="container__btn" onClick={this.zoomIn}>
                         {this.clickButton()}
                     </button>
                     <div className="container__bunny-pop">
