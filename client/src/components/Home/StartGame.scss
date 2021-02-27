@@ -1,271 +1,46 @@
 @import '../../partials/mixins';
-@import '../../partials/start-game';
+@import '../../partials/home-buttons/start-game';
 @import '../../partials/typography';
 .start{
-    font-family: Happy-full;
     @include buttonAnimate;
     @include cursor;
     position: absolute;
     top: calc((100vh - (calc(3rem + (3 - 2) * (100vh - 280px) / (1440 - 280)))) / 2);
-    //width: calc(6.5rem + (6.5 - 4) * (100vh - 280px) / (1440 - 280));
+    width: calc(6.5rem + (6.5 - 4) * (100vh - 280px) / (1440 - 280));
     height: calc(3rem + (3 - 2) * (100vh - 280px) / (1440 - 280));
     left: calc((100vw - (calc(6.5rem + (6.5 - 4) * (100vh - 280px) / (1440 - 280)))) / 2);
     text-decoration: none;
-    // @media (width: 800px) {
-    //     left: 5vw;
-    // }
-    // @media (width: 384px) {
-    //     left: 18.5vw;
-    // }
-    // @media (width: 412px) {
-    //     left: 17vw;
-    // }
-    // @media (width: 600px) {
-    //     left: 9vw;
-    // }
-    // @media (width: 320px) {
-    //     left: 24vw;
-    // }
-    // @media (width: 480px) {
-    //     left: 14vw;
-    // }
-    // @media (width: 768px) {
-    //     left: 6vw;
-    // }
-    // @media (width: 411px) {
-    //     left: 17vw;
-    // }
-    // @media (width: 414px) {
-    //     left: 17vw;
-    // }
-    // @media (width: 1024px) {
-    //     left: 2.5vw;
-    // }
-    // @media (width: 540px) {
-    //     left: 11.5vw;
-    // }
-    // @media (width: 280px) {
-    //     left: 29vw;
-    // }
-    // @media only screen and (device-width: 640px) and (device-height: 360px) and (-webkit-min-device-pixel-ratio: 2) {
-    //     width: 9.5rem;
-    //     height: 5rem;
-    //     font-size: 1rem;
-    //     margin-left: 5rem;
-    // }
-    // /* ----------- Kindle Fire HDX ----------- */
-    // @media only screen and (device-width: 800px) and (device-height: 1280px) {
-    //     width: 27.5rem;
-    //     height: 10rem;
-    //     // font-size: 3rem;
-    //     margin-left: -2rem;
-    //     // bottom: 10rem;
-    //     top: 78rem;
-    // }
-    // /* ----------- LG Optimus L70 ----------- */
-    // @media only screen and (device-width: 640px) and (device-height: 384px) {
-    //     width: 15.5rem;
-    //     height: 5rem;
-    //     font-size: 1.5rem;
-    //     margin-left: 2rem;
-    // }
-    //  /* ----------- Microsoft Lumia 550 ----------- */
-    // @media only screen and (device-width: 640px) and (device-height: 360px) {
-    //     height: 3.5rem;
-    // }
-    //   /* ----------- Nexus 5 ----------- */
-    // @media only screen and (device-width: 360px) and (device-height: 640px) {
-    //     margin-left: 22%;
-    //     height: 10%;
-    //     width: 50%;
-    //     font-size: 35%;
-    // }
-    //    /* ----------- Nexus 6 ----------- */
-    // @media only screen and (device-width: 732px) and (device-height: 412px) {
-    //     font-size: 1.5rem;
-    //     width: 15.5rem;
-    //     height: 5rem;
-    //     margin-left: 2rem;
-    // }
-    //    /* ----------- Nokia Lumia 520 ----------- */
-    // @media only screen and (device-width: 320px) and (device-height: 533px) {
-    //     font-size: 1.7rem;
-    //     margin-top: -3rem;
-    //     margin-left: 1rem;
-    //     height: 5rem;
-    //     width: 17.5rem;
-    // }
-    // @media only screen and (device-width: 533px) and (device-height: 320px) {
-    //     font-size: 1.3rem;
-    //     margin-top: -3rem;
-    //     margin-left: 3.5rem;
-    //     height: 3rem;
-    //     width: 12.5rem;
-    // }
-    //   /* ----------- Nokia N9 ----------- */
-    //     @media only screen and (device-width: 854px) and (device-height: 480px) {
-    //     font-size: 1.6rem;
-    //     margin-top: -3rem;
-    //     margin-left: 1rem;
-    //     height: 4.2rem;
-    //     width: 17rem;
-    // }
-    // /* ----------- Ipad Mini ----------- */
-    //     @media only screen and (device-width: 768px) and (device-height: 1024px) {
-    //     font-size: 3rem;
-    //     margin-top: -6rem;
-    //     margin-left: -4rem;
-    //     height: 7.2rem;
-    //     width: 29rem;
-    //     }
-    //     /* ----------- Iphone 4 ----------- */
-    //     @media only screen and (device-width: 320px) and (device-height: 480px) {
-    //         font-size: 1.7rem;
-    //         margin-top: -4rem;
-    //         margin-left: 2.6rem;
-    //         height: 4.2rem;
-    //         width: 15rem;
-    //     }
-    //     @media only screen and (device-width: 480px) and (device-height: 320px) {
-    //         font-size: 1rem;
-    //         margin-top: -4rem;
-    //         margin-left: 4.6rem;
-    //         height: 3.2rem;
-    //         width: 10rem;
-    //     }
-    //     /* ----------- JioPhone 2 ----------- */
-    //     @media only screen and (device-width: 240px) and (device-height: 320px) {
-    //         font-size: 1.2rem;
-    //         margin-top: -4rem;
-    //         margin-left: 3.3rem;
-    //         height: 4rem;
-    //         width: 12rem;
-    //     }
-    //     @media only screen and (device-width: 320px) and (device-height: 240px) {
-    //         font-size: 1rem;
-    //         margin-top: -4rem;
-    //         margin-left: 4.6rem;
-    //         height: 3.2rem;
-    //         width: 9rem;
-    //     }
-    //     /* ----------- Pixel 2 ----------- */
-    //     @media only screen and (device-width: 731px) and (device-height: 411px) {
-    //         font-size: 1.5rem;
-    //         //margin-top: -8rem;
-    //         margin-left: 2.6rem;
-    //         height: 3.8rem;
-    //         width: 15rem;
-    //     }
-    //     /* ----------- Pixel 2 XL ----------- */
-    //     @media only screen and (device-width: 823px) and (device-height: 411px) {
-    //         font-size: 1.5rem;
-    //         //margin-top: -8rem;
-    //         margin-left: 2.6rem;
-    //         height: 3.8rem;
-    //         width: 15rem;
-    //     }
-    //     /* ----------- iPhone 5/SE ----------- */
-    //     @media only screen and (device-width: 320px) and (device-height: 568px) {
-    //         height: 5rem;
-    //         width: 20rem;
-    //     }
-    //     @media only screen and (device-width: 568px) and (device-height: 320px) {
-    //         font-size: 1rem;
-    //         //margin-top: -8rem;
-    //         margin-left: 4.6rem;
-    //         height: 3.8rem;
-    //         width: 10rem;
-    //     }
-    //     /* ----------- iPhone 6/7/8 ----------- */
-    //     @media only screen and (device-width: 667px) and (device-height: 375px) {
-    //         font-size: 1rem;
-    //         //margin-top: -8rem;
-    //         margin-left: 4.6rem;
-    //         height: 3.8rem;
-    //         width: 10rem;
-    //     }
-    //     /* ----------- iPhone 6/7/8 Plus ----------- */
-    //     @media only screen and (device-width: 736px) and (device-height: 414px) {
-    //         font-size: 1rem;
-    //         //margin-top: -8rem;
-    //         margin-left: 4.6rem;
-    //         height: 3.8rem;
-    //         width: 10rem;
-    //     }
-    //     /* ----------- iPhone X ----------- */
-    //     @media only screen and (device-width: 375px) and (device-height: 812px) {
-    //         font-size: 2rem;
-    //         bottom: 22rem;
-    //         margin-left: .6rem;
-    //         height: 5.8rem;
-    //         width: 20rem;
-    //     }
-    //     @media only screen and (device-width: 812px) and (device-height: 375px) {
-    //         font-size: 1rem;
-    //         //margin-top: -8rem;
-    //         margin-left: 4.6rem;
-    //         height: 3.8rem;
-    //         width: 10rem;
-    //     }
-    //     /* ----------- iPad Pro ----------- */
-    //     @media only screen and (device-width: 1024px) and (device-height: 1366px) {
-    //         font-size: 1rem;
-    //         //margin-top: -8rem;
-    //         margin-left: -4.5rem;
-    //         height: 10rem;
-    //         width: 32rem;
-    //     }
-    //     /* ----------- Surface Duo ----------- */
-    //     @media only screen and (device-width: 720px) and (device-height: 540px) {
-    //         //font-size: 1rem;
-    //         //margin-top: -8rem;
-    //         margin-left: -1rem;
-    //         height: 6rem;
-    //         //width: 32rem;
-    //     }
-    //     /* ----------- Galaxy Fold ----------- */
-    //     @media only screen and (device-width: 280px) and (device-height: 653px) {
-    //         font-size: 1.5rem;
-    //         bottom: 16rem;
-    //         margin-left: 2.8rem;
-    //         height: 6rem;
-    //         width: 15rem;
-    //     }
-    //     @media only screen and (device-width: 653px) and (device-height: 280px) {
-    //         font-size: 1rem;
-    //         //margin-top: -8rem;
-    //         margin-left: 4.5rem;
-    //         height: 4rem;
-    //         width: 10rem;
-    //     }
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: calc(1.5rem + (1.5 - 1) * (100vh - 280px) / (1440 - 280));
-    font-weight: bold;
     text-decoration: none;
-    color: white;
-    text-shadow: 0 1px 0 rgba(0,0,0,.3);
     border: 1px solid #4444;
     border-bottom: 1px solid rgb(113, 185, 30);
     box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.6),inset 0 -0.5px 0 0 rgba(0,0,0,0.4);
     border-radius: 999px;
-    background: white;
     background: radial-gradient(rgb(123, 255, 0), rgb(113, 185, 30));
     outline: none;
     @media (width: 800px) {
-        font-size: 1.7vw;
         box-shadow: inset 0 2px 0 0 rgba(255,255,255,0.6),inset 0 -1px 0 0 rgba(0,0,0,0.4);
         border-bottom: 2px solid rgb(113, 185, 30);
     }
-    letter-spacing: 2px;
-    // @media (height: 1366px) {
-    //     font-size: 35px;
-    //     padding: 0 5px;
-    // }
     &:active{
         background-color: rgb(113, 185, 30);
         background: rgb(123, 255, 0);
         box-shadow: inset 0 0.5px 3px rgba(0, 0, 0, .4);
+    }
+    &__btn{
+        background: none;
+        border: none;
+        color: white;
+        text-shadow: 0 1px 0 rgba(0,0,0,.3);
+        font-family: Happy;
+        font-size: calc(1.5rem + (1.5 - 1) * (100vh - 280px) / (1440 - 280));
+        font-weight: bold;
+        outline: none;
+        letter-spacing: 2px;
+        @media (width: 800px) {
+            font-size: 1.7vw;
+        }
+        margin-left: .6rem;
     }
 }

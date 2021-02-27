@@ -52,25 +52,24 @@
     animation: move 6s infinite linear;
   }
   &--flippy{
-      height: 120%;
-      background-image: url('../../assets/pups/bunny-fllipy.png');
-      animation: flippyMove 6s infinite linear;
+    height: 120%;
+    background-image: url('../../assets/pups/bunny-fllipy.png');
+    animation: flippyMove 6s infinite linear;
   }
   &--naut {
-      background-image: url('../../assets/pups/bunny-naut.png');
-      animation: nautMove 6.5s infinite linear;
+    background-image: url('../../assets/pups/bunny-naut.png');
+    animation: nautMove 6.5s infinite linear;
   }
   &--venger{
-      background-image: url('../../assets/pups/bunny-venger.png');
-      animation: nautMove 7s infinite linear;
+    background-image: url('../../assets/pups/bunny-venger.png');
+    animation: nautMove 7s infinite linear;
   }
   &--toughy{
-      background-image: url('../../assets/pups/bunny-toughy.png');
-      animation: toughyMove 6s infinite linear;
+    background-image: url('../../assets/pups/bunny-toughy.png');
+    animation: toughyMove 6s infinite linear;
   }
   &--muse{
-      height: 150%;
-      background-image: url('../../assets/pups/bunny-muse-opposite.png');
-      animation: flippyMove 6s infinite linear;
+    background-image: url('../../assets/pups/bunny-muse-opposite.png');
+    animation: flippyMove 6s infinite linear;
   }
 }

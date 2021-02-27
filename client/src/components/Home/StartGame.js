@@ -15,26 +15,32 @@ class StartGame extends Component {
         })
             sound.play();
     }
-    
+
     renderButtonAndSound = () =>{
         return audioClip.map((soundObj, index) =>{
             return(
-                    <Link to="/choosegame" className="start" key={index} onClick={() => this.soundPlay(soundObj.sound)}>
-                    {soundObj.label}
-            </Link>
-                    )
-                })
-            }
-    
+                <Link to="/choosegame" className="start" key={index} onClick={() => this.soundPlay(soundObj.sound)}>
+                    <button className="start__btn">{soundObj.label}</button>
+                </Link>
+            )
+        })
+    }
+
     render() {
         Howler.volume(1.0)
         return (
             <>
-            {this.renderButtonAndSound()}
-            {/* <Link className="start" to="/readstory">Read A Story</Link> */}
+                {this.renderButtonAndSound()}
             </>
         );
     }
 }
 
 export default StartGame;
+const Start = () => {
+    return (
+        <button>
+            Start
+        </button>
+    );
+};

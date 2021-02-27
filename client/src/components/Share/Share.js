@@ -3,6 +3,7 @@ import {FacebookShareButton, FacebookIcon} from "react-share";
 import {TwitterShareButton, TwitterIcon} from "react-share";
 import {WhatsappShareButton, WhatsappIcon} from "react-share";
 import {PinterestShareButton, PinterestIcon} from "react-share";
+import Clipboard from '../ClipBoard/Clipboard';
 import './Share.scss';
 
 const Share = () => {
@@ -47,7 +48,7 @@ const Share = () => {
                     borderRadius={8}
                 />
             </PinterestShareButton>
-            <div className="social-icons__clipboard"></div>
+            <Clipboard/>
         </div>
     );
 };

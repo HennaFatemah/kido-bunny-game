@@ -3,7 +3,7 @@ import Creator from '../components/Creator/Creator';
 import './Home.scss'
 import ClickMe from '../components/Home/ClickMe';
 import StartGame from '../components/Home/StartGame';
-import Background from '../assets/mainImages/close-barn-scencery-transparent.png';
+import Background from '../assets/mainImages/close-barn-scenery.png';
 import BackgroundAfter from '../assets/mainImages/open-barn-scenery.png';
 import Tractor from '../assets/mainImages/tractor-girl copy.png';
 import {Howl, Howler} from "howler";

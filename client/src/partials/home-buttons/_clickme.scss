@@ -1,0 +1,66 @@
+@import '../variables';
+@import '../media-points';
+
+@mixin click-me {
+    font-size:calc(55px + (60 - 55) * (100vw - 280px) / (1440 - 280));
+    text-shadow: -.02rem -.02rem 0 #000,.02rem -.02rem 0 #000, -.02rem .02rem 0 #000, .02rem .02rem 0 #000, .4rem .4rem 0 rgba(0, 0, 0, .2);
+}
+
+@mixin white {
+    -webkit-animation-delay: 0.15s;
+    left: 0.1rem;
+    z-index: 100;
+}
+
+@mixin red {
+    -webkit-animation-delay: 0.3s;
+    left: 2px;
+    z-index: -20;
+    color:red
+}
+
+@mixin orange {
+    -webkit-animation-delay: 0.45s;
+    left: 3px;
+    z-index: -30;
+    color:orange;
+}
+
+@mixin yellow {
+    -webkit-animation-delay: 0.6s;
+    left: 4px;
+    z-index: -40;
+    color: yellow;
+}
+
+@mixin green {
+    -webkit-animation-delay: 0.75s;
+    left: 5px;
+    z-index: -50;
+    color: greenyellow;
+}
+
+@mixin blue {
+    -webkit-animation-delay: 0.9s;
+    left: 6px;
+    z-index: -60;
+    color:blue;
+}
+
+@mixin violet {
+    -webkit-animation-delay: 1.05s;
+    left: 7px;
+    z-index: -70;
+    color:  rgb(196, 64, 248);
+}
+
+@mixin rainbow {
+    @keyframes rainbow {
+        0%, 100% {
+            transform: translateY(0.5rem);
+        }
+        50% {
+            transform: translateY(-0.5rem);
+        }
+    }
+}
