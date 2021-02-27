@@ -1,7 +1,8 @@
 import React, { useEffect, useSate, useState } from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import "./Clip.scss";
 
-const Pallet = ({link}) => {
+const Clipboard = ({link}) => {
     const [isCopied, setIsCopied] = useState(false)
 
     const handleCopy = () =>{
@@ -18,13 +19,13 @@ const Pallet = ({link}) => {
     )
     return (
         <CopyToClipboard text={`${link}`} onCopy={handleCopy}>
-            <div className="pallet">
-                <div className="pallet__color" style={{backgroundColor:`${link}`}}>
-                    {isCopied && <small className="pallet__small">copied</small>}
+            <div className="clip">
+                <div className="clip__tag">
+                    {isCopied && <small className="clip__small">copied</small>}
                 </div>
             </div>
         </CopyToClipboard>
     );
 };
 
-export default Pallet;
+export default Clipboard;

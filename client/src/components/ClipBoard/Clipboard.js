@@ -1,11 +1,9 @@
-import React from 'react';
-import Pallet from './Pallet';
-import './Clipboard.scss';
+import Clip from './Clip';
 
 const Clipboard = () => {
     return (
-        <div className="clipboard">
-            <Pallet link="henna"/>
+        <div>
+            <Clip link="henna"/>
         </div>
     );
 };
