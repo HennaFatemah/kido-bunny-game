@@ -1,5 +1,8 @@
 @import '../../partials/typography';
+@import '../../partials/mixins';
+
 .creator {
+    @include cursor;
     font-family: Happy;
     letter-spacing: 5px;
     position: fixed;

@@ -17,19 +17,20 @@ const About = () => {
     return (
         <section className='about'>
             <div className='about__card'>
-                <h1 className="about__title">About The Creator</h1>
                 <div className="about__myself">
                     <img className="about__me" src={Henna}/>
-                    <div className="about__my-details">
-                        <p  className='about__main about__main--base'>You can find me on</p>
-                        <div className="about__links-container">
-                            <a target="_blank" rel="noreferrer"  className='about__main about__links' href="https://www.linkedin.com/in/hennafatemah"><img src={LinkedIn} alt="Sitting pup called Skye" className="about__logo" />Linkedin</a>
-                            <a target="_blank" rel="noreferrer"  className='about__main about__links' href="https://github.com/HennaFatemah"><img src={GitHub} alt="Sitting pup called Skye" className="about__logo" />GitHub</a>
-                            <button className="about__links about__main" onClick={openContactWindow}><img src={EMail} alt="Sitting pup called Skye" className="about__logo" />Contact</button>
-                            <ContactDetails
-                                showContactWindow={showContactWindow}
-                                setShowContactWindow={setShowContactWindow}
-                            />
+                    <div className="about__flex">
+                        <p  className='about__main about__main--base'>Hi! I am <strong className="about__main--name">Henna Fatemah</strong>.<br/>You can find me on</p>
+                        <div className="about__my-details">
+                            <div className="about__links-container">
+                                <a target="_blank" rel="noreferrer"  className='about__main about__links' href="https://www.linkedin.com/in/hennafatemah"><img src={LinkedIn} alt="Sitting pup called Skye" className="about__logo" />Linkedin</a>
+                                <a target="_blank" rel="noreferrer"  className='about__main about__links' href="https://github.com/HennaFatemah"><img src={GitHub} alt="Sitting pup called Skye" className="about__logo" />GitHub</a>
+                                <button className="about__links about__main" onClick={openContactWindow}><img src={EMail} alt="Sitting pup called Skye" className="about__logo" />Contact</button>
+                                <ContactDetails
+                                    showContactWindow={showContactWindow}
+                                    setShowContactWindow={setShowContactWindow}
+                                />
+                            </div>
                         </div>
                     </div>
                     <p  className='about__main about__main--text'>I am a passionate web developer as well as a dedicated mother of a four year old girl. A child at this age needs attention, training and guidance. Keeping to the best of motherhood while growing professionally is a constant struggle, yet the drive to achieve both fuels my determination. This drive made me come up with an idea of developing a bunch of games full of fun and learning. The characters that I created are inspired by the existing characters that are the attraction to the children at this age. Such characters will keep the teeny tiny engaged on the platform of learning and fun.<br/><br/> The game developed brings a smile and a sparkle of excitement on my daughter's face upon getting correct answers. Thus, it is assured that this game will help other parents and bring contentment and happiness to both parents and children.</p>

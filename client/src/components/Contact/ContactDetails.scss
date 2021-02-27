@@ -1,17 +1,10 @@
 .contact {
     &__window{
-        // bottom: 0;
-        // left: 0;
-        // width: 100vw;
-        // height: 100vh;
-        // position: absolute;
         z-index: 20;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
-        //align-items: center;
-        //background-color: rgba(0, 0, 0, 0.534);
     }
     &__form-container{
         position: absolute;
@@ -21,103 +14,22 @@
         margin: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.493);
+        background-color: transparent;
         margin-top: -41.9px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    &__form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 4px solid  #fcca3481;
-        background-color:rgba(255, 255, 255, 0.945);
-        width: 90vw;
-        height: 55vh;
-        border-radius: 6px;
-    }
     &__cancel{
-        //width: 25px;
-        font-size: 2rem;
+        font-size: 3rem;
         align-self: flex-end;
         background-color: transparent;
         border: none;
         color: #fcfbfa;
-        top: 15vh;
+        top: 12vh;
         right: 6vw;
         position: absolute;
         z-index: 20;
         outline: none;
     }
-    &__field{
-        width: 70vw;
-        height: 40px;
-        border-radius: 4px;
-        border: solid 1px #fcca3481;
-        background-color: #fcca340e;
-        color: #a38427be;
-        margin: 0;
-        padding: 0 0 0 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &:focus-within, &:active{
-            outline: none;
-        }
-        &--user{
-            &::placeholder{
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position-y: 50%;
-                height: 20px;
-                color: #fcca34be;
-                font-weight: bolder;
-                padding-left: -10px;
-            }
-        }
-        &--password{
-            &::placeholder{
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position-y: 50%;
-                height: 20px;
-                color: #fcca34be;
-                font-weight: bolder;
-            }
-        }
-    }
-    &__label{
-        color: #FCCB34;
-    }
-    &__login{
-        width: 45vw;
-        height: 40px;
-        margin-top: 20px;
-        border: solid 1px #fcca3481;
-        background-color:#FCCB34;;
-        color: white;
-        font-size: 20px;
-        letter-spacing: 1px;
-        border-radius: 4px;
-    }
-}
-input,
-textarea,
-[contenteditable] {
-    font-size: 20px;
-    caret-color: #e0b534;
-}
-
-.inputWithIcon input[type= text]{
-    padding-left: 40px;
-}
-.inputWithIcon{
-    position: relative;
-}
-.inputWithIcon img{
-    position: absolute;
-    left: 6px;
-    top: 7px;
-    height: 25px;
 }
