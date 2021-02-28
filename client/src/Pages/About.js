@@ -18,14 +18,14 @@ const About = () => {
         <section className='about'>
             <div className='about__card'>
                 <div className="about__myself">
-                    <img className="about__me" src={Henna}/>
+                    <img className="about__me" src={Henna} alt="creator avatar"/>
                     <div className="about__flex">
                         <p  className='about__main about__main--base'>Hi! I am <strong className="about__main--name">Henna Fatemah</strong>.<br/>You can find me on</p>
                         <div className="about__my-details">
                             <div className="about__links-container">
-                                <a target="_blank" rel="noreferrer"  className='about__main about__links' href="https://www.linkedin.com/in/hennafatemah"><img src={LinkedIn} alt="Sitting pup called Skye" className="about__logo" />Linkedin</a>
-                                <a target="_blank" rel="noreferrer"  className='about__main about__links' href="https://github.com/HennaFatemah"><img src={GitHub} alt="Sitting pup called Skye" className="about__logo" />GitHub</a>
-                                <button className="about__links about__main" onClick={openContactWindow}><img src={EMail} alt="Sitting pup called Skye" className="about__logo" />Contact</button>
+                                <a target="_blank" rel="noreferrer"  className='about__main about__links' href="https://www.linkedin.com/in/hennafatemah"><img src={LinkedIn} alt="linkedIn logo" className="about__logo" />Linkedin</a>
+                                <a target="_blank" rel="noreferrer"  className='about__main about__links' href="https://github.com/HennaFatemah"><img src={GitHub} alt="Github logo" className="about__logo" />GitHub</a>
+                                <button className="about__links about__main" onClick={openContactWindow}><img src={EMail} alt="email symbol" className="about__logo" />Contact</button>
                                 <ContactDetails
                                     showContactWindow={showContactWindow}
                                     setShowContactWindow={setShowContactWindow}
