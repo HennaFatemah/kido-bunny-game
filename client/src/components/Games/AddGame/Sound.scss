@@ -1,0 +1,29 @@
+.game-sound {
+    background-color:transparent;
+    cursor: pointer;
+    width: 22.5vw;
+    min-height: 18vh;
+    margin: 0;
+    padding: 0;
+    @media (min-width: 640px) and (min-height: 360px) {
+        width: 12.5vw;
+    }
+    @media (width: 533px) and (height: 320px) {
+        width: 12.5vw;
+    }
+    @media (width: 568px) and (height: 320px) {
+        width: 12.5vw;
+    }
+    @media (width: 480px) and (height: 320px) {
+        width: 12.5vw;
+    }
+    @media (width: 653px) and (height: 280px) {
+        width: 12.5vw;
+    }
+    @media (width: 800px) and (height: 1280px) {
+        width: 12.5vw;
+    }
+    @media (width: 768px) and (height: 1024px) {
+        width: 12.5vw;
+    }
+}

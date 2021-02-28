@@ -11,6 +11,7 @@ import SkyeSit from '../../../assets/pups/skye.png';
 import SkyeHappy from '../../../assets/pups/bunny-berry.png';
 import {questions} from './AddGameData';
 import { useHistory } from "react-router-dom";
+import Sound from './Sound';
 export default function AddGame() {
     const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -64,7 +65,7 @@ export default function AddGame() {
                         <div className='add__answer-section'>
                             {questions[currentQuestion].answerOptions.map((answerOption) => (
                                 <>
-                                <button className="add__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+                                <button className="add__btn" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.isCorrect === true ? <Sound/> :answerOption.answerText}</button>
                                 </>
                             ))}
                             {showAnswer ? <p  className='add__question-section add__question-section--disappear'>{questions[currentQuestion].correctAnswer}</p>:null}

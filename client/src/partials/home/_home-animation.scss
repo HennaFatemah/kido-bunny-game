@@ -39,14 +39,14 @@
         }
         
         100% {
-            transform: translateX(-100vw);
+            transform: translateX(-140vw);
         }
         0%, 100% {
-            top: 20px;
+            bottom: 0;
         }
     
         50% {
-            top: 0;
+            bottom: 30px;
         }
     }
 }

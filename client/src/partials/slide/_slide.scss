@@ -1,0 +1,59 @@
+@import '../mixins';
+@import '../typography';
+@mixin slide {
+    @include cursor;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    &__tile{
+        @include cursor;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 1vw 0;
+        width: 40vw;
+        height: 40vh;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 15px;
+        background-color: white;
+        &:hover {
+            @include cursor;
+            background-color: rgba(253, 252, 252, 0.39);
+        }
+        &:active{
+            transform: translate(1%, -1%);
+            box-shadow: 0 4px 15px -4px rgba(54, 58, 61, 0.7);
+            @include cursor;
+        }
+    }
+    &__tile-pic{
+        @include cursor;
+        height: 27vh;
+        object-fit: contain;
+    }
+    &__tile-title{
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-family: Happy;
+        font-weight: calc(bold + (normal - bold) * (100vh - 280px) / (1440 - 280));
+        font-size: 5.5vw;
+        line-height: 5.5vw;
+        text-align: center;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        width: calc(58% + (115 - 58) * (100vh - 280px) / (1440 - 280));
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+    &__link{
+        text-decoration: none;
+        @include cursor;
+    }
+}

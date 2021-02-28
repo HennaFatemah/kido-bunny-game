@@ -22,9 +22,6 @@ button.rec-dot{
         background-color: white;
     }
 }
-// .rec.rec-arrow:hover{
-//     background-color: white;
-// }
 .rec-slider-container{
     width: 80vw;
 }
@@ -38,12 +35,11 @@ button.rec-dot{
 }
 .arrow{
     @include cursor;
-    width: 10vw;
+    width: calc(5.5rem + (5 - 5.5) * (100vw - 280px) / (1440 - 280));
     &:focus{
         outline: none;
     }
 }
-
 .button {
     @include cursor;
     background-color: transparent;
