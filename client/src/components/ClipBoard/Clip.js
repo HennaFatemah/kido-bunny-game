@@ -1,4 +1,4 @@
-import React, { useEffect, useSate, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import "./Clip.scss";
 

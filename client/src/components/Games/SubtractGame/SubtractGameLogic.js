@@ -1,0 +1,22 @@
+export const Logic =  {
+    numberOne : Math.round(Math.random() * 5) + 5,
+    numberTwo : Math.round(Math.random() * 5),
+    numberThree : Math.round(Math.random() * 5) + 5,
+    numberFour : Math.round(Math.random() * 5),
+    numberFive : Math.round(Math.random() * 5) + 5,
+    numberSix : Math.round(Math.random() * 5),
+    numberSeven : Math.round(Math.random() * 5) + 5,
+    numberEight : Math.round(Math.random() * 5),
+    numberNine : Math.round(Math.random() * 5) + 5,
+    numberTen : Math.round(Math.random() * 5),
+    numberEleven : Math.round(Math.random() * 5) + 5,
+    numberTwelve : Math.round(Math.random() * 5),
+    numberThirteen : Math.round(Math.random() * 5) + 5,
+    numberFourteen : Math.round(Math.random() * 5),
+    numberFifteen : Math.round(Math.random() * 5) + 5,
+    numberSixteen : Math.round(Math.random() * 5),
+    numberSeventeen : Math.round(Math.random() * 5) + 5,
+    numberEighteen : Math.round(Math.random() * 5),
+    numberNineteen : Math.round(Math.random() * 5) + 5,
+    numberTwenty : Math.round(Math.random() * 5)
+}

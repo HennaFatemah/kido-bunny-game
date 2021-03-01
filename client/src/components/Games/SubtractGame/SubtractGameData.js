@@ -1,124 +1,124 @@
-const numberOne = Math.round(Math.random() * 5) + 6;
-const numberTwo = Math.round(Math.random() * 5);
-const correctAnswerOne = numberOne - numberTwo;
-const optionOne = correctAnswerOne + 2;
-const optionTwo = correctAnswerOne + 1;
-const optionThree = correctAnswerOne + 3;
-const numberThree = Math.round(Math.random() * 5) + 5;
-const numberFour = Math.round(Math.random() * 5);
-const numberFive = Math.round(Math.random() * 5) + 5;
-const numberSix = Math.round(Math.random() * 5);
-const numberSeven = Math.round(Math.random() * 5) + 5;
-const numberEight = Math.round(Math.random() * 5);
-const numberNine = Math.round(Math.random() * 5) + 5;
-const numberTen = Math.round(Math.random() * 5);
-const numberEleven = Math.round(Math.random() * 5) + 5;
-const numberTwelve = Math.round(Math.random() * 5);
-const numberThirteen = Math.round(Math.random() * 5) + 5;
-const numberFourteen = Math.round(Math.random() * 5);
-const numberFifteen = Math.round(Math.random() * 5) + 5;
-const numberSixteen = Math.round(Math.random() * 5);
-const numberSeventeen = Math.round(Math.random() * 5) + 5;
-const numberEighteen = Math.round(Math.random() * 5);
+import {Logic} from './SubtractGameLogic';
+
 export const questions = [
     {
         id: 1,
-        questionText: `What is ${numberOne} - ${numberTwo}?`,
+        questionText: `What is ${Logic.numberOne} - ${Logic.numberTwo}?`,
         answerOptions: [
-            { answerText: `${correctAnswerOne}`, isCorrect: true },
-            { answerText: `${optionOne}`, isCorrect: false },
-            { answerText: `${optionTwo}`, isCorrect: false },
-            { answerText: `${optionThree}`, isCorrect: false },
+            { answerText: `${Logic.numberOne - Logic.numberTwo}`, isCorrect: true },
+            { answerText: `${Logic.numberOne - Logic.numberTwo + 1}`, isCorrect: false },
+            { answerText: `${Logic.numberOne - Logic.numberTwo + 3}`, isCorrect: false },
+            { answerText: `${Logic.numberOne - Logic.numberTwo + 5}`, isCorrect: false },
         ],
     },
     {
         id: 2,
-        questionText: `What is ${numberOne} - ${numberTwo + 1}?`,
+        questionText: `What is ${Logic.numberThree} - ${Logic.numberFour}?`,
         answerOptions: [
-            { answerText: `${numberOne - numberTwo}`, isCorrect: false },
-            { answerText: `${numberOne - numberTwo + 6}`, isCorrect: false },
-            { answerText: `${numberOne - (numberTwo + 1)}`, isCorrect: true },
-            { answerText: `${numberOne - numberTwo + 2}`, isCorrect: false },
+            { answerText: `${Logic.numberThree - Logic.numberFour}`, isCorrect: true },
+            { answerText: `${Logic.numberThree - Logic.numberFour + 3}`, isCorrect: false },
+            { answerText: `${Logic.numberThree - Logic.numberFour + 1}`, isCorrect: false },
+            { answerText: `${Logic.numberThree + Logic.numberFour}`, isCorrect: false },
         ],
+        correctStatement: `Correct answer for question 1`,
+        correctAnswer: `${Logic.numberOne - Logic.numberTwo}`,
     },
     {
         id: 3,
-        questionText: `What is ${numberThree} - ${numberFour}?`,
+        questionText: `What is ${Logic.numberFive} - ${Logic.numberSix}?`,
         answerOptions: [
-            { answerText: `${numberThree - numberFour}`, isCorrect: true },
-            { answerText: `${numberThree - numberFour + 3}`, isCorrect: false },
-            { answerText: `${numberThree - numberFour + 1}`, isCorrect: false },
-            { answerText: `${numberThree + numberFour}`, isCorrect: false },
+            { answerText: `${Logic.numberFive - Logic.numberSix + 4}`, isCorrect: false },
+            { answerText: `${Logic.numberFive - Logic.numberSix + 2}`, isCorrect: false },
+            { answerText: `${Logic.numberFive - Logic.numberSix + 1}`, isCorrect: false },
+            { answerText: `${Logic.numberFive - Logic.numberSix}`, isCorrect: true },
         ],
+        correctStatement: `Correct answer for question 2`,
+        correctAnswer: `${Logic.numberThree - Logic.numberFour}`,
     },
     {
         id: 4,
-        questionText: `What is ${numberFive} - ${numberSix}?`,
+        questionText: `What is ${Logic.numberSeven} - ${Logic.numberEight}?`,
         answerOptions: [
-            { answerText: `${numberFive - numberSix + 4}`, isCorrect: false },
-            { answerText: `${numberFive - numberSix + 2}`, isCorrect: false },
-            { answerText: `${numberFive - numberSix + 1}`, isCorrect: false },
-            { answerText: `${numberFive - numberSix}`, isCorrect: true },
+            { answerText: `${Logic.numberSeven - Logic.numberEight + 4}`, isCorrect: false },
+            { answerText: `${Logic.numberSeven - Logic.numberEight + 2}`, isCorrect: false },
+            { answerText: `${Logic.numberSeven - Logic.numberEight}`, isCorrect: true },
+            { answerText: `${Logic.numberSeven - Logic.numberEight + 1}`, isCorrect: false },
         ],
+        correctStatement: `Correct answer for question 3`,
+        correctAnswer: `${Logic.numberFive - Logic.numberSix}`,
     },
     {
         id: 5,
-        questionText: `What is ${numberSeven} - ${numberEight}?`,
+        questionText: `What is ${Logic.numberNine} - ${Logic.numberTen}?`,
         answerOptions: [
-            { answerText: `${numberSeven - numberEight + 4}`, isCorrect: false },
-            { answerText: `${numberSeven - numberEight + 2}`, isCorrect: false },
-            { answerText: `${numberSeven - numberEight}`, isCorrect: true },
-            { answerText: `${numberSeven - numberEight + 1}`, isCorrect: false },
+            { answerText: `${Logic.numberNine - Logic.numberTen + 4}`, isCorrect: false },
+            { answerText: `${Logic.numberNine - Logic.numberTen + 2}`, isCorrect: false },
+            { answerText: `${Logic.numberNine - Logic.numberTen}`, isCorrect: true },
+            { answerText: `${Logic.numberNine - Logic.numberTen + 1}`, isCorrect: false },
         ],
+        correctStatement: `Correct answer for question 4`,
+        correctAnswer: `${Logic.numberSeven - Logic.numberEight}`,
     },
     {
         id: 6,
-        questionText: `What is ${numberNine} - ${numberTen}?`,
+        questionText: `What is ${Logic.numberEleven} - ${Logic.numberTwelve}?`,
         answerOptions: [
-            { answerText: `${numberNine - numberTen + 4}`, isCorrect: false },
-            { answerText: `${numberNine - numberTen + 2}`, isCorrect: false },
-            { answerText: `${numberNine - numberTen}`, isCorrect: true },
-            { answerText: `${numberNine - numberTen + 1}`, isCorrect: false },
+            { answerText: `${Logic.numberEleven - Logic.numberTwelve + 1}`, isCorrect: false },
+            { answerText: `${Logic.numberEleven - Logic.numberTwelve}`, isCorrect: true },
+            { answerText: `${Logic.numberEleven - Logic.numberTwelve + 3}`, isCorrect: false },
+            { answerText: `${Logic.numberEleven - Logic.numberTwelve + 5}`, isCorrect: false },
         ],
+        correctStatement: `Correct answer for question 5`,
+        correctAnswer: `${Logic.numberNine - Logic.numberTen}`,
     },
     {
         id: 7,
-        questionText: `What is ${numberEleven} - ${numberTwelve}?`,
+        questionText: `What is ${Logic.numberThirteen} - ${Logic.numberFourteen}?`,
         answerOptions: [
-            { answerText: `${numberEleven - numberTwelve + 1}`, isCorrect: false },
-            { answerText: `${numberEleven - numberTwelve}`, isCorrect: true },
-            { answerText: `${numberEleven - numberTwelve + 3}`, isCorrect: false },
-            { answerText: `${numberEleven - numberTwelve + 5}`, isCorrect: false },
+            { answerText: `${Logic.numberThirteen - Logic.numberFourteen}`, isCorrect: true },
+            { answerText: `${Logic.numberThirteen - Logic.numberFourteen + 2}`, isCorrect: false },
+            { answerText: `${Logic.numberThirteen - Logic.numberFourteen + 4}`, isCorrect: false },
+            { answerText: `${Logic.numberThirteen - Logic.numberFourteen + 6}`, isCorrect: false },
         ],
+        correctStatement: `Correct answer for question 6`,
+        correctAnswer: `${Logic.numberEleven - Logic.numberTwelve}`,
     },
     {
         id: 8,
-        questionText: `What is ${numberThirteen} - ${numberFourteen}?`,
+        questionText: `What is ${Logic.numberFifteen} - ${Logic.numberSixteen}?`,
         answerOptions: [
-            { answerText: `${numberThirteen - numberFourteen}`, isCorrect: true },
-            { answerText: `${numberThirteen - numberFourteen + 2}`, isCorrect: false },
-            { answerText: `${numberThirteen - numberFourteen + 4}`, isCorrect: false },
-            { answerText: `${numberThirteen - numberFourteen + 6}`, isCorrect: false },
+            { answerText: `${Logic.numberFifteen - Logic.numberSixteen}`, isCorrect: true },
+            { answerText: `${Logic.numberFifteen - Logic.numberSixteen + 3}`, isCorrect: false },
+            { answerText: `${Logic.numberFifteen - Logic.numberSixteen + 6}`, isCorrect: false },
+            { answerText: `${Logic.numberFifteen - Logic.numberSixteen + 4}`, isCorrect: false },
         ],
+        correctStatement: `Correct answer for question 7`,
+        correctAnswer: `${Logic.numberThirteen - Logic.numberFourteen}`,
     },
     {
         id: 9,
-        questionText: `What is ${numberFifteen} - ${numberSixteen}?`,
+        questionText: `What is ${Logic.numberSeventeen} - ${Logic.numberEighteen}?`,
         answerOptions: [
-            { answerText: `${numberFifteen - numberSixteen}`, isCorrect: true },
-            { answerText: `${numberFifteen - numberSixteen + 3}`, isCorrect: false },
-            { answerText: `${numberFifteen - numberSixteen + 6}`, isCorrect: false },
-            { answerText: `${numberFifteen - numberSixteen + 4}`, isCorrect: false },
+            { answerText: `${Logic.numberSeventeen - Logic.numberEighteen + 4}`, isCorrect: false },
+            { answerText: `${Logic.numberSeventeen - Logic.numberEighteen}`, isCorrect: true },
+            { answerText: `${Logic.numberSeventeen - Logic.numberEighteen + 2}`, isCorrect: false },
+            { answerText: `${Logic.numberSeventeen - Logic.numberEighteen + 6}`, isCorrect: false },
         ],
+        correctStatement: `Correct answer for question 8`,
+        correctAnswer: `${Logic.numberFifteen - Logic.numberSixteen}`,
     },
     {
         id: 10,
-        questionText: `What is ${numberSeventeen} - ${numberEighteen}?`,
+        questionText: `What is ${Logic.numberNineteen} - ${Logic.numberTwenty + 1}?`,
         answerOptions: [
-            { answerText: `${numberSeventeen - numberEighteen + 4}`, isCorrect: false },
-            { answerText: `${numberSeventeen - numberEighteen}`, isCorrect: true },
-            { answerText: `${numberSeventeen - numberEighteen + 2}`, isCorrect: false },
-            { answerText: `${numberSeventeen - numberEighteen + 6}`, isCorrect: false },
+            { answerText: `${Logic.numberNineteen - Logic.numberTwenty}`, isCorrect: false },
+            { answerText: `${Logic.numberNineteen - Logic.numberTwenty + 6}`, isCorrect: false },
+            { answerText: `${Logic.numberNineteen - (Logic.numberTwenty + 1)}`, isCorrect: true },
+            { answerText: `${Logic.numberNineteen - Logic.numberTwenty + 2}`, isCorrect: false },
         ],
+        correctStatement: `Correct answer for question 9`,
+        correctAnswer: `${Logic.numberSeventeen - Logic.numberEighteen}`,
+        correctStatementTen: `Correct answer for question 10`,
+        correctAnswerTen: `${Logic.numberNineteen - Logic.numberTwenty}`,
     }
 ];

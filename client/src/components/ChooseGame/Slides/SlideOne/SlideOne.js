@@ -1,7 +1,7 @@
 
 import {Link} from 'react-router-dom';
 import BunnyBerry from '../../../../assets/pups/bunny-berry.png';
-import BunnyFlippy from '../../../../assets/pups/bunny-fllipy.png';
+import BunnyFlippy from '../../../../assets/pups/bunny-flippy.png';
 import './SlideOne.scss'
 import React from 'react';
 

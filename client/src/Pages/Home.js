@@ -49,7 +49,7 @@ class Home extends Component {
             <div className="container">
                 <Creator/>
                 <div className="container__tractor-path">
-                    <img src={Tractor} className="container__tractor" />
+                    <img src={Tractor} alt="tractor" className="container__tractor" />
                 </div>
                 <div
                 className="container__bg-image-wrapper"
