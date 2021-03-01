@@ -1,185 +1,171 @@
+@import '../../../partials/game/game';
+@import '../../../partials/game/answer-pop-up';
+@import '../../../partials/game/subtract-game/subtract-game-media';
+@import '../../../partials/mixins';
+
 .space {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../../../assets/mainImages/milkyway.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    @include game;
+    @include answer-pop-up;
+    cursor: url('../../../assets/cursor/bunny-paw-white.png') 20 20, auto;
+    background-image: url(../../../assets/mainImages/milkyway-bg.png);
     background-size: cover;
-    &__pic{
-        width: 150px;
+    &__bg{
         position: absolute;
-        z-index: 0;
-        transition: 2s;
-        &--one{
-            top: 5vh;
-            left: 0;
+        z-index: -4;
+        background-image: url(../../../assets/mainImages/milkyway-planets.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100%;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__back-container{
+        width: 40vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 2.5vw;
+    }
+    &__back{
+        cursor: url('../../../assets/cursor/bunny-paw-white.png') 20 20, auto;
+        background: transparent;
+        border: transparent;
+        color: orange;
+        text-shadow: 1px 1px black;
+        font-size: 2.5vh;
+        width: 30vw;
+        padding: 0;
+        outline: none;
+        @media (min-width: 640px) and (min-height: 360px) {
+            font-size: 2.5vw;
         }
-        &--one-text{
-            position: absolute;
-            top: 50vh;
-            left: 0;
-            font-size: 5rem;
-            color: yellow;
-            transition: 2s;
+        @media (width: 533px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            font-size: 2.5vh;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            font-size: 2.5vh;
+        }
+    }
+    &__back-pic{
+        cursor: url('../../../assets/cursor/bunny-paw-white.png') 20 20, auto;
+        width: 3.5vh;
+        margin-left: -3.5vw;
+        margin-bottom: -1vh;
+        @media (min-width: 640px) and (min-height: 360px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 533px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            width: 3.5vh;
+            margin-left: -3.5vw;
+            margin-bottom: -1vh;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            width: 3.5vh;
+            margin-left: -3.5vw;
+            margin-bottom: -1vh;
+        }
+    }
+    &__pic{
+        width: 20vh;
+        position: absolute;
+        z-index: -1;
+        transition: 6s;
+        &--one{
+            bottom: 0;
+            left: 1vw;
+            transition: 6s;
         }
         &--two{
-            top: 32vh;
-            left: 14vw;
-        }
-        &--two-text{
-            position: absolute;
-            top: 62vh;
-            left: 14vw;
-            font-size: 5rem;
-            color: silver;
-            transition: 2s;
+            bottom: 5vh;
+            @include left;
+            transition: 6s;
         }
         &--three{
-            top: 0;
-            left: 24vw;
-            width: 70px;
+            bottom: 10vh;
+            left: 5vw;
+            transition: 6s;
         }
         &--four{
-            top: 29vh;
-            left: 35vw;
-            width: 90px;
+            bottom: 15vh;
+            @include left;
+            transition: 6s;
         }
         &--five{
-            top: 68vh;
-            left: 39vw;
-            width: 100px;
-            z-index: 0;
+            bottom: 20vh;
+            @include right;
         }
         &--six{
-            top: 0;
-            left: 65vw;
-            width: 60px;
+            bottom: 25vh;
+            @include left;
+            transition: 6s;
         }
         &--seven{
-            top: 20vh;
-            left: 65vw;
-            transform: rotate(15deg);
-            transition: 1s;
+            bottom: 30vh;
+            @include right;
         }
         &--eight{
-            top: 40vh;
-            left: 75vw;
-            transform: rotate(10deg);
-            transition: 1s;
+            bottom: 35vh;
+            @include left;
+            transition: 6s;
         }
         &--nine{
-            top: 57vh;
-            left: 80vw;
-            transform: rotate(-10deg);
-            transition: 2s;
+            @include right;
+            bottom: 40vh;
         }
         &--ten{
-            top: 58vh;
-            left: 80vw;
-            transition: 3s;
+            bottom: 67vh;
+            left: 45vw;
         }
         &--score{
             position: absolute;
-            width: 200px;
-            top: 63vh;
-            left: 80vw;
-
+            bottom: 67vh;
+            left: 45vw;
+            width: 20vh;
         }
-    }
-    &__answer-section {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    &__score-section p{
-        color: greenyellow;
-        text-align: center;
-        font-size: 55px;
-        font-weight: bolder;
     }
     &__card{
-        background-color: rgba(0, 0, 0, 0.137);
-        width: 750px;
-        min-height: 500px;
-        height: min-content;
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: 10px 10px 42px 0px rgba(245, 239, 239, 0.75);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        background-color: rgba(255, 255, 255, 0.129);
+        box-shadow: 10px 10px 42px 0px rgba(253, 253, 253, 0.75);
     }
-    &__score-section {
-        display: flex;
-        font-size: 24px;
-        align-items: center;
-    }
-    &__question-section {
-        font-weight: bolder;
-        color: orange;
-        text-shadow: 1px 1px rgb(221, 221, 221);
-        font-size: 30px;
-        width: 100%;
-        position: relative;
-        text-align: right;
-        margin-top: -70px;
-    }
-    &__question-count {
-        margin-bottom: 20px;
-    }
-    &__question-count span {
-        color: orange;
-        text-shadow: 1px 1px rgb(245, 245, 245);
-        font-size: 30px;
-    }
-    &__question-text {
-        color: greenyellow;
-        text-align: center;
-        font-size: 55px;
-        font-weight: bolder;
-        margin-top: 100px;
-        margin-bottom: 2px;
-    }
-    &__timer-text {
-        background: rgb(230, 153, 12);
-        padding: 15px;
-        margin-top: 20px;
-        margin-right: 20px;
-        border: 5px solid rgb(255, 189, 67);
-        border-radius: 15px;
-        text-align: center;
-    }
-    &__btn {
-        width: 40%;
-        font-size: 35px;
-        font-weight: bolder;
-        color: #ffffff;
-        background-color:rgba(172, 255, 47, 0.52);
-        border-radius: 15px;
-        display: flex;
-        padding: 25px;
-        justify-content: center;
-        align-items: center;
-        border: 5px solid #70abcd;
-        cursor: pointer;
-        margin: 5px;
-        &:hover {
-            transform: translate(4px, -4px);
-            box-shadow: -4px 4px 1px rgba(214, 214, 214, 0.5);
-        }
-        &:active{
-            transform: translate(-4px, 4px);
-            box-shadow: none;
-        }
-        &:focus {
-            outline: none;
-        
-        }
+    &__btn{
+        cursor: url('../../../assets/cursor/bunny-paw-white.png') 20 20, auto;
     }
 }
