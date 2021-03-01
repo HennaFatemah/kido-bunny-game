@@ -1,0 +1,103 @@
+@mixin left{
+    left: 60vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                left: 80vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                left: 80vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                left: 80vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                left: 60vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                left: 60vw;
+            }
+            transition: 6s;
+}
+@mixin right{
+    left: 5vw;
+    transition: 6s;
+}
+@mixin bunny-size-start{
+    width: 35vw;
+        @media (min-width: 640px) and (min-height: 360px) {
+            width: 15vw;
+        }
+        @media (width: 533px) and (height: 320px) {
+            width: 15vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            width: 15vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            width: 15vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            width: 15vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            width: 35vw;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            width: 35vw;
+        }
+}
+
+@mixin bunny-size-one{
+    width: 25vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                width: 10vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                width: 10vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                width: 25vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                width: 25vw;
+            }
+}
+
+@mixin bunny-size-score{
+    width: 30vw;
+            @media (min-width: 640px) and (min-height: 360px) {
+                width: 10vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                width: 10vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                width: 10vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                width: 30vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                width: 30vw;
+            }
+}

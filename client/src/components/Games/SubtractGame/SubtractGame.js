@@ -5,11 +5,9 @@ import BunnyLeft from '../../../assets/pups/bunny-flippy-left.png';
 import FlippyStraight from '../../../assets/pups/bunny-flippy.png';
 import {useSpring, animated} from 'react-spring';
 import {questions} from './SubtractGameData';
-import { useHistory } from "react-router-dom";
-import BackArrow from '../../../assets/icons/back-arrow.svg';
+import GoBack from '../GoBack/GoBack'
 
 export default function SubtractGame() {
-    const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
@@ -59,31 +57,7 @@ export default function SubtractGame() {
 
 	return (
         <section className='subtract'>
-            <div className="subtract__back-container">
-                <button 
-                    className="subtract__back" 
-                    onClick={() => history.push("/choosegame")}
-                >
-                    <img 
-                        src={BackArrow} 
-                        alt="Back Arrow" 
-                        className="subtract__back-pic" 
-                    />Go Back</button>
-                <button 
-                    className="subtract__back" 
-                    onClick={() => history.push("/")}
-                >
-                    <img 
-                        src={BackArrow} 
-                        alt="Back Arrow" 
-                        className="subtract__back-pic" 
-                    />
-                    <img 
-                        src={BackArrow} 
-                        alt="Back Arrow" 
-                        className="subtract__back-pic" 
-                    />Home</button>
-            </div>
+            <GoBack/>
             <div className='subtract__card'>
                 {showScore ? (
                     <>

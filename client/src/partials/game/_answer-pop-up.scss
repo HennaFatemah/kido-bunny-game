@@ -1,0 +1,80 @@
+@mixin answer-pop-up{
+    &__question-section {
+        &--disappear{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(240, 222, 60);
+            width: 90vw;
+            min-height: 75vh;
+            height: min-content;
+            border-radius: 15px;
+            padding: 0;
+            box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+            font-family: Happy;
+            letter-spacing: 5px;
+            font-size: 5vh;
+            border: 10px white dotted;
+            text-align: center;
+            @media (min-width: 640px) and (min-height: 360px) {
+                width: 50vw;
+            }
+            @media (width: 533px) and (height: 320px) {
+                width: 50vw;
+            }
+            @media (width: 568px) and (height: 320px) {
+                width: 50vw;
+            }
+            @media (width: 480px) and (height: 320px) {
+                width: 50vw;
+            }
+            @media (width: 653px) and (height: 280px) {
+                width: 50vw;
+            }
+            @media (width: 800px) and (height: 1280px) {
+                width: 90vw;
+            }
+            @media (width: 768px) and (height: 1024px) {
+                width: 90vw;
+            }
+        }
+        &--answer{
+            text-align: center;
+            font-size: 20vh;
+            font-weight: normal;
+        }
+    }
+    
+    &__window{
+        z-index: 20;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    &__form-container{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(108, 195, 253, 0.5);
+    }
+    &__cancel{
+        font-size: 7vh;
+        align-self: flex-end;
+        background-color: transparent;
+        border: none;
+        color: #fcfbfa;
+        top: 2vh;
+        right: 4vw;
+        position: absolute;
+        z-index: 20;
+        outline: none;
+    }
+}

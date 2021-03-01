@@ -1,0 +1,78 @@
+.back-container{
+    width: 40vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 2.5vw;
+    &__back{
+        background: transparent;
+        border: transparent;
+        color: orange;
+        text-shadow: 1px 1px black;
+        font-size: 2.5vh;
+        width: 30vw;
+        padding: 0;
+        outline: none;
+        @media (min-width: 640px) and (min-height: 360px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 533px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            font-size: 2.5vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            font-size: 2.5vh;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            font-size: 2.5vh;
+        }
+    }
+    &__back-pic{
+        width: 3.5vh;
+        margin-left: -3.5vw;
+        margin-bottom: -1vh;
+        @media (min-width: 640px) and (min-height: 360px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 533px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 568px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 480px) and (height: 320px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 653px) and (height: 280px) {
+            width: 3.5vw;
+            margin-left: -3.5vh;
+            margin-bottom: -1vw;
+        }
+        @media (width: 800px) and (height: 1280px) {
+            width: 3.5vh;
+            margin-left: -3.5vw;
+            margin-bottom: -1vh;
+        }
+        @media (width: 768px) and (height: 1024px) {
+            width: 3.5vh;
+            margin-left: -3.5vw;
+            margin-bottom: -1vh;
+        }
+    }
+}
