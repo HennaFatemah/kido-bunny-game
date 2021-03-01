@@ -1,10 +1,13 @@
+@import '../../../partials/mixins';
 .back-container{
+    @include cursor;
     width: 40vw;
     position: absolute;
     left: 0;
     top: 0;
     margin-top: 2.5vw;
     &__back{
+        @include cursor;
         background: transparent;
         border: transparent;
         color: orange;
@@ -36,6 +39,7 @@
         }
     }
     &__back-pic{
+        @include cursor;
         width: 3.5vh;
         margin-left: -3.5vw;
         margin-bottom: -1vh;

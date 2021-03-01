@@ -1,3 +1,4 @@
+@import '../mixins';
 @mixin game {
     width: 100vw;
     height: 100vh;
@@ -91,6 +92,7 @@
         font-weight: bolder;
     }
     &__btn {
+        @include cursor;
         width: 40%;
         min-height: 18vh;
         font-size: 4vh;
@@ -103,7 +105,6 @@
         justify-content: center;
         align-items: center;
         border: 1vh solid #70abcd;
-        cursor: pointer;
         margin: 2%;
         &:hover {
             transform: translate(4px, -4px);

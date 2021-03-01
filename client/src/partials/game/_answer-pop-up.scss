@@ -1,4 +1,6 @@
+@import '../mixins';
 @mixin answer-pop-up{
+    @include cursor;
     &__question-section {
         &--disappear{
             display: flex;
@@ -66,6 +68,7 @@
         background-color: rgba(108, 195, 253, 0.5);
     }
     &__cancel{
+        @include cursor;
         font-size: 7vh;
         align-self: flex-end;
         background-color: transparent;

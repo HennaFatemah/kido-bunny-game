@@ -104,6 +104,7 @@
         width: 60vw;
     }
     &__back {
+        @include cursor;
         display: flex;
         align-items: center;
         justify-content: center;

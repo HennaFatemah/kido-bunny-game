@@ -2,7 +2,9 @@
 @import '../../../partials/game/answer-pop-up';
 @import '../../../partials/game/add-game/add-game-media';
 @import '../../../partials/game/add-game/animation';
+@import '../../../partials/mixins';
 .add {
+    @include cursor;
     @include game;
     @include answer-pop-up;
     background-image: url(../../../assets/mainImages/scenery.jpg);
