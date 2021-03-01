@@ -1,39 +1,12 @@
+@import '../../../partials/game/game';
+@import '../../../partials/game/answer-pop-up';
+@import '../../../partials/game/subtract-game/subtract-game-media';
 .subtract {
-    position: absolute;
-    z-index: -4;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include game;
+    @include answer-pop-up;
     background-image: url(../../../assets/mainImages/sea.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     &__pic{
-        width: 40vw;
-        @media (min-width: 640px) and (min-height: 360px) {
-            width: 15vw;
-        }
-        @media (width: 533px) and (height: 320px) {
-            width: 15vw;
-        }
-        @media (width: 568px) and (height: 320px) {
-            width: 15vw;
-        }
-        @media (width: 480px) and (height: 320px) {
-            width: 15vw;
-        }
-        @media (width: 653px) and (height: 280px) {
-            width: 15vw;
-        }
-        @media (width: 800px) and (height: 1280px) {
-            width: 40vw;
-        }
-        @media (width: 768px) and (height: 1024px) {
-            width: 40vw;
-        }
+        @include bunny-size-start;
         position: absolute;
         z-index: -1;
         transition: 6s;
@@ -47,389 +20,52 @@
             }
             }
         &--one{
-            @media (min-width: 640px) and (min-height: 360px) {
-                width: 15vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                width: 15vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                width: 15vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                width: 15vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                width: 15vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                width: 15vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                width: 15vw;
-            }
+            @include bunny-size-one;
             top: 0;
             left: 1vw;
         }
         &--two{
             top: 10vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
+            @include left;
         }
         &--three{
             top: 20vh;
-            left: 5vw;
+            @include right;
         }
         &--four{
             top: 30vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
+            @include left;
         }
         &--five{
             top: 40vh;
-            left: 5vw;
+            @include right;
         }
         &--six{
             top: 50vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
+            @include left;
         }
         &--seven{
             top: 60vh;
-            left: 5vw;
+            @include right;
         }
         &--eight{
             top: 70vh;
-            left: 60vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                left: 80vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                left: 80vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                left: 80vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                left: 60vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                left: 60vw;
-            }
+            @include left;
         }
         &--nine{
             top: 80vh;
-            left: 5vw;
+            @include right;
         }
         &--ten{
             bottom: 0;
             left: 20vw;
-            width: 25vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                width: 10vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                width: 10vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                width: 25vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                width: 25vw;
-            }
+            @include bunny-size-ten;
         }
         &--score{
             position: absolute;
-            width: 25vw;
-            @media (min-width: 640px) and (min-height: 360px) {
-                width: 10vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                width: 10vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                width: 10vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                width: 25vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                width: 25vw;
-            }
+            @include bunny-size-score;
             bottom: 0;
             left: 20vw;
-
         }
-    }
-    &__answer-section {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    &__score-section p{
-        color: greenyellow;
-        text-align: center;
-        font-size: 55px;
-        font-weight: bolder;
-    }
-    &__card{
-        background-color: rgba(0, 0, 0, 0.137);
-        width: 90vw;
-        min-height: 75vh;
-        height: min-content;
-        border-radius: 15px;
-        padding: 0;
-        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        @media (min-width: 640px) and (min-height: 360px) {
-            width: 50vw;
-        }
-        @media (width: 533px) and (height: 320px) {
-            width: 50vw;
-        }
-        @media (width: 568px) and (height: 320px) {
-            width: 50vw;
-        }
-        @media (width: 480px) and (height: 320px) {
-            width: 50vw;
-        }
-        @media (width: 653px) and (height: 280px) {
-            width: 50vw;
-        }
-        @media (width: 800px) and (height: 1280px) {
-            width: 90vw;
-        }
-        @media (width: 768px) and (height: 1024px) {
-            width: 90vw;
-        }
-    }
-    &__score-section {
-        display: flex;
-        font-size: 7.5%;
-        align-items: center;
-    }
-    &__question-section {
-        font-weight: normal;
-        color: orange;
-        text-shadow: 1px 1px black;
-        font-size: 4vh;
-        width: 100%;
-        position: relative;
-        height: 20vh;
-        padding: 3vw;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        &--disappear{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(240, 222, 60);
-            width: 90vw;
-            min-height: 75vh;
-            height: min-content;
-            border-radius: 15px;
-            padding: 0;
-            box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
-            font-family: Happy;
-            letter-spacing: 5px;
-            font-size: 5vh;
-            border: 10px white dotted;
-            text-align: center;
-            @media (min-width: 640px) and (min-height: 360px) {
-                width: 50vw;
-            }
-            @media (width: 533px) and (height: 320px) {
-                width: 50vw;
-            }
-            @media (width: 568px) and (height: 320px) {
-                width: 50vw;
-            }
-            @media (width: 480px) and (height: 320px) {
-                width: 50vw;
-            }
-            @media (width: 653px) and (height: 280px) {
-                width: 50vw;
-            }
-            @media (width: 800px) and (height: 1280px) {
-                width: 90vw;
-            }
-            @media (width: 768px) and (height: 1024px) {
-                width: 90vw;
-            }
-        }
-        &--answer{
-            text-align: center;
-            font-size: 20vh;
-            font-weight: normal;
-        }
-    }
-    &__question-count {
-        text-align: right;
-    }
-    &__question-count span {
-        color: orange;
-        text-shadow: 1px 1px black;
-        font-size: 4vh;
-    }
-    &__question-text {
-        color: greenyellow;
-        text-align: center;
-        font-size: 6vh;
-        font-weight: bolder;
-    }
-    &__btn {
-        width: 40%;
-        font-size: 4vh;
-        font-weight: bolder;
-        color: #ffffff;
-        background-color:rgba(172, 255, 47, 0.52);
-        border-radius: 3vh;
-        display: flex;
-        padding: 8%;
-        justify-content: center;
-        align-items: center;
-        border: 1vh solid #70abcd;
-        cursor: pointer;
-        margin: 2%;
-        &:hover {
-            transform: translate(4px, -4px);
-            box-shadow: -4px 4px 1px rgba(0, 0, 0, 0.137);
-        }
-        &:active{
-            transform: translate(-4px, 4px);
-            box-shadow: none;
-        }
-        &:focus {
-            outline: none;
-        
-        }
-    }
-    &__check{
-        position: absolute;
-        font-size: 20px;
-        color: black;
-        z-index: 100;
-        top: 30vh;
-        left: 20vw;
-    }
-    &__window{
-        z-index: 20;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    &__form-container{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(108, 195, 253, 0.5);
-    }
-    &__cancel{
-        font-size: 7vh;
-        align-self: flex-end;
-        background-color: transparent;
-        border: none;
-        color: #fcfbfa;
-        top: 2vh;
-        right: 4vw;
-        position: absolute;
-        z-index: 20;
-        outline: none;
     }
 }

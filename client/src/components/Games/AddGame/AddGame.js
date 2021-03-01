@@ -10,7 +10,7 @@ import BunnyBerryHappy from '../../../assets/pups/bunny-berry.png';
 import {questions} from './AddGameData';
 import {useSpring, animated} from 'react-spring';
 import GoBack from '../GoBack/GoBack';
-import Confetti from '../Confetti/confetti';
+import Confetti from '../Confetti/Confetti';
 
 export default function AddGame() {
 	const [currentQuestion, setCurrentQuestion] = useState(0);

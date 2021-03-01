@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './confetti.scss'
+import './Confetti.scss'
 import Confetti from "react-confetti";
 
 const Confettiwork = () => {
     const [height, setHeight] = useState(null);
     const [width, setWidth] = useState(null);
     const confettiRef = useRef(null);
-    const [show, setShow] = useState(false);
+    const [setShow] = useState(false);
 
     useEffect(() => {
         setHeight(confettiRef.current.clientHeight);
@@ -24,7 +24,7 @@ const Confettiwork = () => {
             onMouseEnter={() => handleShow(true)}>
             <Confetti 
             recycle ={true}
-            numberOfPieces={80}
+            numberOfPieces={180}
             width={width}
             height={height}
             />

@@ -5,7 +5,8 @@ import BunnyLeft from '../../../assets/pups/bunny-flippy-left.png';
 import FlippyStraight from '../../../assets/pups/bunny-flippy.png';
 import {useSpring, animated} from 'react-spring';
 import {questions} from './SubtractGameData';
-import GoBack from '../GoBack/GoBack'
+import GoBack from '../GoBack/GoBack';
+import Confetti from '../Confetti/Confetti';
 
 export default function SubtractGame() {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -69,6 +70,7 @@ export default function SubtractGame() {
                             className="subtract__btn" 
                             onClick={refreshPage}
                         >Start Again</button>
+                        <Confetti/>
                         {showAnswerWindow? 
                                 <div className="subtract__form-container" ref={AnswerRef} onClick = {closeAnswer}>
                                     <animated.div style={animation}>
