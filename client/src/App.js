@@ -8,7 +8,7 @@ import SubtractGame from './components/Games/SubtractGame/SubtractGame';
 import ExerciseGame from './components/Games/ExerciseGame/ExerciseGame';
 import ScavengerHunt from './components/Games/ScavengerHunt/ScavengerHunt';
 import SightWords from './components/Games/SightWordsGame/SightWordsGame';
-import SoundGame from './components/Games/GKGame/GKGame';
+import SoundGame from './components/Games/SoundGame/SoundGame';
 import './App.scss';
 import Share from './components/Share/Share';
 
