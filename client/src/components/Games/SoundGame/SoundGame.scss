@@ -1,4 +1,5 @@
 @import '../../../partials/game/answer-pop-up';
+@import "../../../partials/mixins";
 .sound {
     @include answer-pop-up;
     position: absolute;
@@ -120,6 +121,7 @@
         font-weight: bolder;
     }
     &__btn {
+        @include cursor;
         width: 40%;
         font-size: 4vh;
         font-weight: bolder;
@@ -131,7 +133,6 @@
         justify-content: center;
         align-items: center;
         border: 1vh solid #70abcd;
-        cursor: pointer;
         margin: 1.5%;
         &:hover {
             transform: translate(4px, -4px);

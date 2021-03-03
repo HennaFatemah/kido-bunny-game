@@ -85,7 +85,7 @@ export default function ScavengerHunt() {
                             <div className="sound__form-container" ref={AnswerRef} onClick={closeAnswer}>
                                 <animated.div style={animation}>
                                     <button className="sound__cancel" onClick={()=> setShowAnswerWindow(prev=>!prev)}>✕</button>
-                                    <p  className='sound__question-section sound__question-section--disappear'>{questions[4].correctStatementFive}<br/><span className="sound__question-section sound__question-section--answer">{questions[4].correctAnswerFive}</span></p>
+                                    <p  className='sound__question-section sound__question-section--disappear'>{questions[9].correctStatementTen}<br/><span className="sound__question-section sound__question-section--answer">{questions[9].correctAnswerTen}</span></p>
                                 </animated.div>
                             </div>: null
                         }
