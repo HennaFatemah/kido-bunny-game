@@ -1,9 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import './SoundGame.scss'
 import BunnyMuse from '../../../assets/pups/bunny-muse.png';
-import BackArrow from '../../../assets/icons/back-arrow.svg';
 import {questions} from './SoundGameData';
-import { useHistory } from "react-router-dom";
 import SoundOne from './Audio/SoundOne';
 import SoundTwo from './Audio/SoundTwo';
 import SoundThree from './Audio/SoundThree';
@@ -19,7 +17,6 @@ import {useSpring, animated} from 'react-spring';
 import GoBack from '../GoBack/GoBack';
 
 export default function ScavengerHunt() {
-    const history = useHistory();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
