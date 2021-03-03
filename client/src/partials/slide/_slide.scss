@@ -39,7 +39,7 @@
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         font-family: Happy;
-        font-weight: calc(bold + (normal - bold) * (100vh - 280px) / (1440 - 280));
+        font-weight: normal;
         font-size: 5.5vw;
         line-height: 5.5vw;
         text-align: center;
@@ -47,7 +47,7 @@
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
-        width: calc(58% + (115 - 58) * (100vh - 280px) / (1440 - 280));
+        width: calc(58% + (110 - 58) * (100vh - 280px) / (1440 - 280));
         height: fit-content;
         margin: 0;
         padding: 0;
