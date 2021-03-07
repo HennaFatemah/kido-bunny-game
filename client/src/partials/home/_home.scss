@@ -31,11 +31,11 @@
 
 @mixin tractor-path {
   position: absolute;
-  width: 180vw;
-  right: -10vw;
-  height: 20vw;
+  width: 250vw;
+  right: -15vw;
+  height: 24vw;
   background-color: transparent;
-  bottom: 27vh;
+  bottom: 23vh;
   transform: rotate(-1deg);
   overflow: hidden;
   z-index: 10;

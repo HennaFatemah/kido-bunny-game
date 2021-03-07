@@ -34,9 +34,6 @@
     }
     &__tractor-path{
         @include tractor-path;
-        @media(max-width: 411px) {
-            height: 20vw;
-        }
         //ipad portrait
         @media(min-width: 1024px) and (min-height: 768px) {
             bottom: 24vh;
